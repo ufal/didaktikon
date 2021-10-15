@@ -1,0 +1,2 @@
+# didaktikon
+Exponát pro Didaktikon
