@@ -1,0 +1,85 @@
+
+body {
+    font-family: 'Questrial';
+    background-color: rgb(70, 70, 70);
+    text-align: center;
+    color: white;
+
+}
+p {
+  padding: 0 15px;
+}
+
+.logo { 
+    height: 30px;
+    padding: 0 0px;
+    margin-right: 0px;
+  
+
+}
+
+.navbar-brand.order-md-last {
+    margin-right:0;
+    padding-right: 0;
+}
+
+li.nav-item {
+padding: 0px 15px 0px 5px;
+}
+
+
+.gradient_back {
+  background-image: linear-gradient( #141414, #616161);
+  padding:50px 0 50px 0;
+
+}
+
+.person  img {
+  max-height: 140px;
+}
+
+.person > h5 {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.people {
+  max-width:900px;
+}
+
+#carouselExampleIndicators {
+  background-color: black;
+}
+#carouselExampleIndicators .carousel-item  img {
+  object-fit: cover;
+  object-position: center;
+  height:40vh;
+  overflow: hidden;
+  opacity: 40%;
+}
+
+.carousel-caption {
+
+  transform: translateY(-50%);
+  bottom:initial;
+  top:55%;
+
+
+}
+
+.carousel-caption > * {
+color: white;
+}
+
+
+#yellow_link {
+  color:rgb(255, 255, 101);
+  font-weight: 900;
+}
+
+.text_restrict {
+    position: relative;
+    max-width: 80%;
+    left:10%;
+
+  }
