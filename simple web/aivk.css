@@ -10,6 +10,10 @@ p {
   padding: 0 15px;
 }
 
+h5 {
+  font-size: 20px;
+}
+
 .logo { 
     height: 30px;
     padding: 0 0px;
@@ -28,19 +32,98 @@ padding: 0px 15px 0px 5px;
 }
 
 
-.gradient_back {
-  background-image: linear-gradient( #141414, #616161);
-  padding:50px 0 50px 0;
+.my_container {
+ 
+  /* vertical-align: middle; */
+  background-color: rgb(85, 136, 151);
+  max-height: 140px;
+  max-width: 140px;
+  width: 140px;
+  height: 140px;
+
+  min-height: 140px;
+  min-width: 140px;
+
+  margin: auto;
+ 
+}
+
+.my_text {
+  
+  z-index: 150;
+  padding-top: 43px;
+  transition: 0.3s;
 
 }
 
+.my_text:hover {
+  color: rgb(255, 255, 101);
+}
+
+
+.students {
+  max-width:600px;
+}
+
+.student {
+  min-width: 145px;
+}
+.student img {
+  height: 115px;
+
+}
+
+
+.student > h5 {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.student > h5:hover{
+  color: rgb(255, 255, 101);
+  
+}
+
+.friends {
+  /* max-width:900px; */
+}
+
+.friend {
+  min-width: 145px;
+}
+.friend img {
+  height: 115px;
+
+}
+
+
+.friend > h5 {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.friend > h5:hover{
+  color: rgb(255, 255, 101);
+}
+
+.person {
+  text-align: center;
+  /* background-color: salmon; */
+  min-width: 145px;
+}
 .person  img {
-  max-height: 140px;
+  height: 140px;
+
 }
 
 .person > h5 {
   padding-top: 7%;
+  transition: 0.3s;
   padding-bottom: 7%;
+}
+.person > h5:hover{
+  color: rgb(255, 255, 101);
+
 }
 
 .people {
@@ -83,3 +166,54 @@ color: white;
     left:10%;
 
   }
+
+.section1 {
+  /* height: 5000px; */
+  /* background-color: rgb(69, 111, 225); */
+  background-color: rgb(85, 136, 151);
+}
+
+.gradient_back {
+  
+  /* background-image: linear-gradient( #141414, #616161); */
+  padding:50px 0 50px 0;
+
+}
+
+.description {
+  /* display: none; */
+  position:fixed;
+  /* left: 50%; */
+  bottom:0%;
+  
+
+  z-index: 9999;
+  font-size: 100px;
+  width: 100%;
+  background-color: rgb(85, 136, 151);
+  padding-top: 7px;
+
+  
+}
+
+
+
+@media screen and (min-width: 100px) and (max-width: 480px) {
+
+
+  .gradient_back {
+    background-image: linear-gradient( #141414, #616161);
+  }
+  .my_container {
+    background-color: rgb(151, 151, 151);;
+  }
+  .description {
+    background-color: rgb(51, 51, 51);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+
