@@ -10,8 +10,8 @@ window.addEventListener('scroll', () => {
 
 
 let people = {
-  'alisa': 'Design, front-end',
-  'vika': 'Back-end',
+  'alisa': 'Design, front end',
+  'vika': 'Back end',
   'rudolf': 'Lorem impsum. Lorem LoremLoremLoreml<br>LoremjLoremlkajsdhflLoremLoremakjsdhflkaLoremsdLorem',
   'alenka': 'Lorem impsum'
 }
