@@ -48,16 +48,40 @@ let diacritics = {
 }
 
 let content = {
-    a_letter : {text:'Amber', img:'blur1.jpeg'},
-    b_letter : {text: "Beetroot, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br><br> Beetroot, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown pr", img:'blur3.jpeg'},    
-    c_letter : {text: "Calculus. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ", img:''},   
-    d_letter : {text: 'Dedication', img:''},  
-    e_letter : {text: 'Epsilon',  img:''},  
-    f_letter : {text: 'Figure',   img:''}, 
-    g_letter : {text: 'Goose',    img:''},
-    h_letter : {text: 'Hectic',   img:''},
-    z_soft_letter : {text: 'Žába',   img:''}
-    
+    a_letter : {text:'Abeceda', img:'blur1.jpeg'},
+    b_letter : {text: "Babička", img:''},    
+    c_letter : {text: "Celnice", img:''},
+    c_soft_letter : {text: "Či Či", img:''},   
+    d_letter : {text: 'Dům', img:''},  
+    e_letter : {text: 'Echo',  img:''},  
+    f_letter : {text: 'Fiasko',   img:''}, 
+    g_letter : {text: 'Galoše',    img:''},
+    h_letter : {text: 'Háj',   img:''},
+    i_letter : {text: 'Iniciála',   img:''},
+    ch_letter : {text: "Chorvatsko", img:''},
+    j_letter : {text:"Jablko", img:''}, 
+    k_letter : {text:"Kaše", img:''}, 
+    l_letter : {text:"Líbánky", img:''}, 
+    m_letter : {text:"Most", img:''}, 
+    n_letter : {text:"Nákaza", img:''}, 
+    n_soft_letter : {text:"", img:''}, 
+    o_letter : {text:"Opice", img:''}, 
+    p_letter : {text:"Park", img:''}, 
+    q_letter : {text:"", img:''}, 
+    r_letter : {text:"Radost", img:''}, 
+    r_soft_letter : {text:"Řeka", img:''}, 
+    s_letter : {text:"Seno", img:''}, 
+    s_soft_letter : {text:"Šablona", img:''}, 
+    t_letter : {text:"Tábor", img:''}, 
+    t_soft_letter : {text:"", img:''}, 
+    u_letter : {text:"Úprava", img:''}, 
+    v_letter : {text:"Vrstva", img:''}, 
+    w_letter : {text:"Waltz", img:''}, 
+    x_letter : {text:"Xylofon", img:''}, 
+    y_letter : {text:"Ypsilon", img:''}, 
+    z_letter : {text:"Zebra", img:''}, 
+    z_soft_letter : {text: 'Žába',   img:''},
+
 }
 console.log(diacritics)
 
@@ -69,7 +93,7 @@ function start(){
     for (let i=0; i<wordArray.length; i++) {
         console.log(wordArray[i])
         if (wordArray[i] === 'ň') {
-            wordArray[i] = 'n_soft_letter'
+            wordArray[i] = 'n_letter'
         
         } else if ( wordArray[i] === 'ě') {
             wordArray[i] = 'e_letter'
@@ -86,13 +110,24 @@ function start(){
         } else if (wordArray[i] === 'ž') {
             wordArray[i] = 'z_soft_letter'
 
-        } else if (wordArray[i] === 'ť') {
-            wordArray[i] = 't_soft_letter'
+        } 
+        // else if (wordArray[i] === 'ť') {
+        //     wordArray[i] = 't_soft_letter'
+
+        // } else if (wordArray[i] === 'ď') {
+        //     wordArray[i] = 'd_soft_letter'
+
+        // } 
+
+        else if (wordArray[i] === 'ť') {
+            wordArray[i] = 't_letter'
 
         } else if (wordArray[i] === 'ď') {
-            wordArray[i] = 'd_soft_letter'
+            wordArray[i] = 'd_letter'
 
-        } else if (wordArray[i] === 'ý') {
+        } 
+
+        else if (wordArray[i] === 'ý') {
             wordArray[i] = 'y_letter'
 
         } else if (wordArray[i] === 'á') {
@@ -109,6 +144,9 @@ function start(){
 
         } else if (wordArray[i] === 'ů') {
             wordArray[i] = 'u_letter'
+
+        } else if (wordArray[i] === 'ó') {
+            wordArray[i] = 'o_letter'
 
         } else  {
             wordArray[i] += '_letter'
