@@ -26,9 +26,12 @@
         <h3>Sestavit slovo z abecedy:</h3>
 
 
-        <form id='form'>
-            <input type="text" id="name_input" name="name"  >
-            <input type="submit" value="Submit" class='submit-btn' >
+        <form id='form' >
+            <input type="text" id="name_input" name="name" action='/alphabet.js'  >
+
+            <input type="button" value="Submit" class='submit-btn' onclick="start()">
+            <input type="button" value="Znova" class='restart-btn' onclick = "restart()">
+            
         </form>
    
 
@@ -69,35 +72,35 @@
         <div class='letter-container' id='e_letter' data-id='e_letter'>
     
             <h1 class = 'big-letter' data-id='e_letter'>E</h1>
-
-                <h3 class = 'description text-block' data-id='e_letter'>Description</h3>
+            <h3 class = 'description text-block' data-id='e_letter'>Description</h3>
 
         </div>
 
         <div class='letter-container' id='f_letter' data-id='f_letter'>
     
             <h1 class = 'big-letter' data-id='f_letter'>F</h1>
-
-            
-                <h3 class = 'description text-block' data-id='f_letter'>Description</h3>
+            <h3 class = 'description text-block' data-id='f_letter'>Description</h3>
 
         </div>
 
         <div class='letter-container' id='g_letter' data-id='g_letter'>
     
-            <h1 class = 'big-letter' data-id='g_letter'>G</h1>
-
-            
-                <h3 class = 'description text-block' data-id='g_letter'>Description</h3>
+            <h1 class = 'big-letter' data-id='g_letter'>G</h1>   
+            <h3 class = 'description text-block' data-id='g_letter'>Description</h3>
 
         </div>
 
         <div class='letter-container' id='h_letter' data-id='h_letter'>
     
             <h1 class = 'big-letter' data-id='h_letter'>H</h1>
+            <h3 class = 'description text-block' data-id='h_letter'>Description</h3>
+  
+        </div>
 
-            
-                <h3 class = 'description text-block' data-id='h_letter'>Description</h3>
+        <div class='letter-container' id='z_soft_letter' data-id='z_soft_letter'>
+    
+            <h1 class = 'big-letter' data-id='z_soft_letter'>Ž</h1>
+            <h3 class = 'description text-block' data-id='z_soft_letter'>Description</h3>
   
         </div>
 
