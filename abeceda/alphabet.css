@@ -147,6 +147,8 @@ h3 {
     font-size: 30px;
 }
 
+
+
 .hide {
     display: none;
 }
@@ -157,26 +159,22 @@ h3 {
     flex-wrap: wrap;
 }
 
-
-.big-letter {
-
+#alphabet::after {
+    flex-basis: calc(50%);
+    /* background: lightcoral; */
 }
-
 
 
 .letter-container {
     color:white;
 
-    height:400px;
+    height: 400px;
     width: 300px;
 
     background-color: #F17553;
     border-radius: 15px;
-
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    
+    margin: 2vh auto;
 
     transition: 0.3s;
 
