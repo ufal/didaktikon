@@ -160,10 +160,20 @@ h3 {
 }
 
 #alphabet::after {
+    content: "";
     flex-basis: calc(50%);
     /* background: lightcoral; */
+   
 }
 
+.big-letter {
+
+}
+
+
+:root {
+
+}
 
 .letter-container {
     color:white;
@@ -175,6 +185,16 @@ h3 {
     border-radius: 15px;
     
     margin: 2vh auto;
+
+    
+    /* margin: 2vh 20px+auto; */
+    
+    
+    /* margin: var(--letter-container-margin); */
+    /* margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto; */
 
     transition: 0.3s;
 
