@@ -185,17 +185,6 @@ h3 {
     border-radius: 15px;
     
     margin: 2vh auto;
-
-    
-    /* margin: 2vh 20px+auto; */
-    
-    
-    /* margin: var(--letter-container-margin); */
-    /* margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto; */
-
     transition: 0.3s;
 
     display: flex;
@@ -224,7 +213,7 @@ h3 {
 
 }
 
-.letter-container:hover .big-letter {
+.letter-container:hover .big-letter, .letter-container:hover .more-text {
     display: none;
 
 }
@@ -236,9 +225,10 @@ h3 {
 }
 
 
-.more-text {
+.letter-container > .more-text {
+    display: initial;
     color: white;
-    font-size: 20px;
+    font-size: 4vh;
 }
 
 
