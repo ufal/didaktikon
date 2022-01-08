@@ -14,7 +14,8 @@ let people = {
   'vika': 'Back end',
   'misa': 'Front end',
   'tereza': ' Sociologie/informatika, AI v kontextu sociálních věd',
-  'rosa': 'Múza projektu'
+  'rosa': 'Múza projektu',
+  'jindrich': 'Lorem Impsum'
 }
 
 let description = document.querySelector('.description')
