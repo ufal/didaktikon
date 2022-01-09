@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+
+body {
+    position: absolute;
+    
+
+    color:white;
+    background-color: rgb(32, 53, 81);
+    padding: 0;
+    margin: 0;
+    font-family: 'Questrial';
+    text-align: center;
+
+}
+
+p {
+    font-size: 25px;
+    margin:10px;
+}
+
+.woop {
+    display: inline-block;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 15px; 
+}
+
+.btn {
+    font-family: 'Questrial';
+    font-size: 30px;
+
+    font-weight: bold;
+    
+    color: white;
+    border: none;
+    transition: 0.3s;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 10px;
+  
+}
+
+#pro {
+    background-color: rgb(130, 209, 84);
+
+}
+#con {
+    background-color: rgb(231, 137, 75);
+}
+  
+#con:hover, #pro:hover {
+    background-color: rgb(74, 179, 175);
+    border: none;
+}
+
+
+.containers {
+   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 72vh;
+    width: 100vw;
+    margin-top: 15px;
+
+
+}
+
+.container {
+
+    background: linear-gradient(180deg, rgb(60, 77, 154) 0%, rgb(77, 170, 193) 100%, rgb(142, 212, 226) 100%);
+    color: white;
+    border-radius: 16px;
+    margin: auto;
+    height: 100%;
+    width: 40%;
+    overflow: scroll;
+
+    
+}
+
+.pool {
+
+    position: fixed;
+    bottom: 0;
+
+   
+    background-color: rgb(225, 225, 225);
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 27vh; */
+
+}
+
+#char_container {
+    padding: 4px;
+    border-radius: 16px;
+    background-color: rgba(71, 71, 71, 0.5);
+    
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+#char_container p {
+
+    margin: 4px;
+}
+
+.char_container {
+    padding: 4px;
+    border-radius: 16px;
+    background-color: rgba(71, 71, 71, 0.5);
+    margin:10px;
+   
+
+}
+
+.char_container p {
+    margin: 4px;
+}
+
+.hide {
+    display: none;
+}
+
+.my_text {
+    height: 27px;
+    color: rgb(53, 53, 53);
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    /* background-color: darkorange; */
+}
+
+.my_text p {
+    margin:0px;
+}
+
+#final {
+   
+    color: rgb(53, 53, 53);
+    font-weight: bold;
+   
+}
