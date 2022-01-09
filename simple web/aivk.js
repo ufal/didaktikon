@@ -1,4 +1,4 @@
-const [red, green, blue] = [85, 136, 151]
+const [red, green, blue] = [42, 70, 78]
 
 const section1 = document.querySelector('.section1')
 
