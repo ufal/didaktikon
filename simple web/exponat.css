@@ -1,0 +1,14 @@
+body{
+    background-color: #1B344C;
+}
+#pripravy{
+    width:37%;
+    /* background-image: linear-gradient(to right, #7552ac , #3e9e82); */
+    margin:auto;
+    border-radius: 16px;
+}
+#pripravy-img{
+    width:inherit;
+    /* padding:10px; */
+    /*border-radius: 16px;*/
+}
