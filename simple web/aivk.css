@@ -54,7 +54,6 @@ padding: 0px 15px 0px 5px;
   z-index: 150;
   padding-top: 43px;
   transition: 0.3s;
-
 }
 
 .my_text:hover {
@@ -62,7 +61,7 @@ padding: 0px 15px 0px 5px;
 }
 
 .experts{
-  max-width:750px;
+  max-width:800px;
 }
 .students {
   max-width:600px;
@@ -124,10 +123,11 @@ padding: 0px 15px 0px 5px;
   transition: 0.3s;
   padding-bottom: 7%;
 }
+/*
 .person > h5:hover{
   color: rgb(255, 255, 101);
 
-}
+}*/
 
 .people {
   max-width:900px;
@@ -193,7 +193,9 @@ color: white;
   z-index: 9999;
   font-size: 100px;
   width: 100%;
-  background-color: rgb(85, 136, 151);
+  background-color: rgb(184, 184, 73);
+  color:rgb(42, 70, 78);
+  /*background-color: rgb(85, 136, 151);*/
   padding-top: 7px;
 
   
@@ -230,4 +232,17 @@ color: white;
 
 .rounded-circle{
   filter: grayscale(100%);
+}
+.rounded-circle:hover{
+
+}
+
+.img-card:hover{
+  color:rgb(255, 255, 101);
+}
+.img-card:hover > .rounded-circle{
+  filter:none;
+}
+.h5-card:hover > .my_text{
+  color: rgb(255, 255, 101);
 }
