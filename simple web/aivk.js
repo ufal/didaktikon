@@ -15,7 +15,10 @@ let people = {
   'misa': 'Front end',
   'tereza': ' Sociologie/informatika, AI v kontextu sociálních věd',
   'rosa': 'Múza projektu',
-  'jindrich': 'Lorem Impsum'
+  'jindrich': 'Lorem Impsum',
+  'kajzar': 'Lékař, AI v medicíně',
+  'nikol': 'Psycholožka, AI v psychologii',
+  'frantisek': 'AI v teologii'
 }
 
 let description = document.querySelector('.description')
