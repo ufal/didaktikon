@@ -53,12 +53,12 @@ padding: 0px 15px 0px 5px;
   
   z-index: 150;
   padding-top: 43px;
-  transition: 0.3s;
+  /*transition: 0.3s;*/
 }
-
+/*
 .my_text:hover {
   color: rgb(255, 255, 101);
-}
+}*/
 
 .experts{
   max-width:800px;
@@ -246,4 +246,9 @@ color: white;
 }
 .h5-card:hover > .my_text{
   color: rgb(255, 255, 101);
+}
+.expert:hover > .rounded-circle {
+  filter:none;
+  background-color: rgb(255, 255, 101);
+  color:rgb(42, 70, 78);
 }
