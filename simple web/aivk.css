@@ -189,13 +189,13 @@ color: white;
   /* left: 50%; */
   bottom:0%;
   
-
   z-index: 9999;
   font-size: 100px;
   width: 100%;
-  background-color: rgb(184, 184, 73);
+  /* background-color: rgb(184, 184, 73); darker yellow */ 
+  background-color: rgb(255, 255, 101);
   color:rgb(42, 70, 78);
-  /*background-color: rgb(85, 136, 151);*/
+  
   padding-top: 7px;
 
   
@@ -233,6 +233,7 @@ color: white;
 
 .rounded-circle{
   filter: grayscale(100%);
+  transition: 0.3s;
 }
 .rounded-circle:hover{
 
