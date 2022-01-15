@@ -15,7 +15,7 @@ let people = {
   'misa': 'Front end',
   'tereza': ' Sociologie/informatika, AI v kontextu sociálních věd',
   'rosa': 'informatika, AI v kontextu divadelních her',
-  'jindrich': 'AI v kontextu přirozeného jazyka',
+  'jindrich': 'informatika, AI v kontextu přirozeného jazyka',
   'kajzar': 'Lékař, AI v medicíně',
   'nikol': 'Psycholožka, AI v psychologii',
   'frantisek': 'AI v teologii'
