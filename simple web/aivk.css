@@ -217,6 +217,13 @@ color: white;
     /*
     background-color: rgb(51, 51, 51);*/
   }
+  #carouselExampleIndicators .carousel-item  img {
+    object-fit: cover;
+    object-position: center;
+    height:80vh;
+    overflow: hidden;
+    opacity: 40%;
+  }
 }
 
 .hide {
