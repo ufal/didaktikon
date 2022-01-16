@@ -15,5 +15,8 @@
       text-align: left;
       display: inline-block;
   }
-  
+  .table-program{
+      width:40%;
+      margin:auto;
+  }
  
