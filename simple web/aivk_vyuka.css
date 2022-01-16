@@ -19,4 +19,13 @@
       width:40%;
       margin:auto;
   }
+  @media screen and (min-width: 100px) and (max-width: 600px) {
+    .table-program{
+        width:90%;
+        margin:auto;
+    }
+    #heading-program{
+        margin:20px;
+    }
+  }
  
