@@ -1,0 +1,19 @@
+
+ body{
+     background-color: #2D5C4C;
+ }
+ a {
+    color: rgb(255, 255, 101);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(252, 252, 151);
+  }
+
+  .program{
+      text-align: left;
+      display: inline-block;
+  }
+  
+ 
