@@ -28,4 +28,9 @@
         margin:20px;
     }
   }
- 
+
+#map{
+  width:50%;
+  height:400px;
+  margin:auto;
+}
