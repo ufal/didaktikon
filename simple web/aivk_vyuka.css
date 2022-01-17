@@ -19,7 +19,17 @@
       width:40%;
       margin:auto;
   }
+  #map{
+    width:60%;
+    height:450px;
+    margin: 20px auto;
+  }
   @media screen and (min-width: 100px) and (max-width: 600px) {
+    #map{
+      width:90%;
+      height:300px;
+      margin: 20px auto;
+    }
     .table-program{
         width:90%;
         margin:auto;
@@ -27,10 +37,6 @@
     #heading-program{
         margin:20px;
     }
+
   }
 
-#map{
-  width:50%;
-  height:400px;
-  margin:auto;
-}
