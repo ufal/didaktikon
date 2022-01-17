@@ -14,11 +14,11 @@ let people = {
   'vika': 'Back end',
   'misa': 'Front end',
   'tereza': ' Sociologie/informatika, AI v kontextu sociálních věd',
-  'rosa': 'informatika, AI v kontextu divadelních her',
-  'jindrich': 'informatika, AI v kontextu přirozeného jazyka',
+  'rosa': 'Informatika, AI v kontextu divadelních her',
+  'jindrich': 'Informatika, AI v kontextu přirozeného jazyka',
   'kajzar': 'Lékař, AI v medicíně',
   'nikol': 'Psycholožka, AI v psychologii',
-  'frantisek': 'AI v teologii'
+  'frantisek': 'Teolog, AI v teologii'
 }
 
 let description = document.querySelector('.description')
