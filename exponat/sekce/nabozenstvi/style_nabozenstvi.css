@@ -1,0 +1,157 @@
+
+*, *::before, *::after {
+  /* box-sizing: border-box; */
+  font-size: 30px;
+  font-family: 'Questrial'
+}
+
+body {
+  color:white;
+  background-color: rgb(32, 53, 81);
+  padding: 0;
+  margin: 0;
+
+
+}
+#center {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+
+#text-container {
+  width:80%;
+  overflow-y:auto;
+
+ 
+
+  text-align: left;
+  overflow: scroll;
+
+
+
+  
+}
+
+p {
+  font-size: 4vh;
+}
+
+#next-button {
+  position: fixed;
+  left: 95%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+#prev-button {
+
+  position: fixed;
+  left: 5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+#prev-button, #next-button {
+  background-color: rgba(100, 148, 237, 0.402);
+  padding: 10px;
+  border-radius: 16px;
+  transition: 0.2s;
+
+}
+
+#prev-button:hover, #next-button:hover {
+  background-color: rgba(100, 148, 237, 0.84);
+
+
+}
+
+
+.a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+
+}
+
+.a:hover {
+  color: rgb(255, 255, 101);
+}
+
+.our-img {
+  float: right;
+  height: 40vw;
+  margin-left: 20px;
+
+
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 15px; 
+  
+}
+
+.btn {
+  font-family: 'Questrial';
+  font-size: 30px;
+
+  font-weight: bold;
+  
+  color: white;
+  border: none;
+  transition: 0.3s;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(68, 172, 169);
+
+}
+.btn:hover {
+
+  background-color: rgb(81, 193, 189);
+
+}
+
+.hide {
+  display: none;
+}
+
+.input {
+  outline: none;
+  border:none;
+  background-image:none;
+  background-color: white;
+  width: 200px;
+  border-radius: 16px;
+  padding: 10px 10px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;  
+
+}
+
+
+.hide {
+  display: none;
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 480px) {
+
+
+  #text-container {
+    height: 100%;
+  }
+}
+
+
+
+
