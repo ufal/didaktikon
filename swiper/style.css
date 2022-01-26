@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial|Open Sans');
+*, *::before, *::after {
+  /* box-sizing: border-box; */
+ 
+  font-family: 'Questrial';
+  transition: 0.2s;
+}
+
+h3 {
+  font-size: 5vh;
+
+}
+p {
+  font-size: 3vh;
+  
+}
+
+body {
+  color:white;
+  /* background-color: rgb(85, 26, 43); */
+  background-color: rgb(32, 53, 81);
+  padding: 0;
+  margin: 0;
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  text-align: center;
+}
+
+
+
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 15px; 
+  
+}
+
+.card {
+
+  position: relative;
+
+  height: 70vh;
+  width: 50vh;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(90deg, rgb(202, 49, 92) 0%, rgb(215, 62, 62) 100%, rgb(255, 131, 59) 100%);
+}
+
+
+.swipe_to_right {
+  animation-name: swipe_to_right;
+  animation-duration: 1.5s;
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes swipe_to_right {
+  0% { -webkit-filter: blur(0px); left:0px; bottom:0px;transform: rotate(0deg) }
+  50% { -webkit-filter: blur(10px); left:1500px; bottom:100px; transform: rotate(20deg)}
+  51% { -webkit-filter: blur(10px); left:0px; bottom:0px; transform: scale(0.0)}
+  100% { -webkit-filter: blur(0px); left:0px; bottom:0px;  transform: scale(1.0)}
+}
+
+.swipe_to_left {
+  animation-name: swipe_to_left;
+  animation-duration: 1.5s;
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes swipe_to_left {
+  0% { -webkit-filter: blur(0px); right:0px; bottom:0px;transform: rotate(0deg) }
+  50% { -webkit-filter: blur(10px); right:1500px; bottom:100px; transform: rotate(20deg)}
+  51% { -webkit-filter: blur(10px); right:0px; bottom:0px; transform: scale(0.0)}
+  100% { -webkit-filter: blur(0px); right:0px; bottom:0px;  transform: scale(1.0)}
+}
+
+
+
+
+.left {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  font-family: 'Questrial';
+  font-size: 40px;
+  background-color: rgba(0, 255, 255, 0);
+  color:rgb(215, 62, 62);
+  border: 5px solid rgb(215, 62, 62);
+
+  transition: 0.3s;
+  padding: 10px;
+  margin: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  font-family: 'Open Sans';
+  font-size: 40px;
+  background-color: rgba(0, 255, 255, 0);
+  color:rgb(68, 172, 169);
+  border: 5px solid rgb(68, 172, 169);
+
+  transition: 0.3s;
+  padding: 10px;
+  margin: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.right:hover {
+  color:rgb(96, 224, 220);
+  border: 5px solid rgb(96, 224, 220);
+
+}
+
+.left:hover {
+
+  color:rgb(255, 96, 96);
+  border: 5px solid rgb(255, 96, 96);
+
+}
+
+
+
+.hide {
+  display: none;
+}
