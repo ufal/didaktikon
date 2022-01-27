@@ -1,7 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css?family=Questrial|Open Sans');
 *, *::before, *::after {
   /* box-sizing: border-box; */
-  font-size: 30px;
   font-family: 'Questrial'
 }
 
@@ -10,8 +9,7 @@ body {
   background-color: rgb(32, 53, 81);
   padding: 0;
   margin: 0;
-
-
+  overflow: scroll;
 }
 #center {
   height: 100vh;
@@ -19,27 +17,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-
 }
 
 #text-container {
   width:80%;
-  overflow-y:auto;
-
- 
-
+  /* overflow-y:auto; */
   text-align: left;
-  overflow: scroll;
-
-
-
+  /* overflow: scroll; */
   
 }
 
 p {
-  font-size: 4vh;
+  font-size: 3vw;
 }
 
 #next-button {
@@ -50,12 +39,10 @@ p {
 
 }
 #prev-button {
-
   position: fixed;
   left: 5%;
   top: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 #prev-button, #next-button {
@@ -63,24 +50,29 @@ p {
   padding: 10px;
   border-radius: 16px;
   transition: 0.2s;
-
 }
 
 #prev-button:hover, #next-button:hover {
   background-color: rgba(100, 148, 237, 0.84);
-
-
 }
 
 
 .a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  text-decoration: none;
+ 
 }
 
 .a:hover {
-  color: rgb(255, 255, 101);
+
+}
+.a img {
+  width: 3vw;
+  height: 3vw;
+
 }
 
 .our-img {
@@ -101,7 +93,7 @@ p {
 
 .btn {
   font-family: 'Questrial';
-  font-size: 30px;
+  font-size: 4vw;
 
   font-weight: bold;
   
@@ -125,6 +117,7 @@ p {
 }
 
 .input {
+  font-size: 4vw;
   outline: none;
   border:none;
   background-image:none;
@@ -144,12 +137,26 @@ p {
 }
 
 
-@media screen and (min-width: 100px) and (max-width: 480px) {
-
-
-  #text-container {
-    height: 100%;
+@media screen and (min-width: 100px) and (max-width: 500px) {
+  .a img {
+    width: 3.5vh;
+    height: 3.5vh;
   }
+
+  #next-button {
+    position: fixed;
+    left: 93%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  
+  }
+  #prev-button {
+    position: fixed;
+    left: 7%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 }
 
 

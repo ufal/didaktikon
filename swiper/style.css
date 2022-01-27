@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial|Open Sans');
 *, *::before, *::after {
   /* box-sizing: border-box; */
- 
   font-family: 'Questrial';
-  transition: 0.2s;
+  /* transition: 0.2s; */
+  color:white;
 }
 
 h3 {
   font-size: 5vh;
-
 }
 p {
   font-size: 3vh;
-  
 }
 
 body {
@@ -27,33 +25,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
- 
   text-align: center;
 }
 
 
-
-
-.controls {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  margin-bottom: 15px; 
-  
-}
-
 .card {
-
   position: relative;
-
   height: 70vh;
   width: 50vh;
   border-radius: 16px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   background: linear-gradient(90deg, rgb(202, 49, 92) 0%, rgb(215, 62, 62) 100%, rgb(255, 131, 59) 100%);
 }
 
@@ -85,7 +68,40 @@ body {
 }
 
 
+.btn {
+  width: 70px;
+  height: 70px;
 
+  font-weight: bold;
+  background-color: rgb(68, 172, 169);
+  color: white;
+  border: none;
+  border-radius: 16px;
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* text-align: center;  */
+
+}
+
+.align {
+    
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: rgb(81, 193, 189);
+  border: none;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 15px; 
+  
+}
 
 .left {
   width: 70px;
@@ -123,24 +139,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
 
 .right:hover {
   color:rgb(96, 224, 220);
   border: 5px solid rgb(96, 224, 220);
-
 }
 
 .left:hover {
-
   color:rgb(255, 96, 96);
   border: 5px solid rgb(255, 96, 96);
-
 }
-
-
 
 .hide {
   display: none;
