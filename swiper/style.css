@@ -78,16 +78,14 @@ body {
   border: none;
   border-radius: 16px;
 
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 
-  /* text-align: center;  */
 
 }
 
 .align {
-    
   display: inline-block;
 }
 
