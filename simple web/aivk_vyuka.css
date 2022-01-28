@@ -24,6 +24,15 @@
     height:450px;
     margin: 20px auto;
   }
+
+  .btn {
+    background-color: #2D5C4C;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
   @media screen and (min-width: 100px) and (max-width: 600px) {
     #map{
       width:90%;
