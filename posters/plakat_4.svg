@@ -8,7 +8,7 @@
    version="1.1"
    id="svg42109"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
-   sodipodi:docname="plakat_3.svg"
+   sodipodi:docname="plakat_4.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -32,32 +32,17 @@
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g239729"
      showguides="true"
-     inkscape:guide-bbox="true">
-    <sodipodi:guide
-       position="132.56202,204.19859"
-       orientation="0,-1"
-       id="guide239650" />
-    <sodipodi:guide
-       position="6.3815412,191.43551"
-       orientation="1,0"
-       id="guide239652" />
-    <sodipodi:guide
-       position="100.65431,8.1112471"
-       orientation="0,-1"
-       id="guide239654" />
-    <sodipodi:guide
-       position="290.94027,138.93284"
-       orientation="1,0"
-       id="guide239656" />
-    <sodipodi:guide
-       position="105.00536,176.93201"
-       orientation="0,-1"
-       id="guide239782" />
-  </sodipodi:namedview>
+     inkscape:guide-bbox="true" />
   <defs
      id="defs42106">
+    <rect
+       x="372.75143"
+       y="176.50877"
+       width="406.73759"
+       height="83.320908"
+       id="rect266176" />
     <rect
        x="468.13194"
        y="712.61303"
@@ -69,34 +54,6 @@
      inkscape:label="Vrstva 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:8.46667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="149.38899"
-       y="57.896358"
-       id="text45760"><tspan
-         sodipodi:role="line"
-         id="tspan45758"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:Questrial;-inkscape-font-specification:Questrial;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="149.38899"
-         y="57.896358">Zveme vás na sérii zvaných </tspan><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:Questrial;-inkscape-font-specification:Questrial;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="149.38899"
-         y="68.787468"
-         id="tspan57784">přednášek a seminářů <tspan
-   style="fill:#89a02c"
-   id="tspan140675">AI v kontextu</tspan>.</tspan><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:Questrial;-inkscape-font-specification:Questrial;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="149.38899"
-         y="79.678574"
-         id="tspan45762">V tomto semestru hosté představí, jak AI zasahuje do </tspan><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:Questrial;-inkscape-font-specification:Questrial;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="149.38899"
-         y="90.261909"
-         id="tspan45764" /></text>
     <path
        style="fill:#000000;stroke-width:0.0433569"
        d="m 180.0389,33.067995 c -0.84225,-0.132397 -1.69692,-0.485053 -2.34353,-0.966999 -0.40639,-0.302909 -0.97105,-0.881461 -1.22437,-1.254508 -0.43155,-0.635486 -0.74368,-1.429895 -0.85691,-2.180961 -0.0944,-0.626328 -0.0926,-17.552547 0.002,-18.179846 0.10909,-0.7237241 0.4358,-1.5502554 0.85964,-2.1747494 0.2489,-0.3667396 0.81589,-0.9467726 1.21969,-1.2477451 0.41004,-0.305625 1.17555,-0.6879219 1.62813,-0.8130896 0.75906,-0.209934 0.90679,-0.2164847 4.88849,-0.2167569 3.68189,-2.512e-4 3.74086,0.00104 3.82623,0.086456 0.0477,0.047688 0.0867,0.1246261 0.0867,0.1709637 0,0.046333 -0.11801,0.2658302 -0.26224,0.4877638 -0.59899,0.9216959 -1.13625,2.2545838 -1.35974,3.3734565 -0.12266,0.614023 -0.24237,1.777007 -0.24237,2.354667 0,0.593383 0.11336,1.23554 0.33781,1.913767 0.1891,0.571429 0.20155,0.637442 0.20046,1.064456 -8.7e-4,0.412751 -0.0144,0.487624 -0.14258,0.802101 -0.19867,0.487182 -0.72764,1.489211 -1.37466,2.603948 -0.87611,1.509481 -1.01469,1.906169 -0.80943,2.317052 0.0876,0.175331 0.44101,0.427412 0.7601,0.542157 0.24077,0.08658 0.59473,0.396204 0.59473,0.520232 0,0.04403 -0.051,0.227729 -0.11327,0.408229 -0.0958,0.277426 -0.11032,0.381868 -0.0942,0.675291 0.0226,0.410896 0.10995,0.607035 0.42574,0.95574 0.11842,0.130759 0.2153,0.262602 0.2153,0.292983 0,0.03039 -0.0413,0.171627 -0.0918,0.313879 -0.10385,0.292593 -0.15084,0.71436 -0.10614,0.952599 0.0228,0.121385 0.11745,0.251313 0.39006,0.535267 0.54685,0.569594 0.55239,0.587905 0.47902,1.581373 -0.0291,0.394293 -0.0224,0.453323 0.0882,0.793678 0.14134,0.434477 0.35833,0.784802 0.65902,1.06396 0.28535,0.264929 0.6454,0.382176 1.26977,0.413505 0.62869,0.03153 1.95365,-0.05369 2.86155,-0.184091 1.39484,-0.200335 2.02705,-0.188792 2.61804,0.04781 0.34434,0.137848 0.72825,0.44534 0.94383,0.755967 0.2825,0.407047 0.6871,1.56261 0.6871,1.9624 0,0.08895 -0.0318,0.177466 -0.0793,0.2204 -0.0732,0.06624 -0.67553,0.07142 -7.83675,0.06746 -6.00046,-0.0033 -7.83601,-0.01664 -8.1043,-0.05882 z m 55.1676,-9.149931 c -0.85665,-0.161956 -1.60222,-0.549975 -2.2439,-1.167796 -0.55263,-0.532081 -0.9257,-1.180103 -1.16252,-2.019219 -0.123,-0.435866 -0.11069,-1.753923 0.0209,-2.232878 0.25027,-0.911198 0.79557,-1.721218 1.53252,-2.276533 0.90619,-0.68283 2.07586,-0.997917 3.25865,-0.877808 2.25731,0.22923 3.84141,1.855068 3.96045,4.064835 0.11386,2.113186 -1.13577,3.862139 -3.16394,4.428164 -0.33926,0.09468 -0.50901,0.113718 -1.13592,0.127389 -0.5195,0.01133 -0.83424,-0.0023 -1.06622,-0.04615 z m 2.05422,-0.646439 c 1.37375,-0.408044 2.35194,-1.46949 2.61453,-2.83705 0.0812,-0.423129 0.0777,-1.187577 -0.008,-1.602215 -0.28524,-1.387936 -1.36296,-2.486946 -2.7798,-2.83473 -0.47398,-0.116346 -1.34518,-0.128432 -1.81309,-0.02515 -1.51419,0.334217 -2.62498,1.465264 -2.90627,2.959264 -0.10337,0.549039 -0.0675,1.290718 0.0879,1.820986 0.38972,1.329252 1.42047,2.281686 2.79743,2.58485 0.54785,0.120623 1.48214,0.08991 2.0069,-0.06596 z m 49.06009,0.669261 c -0.81713,-0.147727 -1.50705,-0.542472 -1.9289,-1.103644 -0.23833,-0.317041 -0.34148,-0.514332 -0.4774,-0.91305 -0.21603,-0.633634 -0.23078,-0.876647 -0.23096,-3.805393 v -2.720641 h 0.3035 0.30349 v 2.590572 c 0,1.61512 0.0181,2.737498 0.0477,2.98078 0.14885,1.219705 0.70613,1.975022 1.70126,2.305869 0.32384,0.10766 0.41223,0.117775 1.0474,0.119849 0.60955,0.002 0.73315,-0.01004 1.01888,-0.09914 0.67085,-0.209205 1.16244,-0.613083 1.44294,-1.185518 0.34699,-0.708043 0.37725,-1.041957 0.37769,-4.165196 l 3e-4,-2.547213 h 0.30578 0.30577 l -0.0162,2.87239 c -0.0176,3.131567 -0.0185,3.143338 -0.28049,3.804562 -0.35584,0.898112 -1.09687,1.549047 -2.04914,1.799988 -0.31992,0.0843 -1.5333,0.12696 -1.87167,0.06579 z m -92.25598,-0.01505 c 0,-0.0075 0.86612,-1.924402 1.92471,-4.259807 l 1.92473,-4.246193 0.62249,-0.01054 0.62249,-0.01054 1.73427,3.824394 c 0.95386,2.103417 1.82584,4.025072 1.93777,4.270348 l 0.20347,0.445953 h -0.64151 -0.64151 l -0.46756,-1.062242 -0.46757,-1.062242 h -2.2863 -2.28631 l -0.11733,0.270981 c -0.0645,0.149038 -0.27427,0.627048 -0.46608,1.062241 l -0.34877,0.791262 h -0.6235 c -0.34293,0 -0.62349,-0.0061 -0.62349,-0.01361 z m 6.28689,-3.140593 c 2.6e-4,-0.05315 -1.79753,-4.128031 -1.82114,-4.12784 -0.0183,1.3e-4 -1.7229,3.861727 -1.80299,4.084483 -0.0257,0.07149 0.0782,0.07587 1.79834,0.07587 1.00409,0 1.82571,-0.01463 1.82579,-0.03252 z m 3.94531,-1.116438 v -4.270647 h 0.607 0.607 v 4.270647 4.270647 h -0.607 -0.607 z m 9.80585,4.196621 c -0.0372,-0.07018 -3.57577,-7.990677 -3.7199,-8.326358 l -0.0605,-0.14091 h 0.34089 0.3409 l 1.63915,3.674491 c 0.90155,2.02097 1.68063,3.757902 1.73131,3.859851 l 0.0922,0.185359 1.70698,-3.827334 c 0.93886,-2.105032 1.72056,-3.842879 1.73716,-3.861882 0.0166,-0.019 0.16765,-0.02876 0.33569,-0.02168 l 0.30554,0.01287 -1.89487,4.248969 -1.89487,4.248969 -0.30921,0.01269 c -0.26108,0.01071 -0.31563,5.89e-4 -0.35039,-0.06503 z m 9.83479,-4.196621 v -4.270647 h 0.30317 0.30318 l 0.0111,2.72843 0.0111,2.728429 2.64477,-2.7272 2.64478,-2.727197 0.38958,-0.0012 0.38958,-0.0012 -0.54398,0.5528 c -0.29918,0.30404 -1.14547,1.172577 -1.88063,1.930081 -1.2252,1.262419 -1.33131,1.383552 -1.2724,1.452454 0.0353,0.04133 0.91118,1.060511 1.9463,2.264815 1.03512,1.204305 1.90882,2.223732 1.94154,2.265393 0.0557,0.07082 0.0354,0.07576 -0.3109,0.07576 h -0.3704 l -1.7657,-2.026932 c -0.97114,-1.114813 -1.80031,-2.063835 -1.84261,-2.10894 -0.0746,-0.07958 -0.10517,-0.05328 -1.03242,0.888815 l -0.95554,0.970824 -0.002,1.138118 -0.002,1.138115 h -0.3035 -0.3035 z m 19.16371,-0.0021 v -4.272716 l 0.26757,0.01291 0.26756,0.0129 2.88665,3.685029 2.88665,3.685029 0.0111,-3.695867 0.0111,-3.695869 h 0.30325 0.30324 v 4.270647 4.270647 h -0.2493 -0.2493 l -2.90491,-3.701364 -2.9049,-3.701365 -0.0111,3.701365 -0.011,3.701364 h -0.30325 -0.30326 z m 11.87978,0.26221 v -4.010506 h -1.53917 -1.53917 v -0.260141 -0.260141 h 3.40351 3.40352 v 0.260141 0.260141 h -1.53918 -1.53915 v 4.010506 4.010505 h -0.32519 -0.32517 z m 5.59302,-0.260141 v -4.270647 h 2.83988 2.83987 v 0.260141 0.260141 h -2.53638 -2.53636 v 1.690915 1.690917 h 2.27623 2.27623 v 0.281819 0.28182 h -2.27623 -2.27623 v 1.755951 1.755952 h 2.64476 2.64476 v 0.281819 0.281818 h -2.94825 -2.94828 z m 7.26913,4.043024 c 0.0913,-0.125193 0.82591,-1.11247 1.6325,-2.193947 0.81981,-1.099187 1.45666,-1.992034 1.44417,-2.024623 -0.0124,-0.03205 -0.65851,-0.920058 -1.436,-1.97332 -0.7775,-1.053261 -1.44412,-1.961542 -1.48137,-2.018402 l -0.0677,-0.10338 0.36269,0.0013 0.36268,0.0013 1.34405,1.819092 c 0.73926,1.0005 1.35383,1.818517 1.36575,1.817811 0.0119,-7.01e-4 0.62608,-0.819885 1.36481,-1.820404 l 1.34313,-1.819126 h 0.33951 c 0.2598,0 0.33197,0.01272 0.30744,0.05419 -0.0177,0.02981 -0.69327,0.94869 -1.5014,2.04196 -0.8738,1.182111 -1.45981,2.012597 -1.44584,2.049033 0.0171,0.04447 2.86143,3.900183 3.20303,4.341911 0.0328,0.04238 -0.0377,0.0542 -0.32319,0.0542 h -0.36512 l -1.46797,-1.971092 c -0.80741,-1.084102 -1.48163,-1.962662 -1.49831,-1.952358 -0.0167,0.01031 -0.68108,0.897298 -1.47647,1.971093 l -1.44613,1.952357 h -0.36311 -0.36309 l 0.16598,-0.227623 z m 10.50718,-3.782884 v -4.010506 h -1.53917 -1.53918 v -0.260141 -0.260141 h 3.40352 3.40351 v 0.260141 0.260141 H 280.54 279.00084 v 4.010506 4.010505 h -0.32518 -0.32517 z"
@@ -1028,9 +985,9 @@ SVtaWlqaz///kfXCZnWfwgAAAABJRU5ErkJggg==
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect79040);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="468.13281"
          y="749.45794"
-         id="tspan300418"><tspan
+         id="tspan298322"><tspan
            style="font-family:Questrial;-inkscape-font-specification:Questrial"
-           id="tspan300416">www.AIvK.cz</tspan></tspan></text>
+           id="tspan298320">www.AIvK.cz</tspan></tspan></text>
     <g
        id="g239729"
        transform="translate(0.41032736)">
@@ -1041,14 +998,14 @@ SVtaWlqaz///kfXCZnWfwgAAAABJRU5ErkJggg==
          transform="scale(0.26458333)" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#668000;fill-opacity:1;stroke:none;stroke-width:0.264583"
          x="-46.40638"
          y="140.58858"
          id="text89294"
          transform="rotate(-40)"><tspan
            sodipodi:role="line"
            id="tspan89292"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Questrial;-inkscape-font-specification:Questrial;stroke-width:0.264583"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Questrial;-inkscape-font-specification:Questrial;stroke-width:0.264583;fill:#668000"
            x="-46.40638"
            y="140.58858">umění</tspan></text>
       <text
@@ -1154,6 +1111,40 @@ SVtaWlqaz///kfXCZnWfwgAAAABJRU5ErkJggg==
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:Questrial;-inkscape-font-specification:Questrial;fill:#668000;fill-opacity:0.67451;stroke-width:0.264583"
            x="217.69934"
            y="157.11354">28. 4.</tspan></text>
+      <path
+         style="opacity:1;fill:#668000;fill-opacity:1;stroke-width:4.1436;stroke-linejoin:round"
+         d="m 242.74718,549.84251 c -3.4776,-1.40684 -7.96195,-7.32604 -8.75574,-11.5573 -1.50667,-8.03126 6.12242,-16.20379 15.01177,-16.08111 7.47381,0.10314 12.75032,5.11296 13.73014,13.03615 1.26352,10.21727 -10.17221,18.57242 -19.98617,14.60226 z"
+         id="path283081"
+         transform="matrix(0.26458333,0,0,0.26458333,-0.41032736,0)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="88.474075"
+         y="76.186478"
+         id="text286204"><tspan
+           sodipodi:role="line"
+           id="tspan286202"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Questrial;-inkscape-font-specification:Questrial;stroke-width:0.264583"
+           x="88.474075"
+           y="76.186478">AI v kontextu <tspan
+   style="fill:#89a02c"
+   id="tspan296406">umění</tspan>, 24. 2.</tspan></text>
     </g>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text266174"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect266176);fill:#000000;fill-opacity:1;stroke:none" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16.9333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="90.418892"
+       y="64.395554"
+       id="text270802"><tspan
+         sodipodi:role="line"
+         id="tspan270800"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;font-family:Questrial;-inkscape-font-specification:Questrial;stroke-width:0.264583"
+         x="90.418892"
+         y="64.395554">Dita Malečková</tspan></text>
   </g>
 </svg>
