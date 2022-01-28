@@ -32,6 +32,16 @@ li.nav-item {
 padding: 0px 15px 0px 5px;
 }
 
+.languages{
+  z-index:1;
+  display: inline-block;
+  position: fixed;
+  right:0;
+}
+.flag{
+  border-radius: 50%;
+  margin:8px 4px;
+}
 
 .my_container {
  
