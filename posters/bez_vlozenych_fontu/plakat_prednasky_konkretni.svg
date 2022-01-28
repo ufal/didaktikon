@@ -8,7 +8,7 @@
    version="1.1"
    id="svg42109"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
-   sodipodi:docname="plakat_4.svg"
+   sodipodi:docname="plakat_prednasky_konkretni.svg"
    inkscape:export-filename="C:\Users\mysak\Documents\01_MFF\didaktikon\git\didaktikon\posters\plakat_prednasky_konkretni.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -92,11 +92,11 @@
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect79040);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="468.13281"
          y="749.45794"
-         id="tspan436853"><tspan
+         id="tspan2399"><tspan
            style="font-size:32px"
-           id="tspan436849">Více o předmětu zde: </tspan><tspan
+           id="tspan2395">Více o předmětu zde: </tspan><tspan
            style="font-family:Questrial;-inkscape-font-specification:Questrial"
-           id="tspan436851">www.AIvK.cz</tspan></tspan></text>
+           id="tspan2397">www.AIvK.cz</tspan></tspan></text>
     <path
        id="rect42238"
        style="opacity:0.673295;fill:#668000;stroke-width:0.955445;stroke-linejoin:round"
@@ -269,6 +269,6 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:Questrial;-inkscape-font-specification:Questrial;text-align:end;text-anchor:end;fill:#668000;fill-opacity:0.67451;stroke-width:0.264583"
          x="290.10742"
          y="30.697758"
-         id="tspan74117">Malostranské náměstí 25, S</tspan></text>
+         id="tspan74117">Malostranské náměstí 25</tspan></text>
   </g>
 </svg>
