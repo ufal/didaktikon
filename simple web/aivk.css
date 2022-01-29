@@ -65,6 +65,12 @@ padding: 0px 15px 0px 5px;
   padding-top: 43px;
   /*transition: 0.3s;*/
 }
+.my_text_2 {
+  
+  z-index: 150;
+  padding-top: 40px;
+  /*transition: 0.3s;*/
+}
 /*
 .my_text:hover {
   color: rgb(255, 255, 101);

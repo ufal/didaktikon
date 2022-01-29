@@ -19,7 +19,8 @@ let people = {
   'kajzar': 'Lékař, AI v medicíně',
   'nikol': 'Psycholožka, AI v psychologii',
   'frantisek': 'Teolog, AI v teologii a náboženství',
-  'helena': 'Pedagožka, AI pro děti'
+  'helena': 'Pedagožka, AI pro děti',
+  'we-want-you': 'Hledáme odborníky na AI v kontextech: práva, architektury, dopravy, ekologie, ekonomie, markentigu, hudby, bezpečnosti, atd.'
 }
 
 let description = document.querySelector('.description')
