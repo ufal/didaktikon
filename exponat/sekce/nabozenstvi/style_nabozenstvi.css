@@ -20,6 +20,7 @@ body {
 }
 
 #text-container {
+  margin-top: 50px;
   width:80%;
   /* overflow-y:auto; */
   text-align: left;
@@ -79,6 +80,7 @@ p {
   float: right;
   height: 40vw;
   margin-left: 20px;
+  margin-bottom: 20px;
 
 
 }
@@ -159,6 +161,6 @@ p {
 
 }
 
-
-
-
+b {
+  font-weight: 900;
+}
