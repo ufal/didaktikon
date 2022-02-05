@@ -19,9 +19,9 @@ h5 {
     height: 30px;
     padding: 0 0px;
     margin-right: 0px;
-  
-
 }
+
+
 
 .navbar-brand.order-md-last {
     margin-right:0;
@@ -151,6 +151,7 @@ padding: 0px 15px 0px 5px;
 
 #carouselExampleIndicators {
   background-color: black;
+  position:relative;
 }
 #carouselExampleIndicators .carousel-item  img {
   object-fit: cover;
@@ -172,7 +173,12 @@ padding: 0px 15px 0px 5px;
 .carousel-caption > * {
 color: white;
 }
-
+.logo-mff{
+  position:absolute;
+  right:10px;
+  bottom:10px;
+  
+}
 
 #yellow_link {
   color:rgb(255, 255, 101);
