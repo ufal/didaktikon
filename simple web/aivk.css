@@ -1,10 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Questrial|Open Sans');
 body {
-    font-family: 'Questrial';
-    background-color: rgb(70, 70, 70);
-    text-align: center;
-    color: white;
+  font-family: 'Questrial';
+  background-color: rgb(70, 70, 70);
+  text-align: center;
+  color: white;
 
 }
 p {
@@ -14,23 +14,74 @@ p {
 h5 {
   font-size: 20px;
 }
-
-.logo { 
-    height: 30px;
-    padding: 0 0px;
-    margin-right: 0px;
+/* --------------------------------------------------------------------------------------- */
+.hide {
+  display: none;
 }
 
+.logo { 
+  height: 30px;
+  padding: 0 0px;
+  margin-right: 0px;
+}
 
+/* --------------------------------------------------------------------------------------- */
 
 .navbar-brand.order-md-last {
     margin-right:0;
     padding-right: 0;
 }
+.navbar{
+  position:sticky;
+  top:0;
+  right:0;
+  left:0;
+  z-index:10;
+}
 
 li.nav-item {
 padding: 0px 15px 0px 5px;
 }
+
+
+/* --------------------------------------------------------------------------------------- */
+
+#carouselExampleIndicators {
+  background-color: black;
+  position:relative;
+}
+#carouselExampleIndicators .carousel-item  img {
+  object-fit: cover;
+  object-position: center;
+  height:40vh;
+  overflow: hidden;
+  opacity: 40%;
+}
+
+.carousel-caption {
+
+  transform: translateY(-50%);
+  bottom:initial;
+  top:55%;
+}
+
+.carousel-caption > * {
+color: white;
+}
+.logo-mff{
+  position:absolute;
+  right:10px;
+  bottom:10px;
+  opacity: 60%;
+  
+}
+/* --------------------------------------------------------------------------------------- */
+
+#yellow_link {
+  color:rgb(255, 255, 101);
+  font-weight: 900;
+}
+/* --------------------------------------------------------------------------------------- */
 
 .languages{
   z-index:1;
@@ -42,10 +93,10 @@ padding: 0px 15px 0px 5px;
   border-radius: 50%;
   margin:8px 4px;
 }
+/* --------------------------------------------------------------------------------------- */
 
 .my_container {
  
-  /* vertical-align: middle; */
   background-color: rgb(85, 136, 151);
   max-height: 140px;
   max-width: 140px;
@@ -71,10 +122,6 @@ padding: 0px 15px 0px 5px;
   padding-top: 40px;
   /*transition: 0.3s;*/
 }
-/*
-.my_text:hover {
-  color: rgb(255, 255, 101);
-}*/
 
 .experts{
   max-width:1300px;
@@ -103,7 +150,7 @@ padding: 0px 15px 0px 5px;
 }
 
 .friends {
-  /* max-width:900px; */
+
 }
 
 .friend {
@@ -126,7 +173,6 @@ padding: 0px 15px 0px 5px;
 
 .person {
   text-align: center;
-  /* background-color: salmon; */
   min-width: 145px;
 }
 .person  img {
@@ -139,133 +185,18 @@ padding: 0px 15px 0px 5px;
   transition: 0.3s;
   padding-bottom: 7%;
 }
-/*
-.person > h5:hover{
-  color: rgb(255, 255, 101);
 
-}*/
 
 .people {
   max-width:900px;
 }
 
-#carouselExampleIndicators {
-  background-color: black;
-  position:relative;
-}
-#carouselExampleIndicators .carousel-item  img {
-  object-fit: cover;
-  object-position: center;
-  height:40vh;
-  overflow: hidden;
-  opacity: 40%;
-}
-
-.carousel-caption {
-
-  transform: translateY(-50%);
-  bottom:initial;
-  top:55%;
-
-
-}
-
-.carousel-caption > * {
-color: white;
-}
-.logo-mff{
-  position:absolute;
-  right:10px;
-  bottom:10px;
-  
-}
-
-#yellow_link {
-  color:rgb(255, 255, 101);
-  font-weight: 900;
-}
-
-.text_restrict {
-    position: relative;
-    max-width: 80%;
-    left:10%;
-
-  }
-
-.section1 {
-  /* height: 5000px; */
-  /* background-color: rgb(69, 111, 225); */
-  background-color: rgb(42, 70, 78);
-}
-
-.gradient_back {
-  
-  /* background-image: linear-gradient( #141414, #616161); */
-  padding:50px 0 50px 0;
-
-}
-
-.description {
-  /* display: none; */
-  position:fixed;
-  /* left: 50%; */
-  bottom:0%;
-  
-  z-index: 9999;
-  font-size: 100px;
-  width: 100%;
-  /* background-color: rgb(184, 184, 73); darker yellow */ 
-  background-color: rgb(255, 255, 101);
-  color:rgb(42, 70, 78);
-  
-  padding-top: 7px;
-
-  
-}
-
-
-
-@media screen and (min-width: 100px) and (max-width: 600px) {
-
-
-  .gradient_back {
-    background-image: linear-gradient( #141414, #616161);
-  }
-  .my_container {
-    background-color: rgb(151, 151, 151);
-    /* background-color: rgb(42, 70, 78); */
-  }
-  .description {
-    /*
-    background-color: rgb(51, 51, 51);*/
-  }
-  #carouselExampleIndicators .carousel-item  img {
-    object-fit: cover;
-    object-position: center;
-    height:65vh;
-    overflow: hidden;
-    opacity: 40%;
-  }
-}
-
-.hide {
-  display: none;
-}
-
-.navbar{
-  position:sticky;
-  top:0;
-  right:0;
-  left:0;
-  z-index:10;
-}
 
 .rounded-circle{
   filter: grayscale(100%);
   transition: 0.3s;
 }
 .rounded-circle:hover{
-
 }
 
 .img-card:hover{
@@ -282,3 +213,62 @@ color: white;
   background-color: rgb(255, 255, 101);
   color:rgb(42, 70, 78);
 }
+
+/* --------------------------------------------------------------------------------------- */
+
+.text_restrict {
+  position: relative;
+  max-width: 80%;
+  left:10%;
+
+}
+
+.section1 {
+  background-color: rgb(42, 70, 78);
+}
+
+.gradient_back {
+  padding:50px 0 50px 0;
+}
+
+.description {
+  position:fixed;
+  bottom:0%;
+  
+  z-index: 9999;
+  font-size: 100px;
+  width: 100%;
+
+  background-color: rgb(255, 255, 101);
+  color:rgb(42, 70, 78);
+  
+  padding-top: 7px;
+
+  
+}
+/* --------------------------------------------------------------------------------------- */
+
+
+@media screen and (min-width: 100px) and (max-width: 600px) {
+
+
+  .gradient_back {
+    background-image: linear-gradient( #141414, #616161);
+  }
+  .my_container {
+    background-color: rgb(151, 151, 151);
+
+  }
+  .description {
+
+  }
+  #carouselExampleIndicators .carousel-item  img {
+    object-fit: cover;
+    object-position: center;
+    height:65vh;
+    overflow: hidden;
+    opacity: 40%;
+  }
+}
+
+
