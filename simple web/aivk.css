@@ -217,9 +217,10 @@ color: white;
 /* --------------------------------------------------------------------------------------- */
 
 .text_restrict {
-  position: relative;
+
+  margin: auto;
   max-width: 80%;
-  /* left:10%; */
+
 }
 
 .section1 {
