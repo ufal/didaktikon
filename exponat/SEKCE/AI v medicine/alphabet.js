@@ -19,19 +19,17 @@ nameEl.addEventListener("keypress", (e) => {
 
 
 
-let count = 7
-let counter = 7
+let count = 6;
+let counter = 6;
 let colors = [
     '#F15353', // red
     '#F17553', // orange
-    '#F1D953', //yellow
     'rgb(120, 184, 68)', // green
     // '#A0E449', // green
     'rgb(68, 147, 184)', //blue
     'rgb(102, 65, 158)', // violet
-
     'rgb(202, 111, 146)', //pink
-]
+];
 
 let diacritics = {
     'ě': 'e_letter',
