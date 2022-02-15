@@ -199,10 +199,10 @@ function show(e) {
     cover.style.display = 'flex'
 
     if (content[e.target.dataset.id].img) {
-        cover.innerHTML = `<img src="${content[e.target.dataset.id].img}"> <h3>${content[e.target.dataset.id].text}</h3>`
+        cover.innerHTML = `<img src="${content[e.target.dataset.id].img}"> <p>${content[e.target.dataset.id].text}</p>`
 
     } else {
-        cover.innerHTML = `<h3>${content[e.target.dataset.id].text}</h3>`
+        cover.innerHTML = `<p>${content[e.target.dataset.id].text}</p>`
     }
 
 }

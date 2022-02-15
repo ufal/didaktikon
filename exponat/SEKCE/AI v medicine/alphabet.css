@@ -25,9 +25,10 @@ p {
 
 
 
-#cover h3 {
+#cover p {
 
-    font-size: 2vw;
+    font-size: max(2vw, 1rem);
+    line-height: 1.4;
     
     text-align: center;
     margin: 0 30px;
@@ -225,7 +226,7 @@ h3 {
 }
 
 .letter-container:hover {
-    background: #D8D8D8!important
+    background: #888888!important
 
 }
 
