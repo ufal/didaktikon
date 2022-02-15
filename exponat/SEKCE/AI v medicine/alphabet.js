@@ -220,13 +220,13 @@ function compoundWord() {
 function attachColors() {
     
     Array.from(alphabet.children).forEach( card => {
-        card.style.backgroundColor = colors[count % 7]
-        card.dataset.ourcolor = colors[count % 7]
+        card.style.backgroundColor = colors[count % 6]
+        card.dataset.ourcolor = colors[count % 6]
 
         Array.from(card.children).forEach ( child => {
-            child.dataset.ourcolor = colors[count % 7]
+            child.dataset.ourcolor = colors[count % 6]
         })
-        // console.log(count, count % 7 - 1)
+        // console.log(count, count % 6 - 1)
         count += 1
 
         card.addEventListener('click', show)
