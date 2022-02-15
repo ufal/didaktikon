@@ -4,6 +4,7 @@ p {
 #cover {
     z-index: 950;
     display: none;
+    cursor: pointer;
     position: fixed;
     padding:0;
     margin:0;
@@ -180,6 +181,7 @@ h3 {
 
 .letter-container {
     color:white;
+    cursor: pointer;
 
     height: 400px;
     width: 300px;
