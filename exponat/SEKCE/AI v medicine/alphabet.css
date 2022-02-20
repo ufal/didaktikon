@@ -114,6 +114,10 @@ border: none;
 
 }
 
+input[type="button"] {
+    cursor: pointer;
+}
+
 #name_input {
     font-size: 30px;
     font-family: 'Questrial';
