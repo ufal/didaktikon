@@ -148,12 +148,11 @@ h1 {
 }
 
 h2 {
-
     font-size: 50px;
-
 }
 h3 {
     font-size: 30px;
+
 }
 
 
@@ -170,7 +169,7 @@ h3 {
 
 #alphabet::after {
     content: "";
-    flex-basis: calc(50%);
+    /* flex-basis: calc(40%); */
     /* background: lightcoral; */
    
 }
@@ -226,6 +225,7 @@ h3 {
 
 .text-block {
     display: none;
+    font-size: 5vh;
 
 }
 
