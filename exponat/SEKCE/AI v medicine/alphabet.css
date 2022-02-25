@@ -115,7 +115,7 @@ border: none;
 
 }
 
-input[type="button"] {
+input[type="button"], input[type="reset"] {
     cursor: pointer;
 }
 

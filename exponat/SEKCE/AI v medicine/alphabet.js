@@ -84,10 +84,14 @@ let content = {
 console.log(diacritics)
 
 function start(){
-    restart()
+    restart();
     let name = nameEl.value;
     name = name.toLowerCase()
     let wordArray = name.split("");
+    if (wordArray.length === 0) {
+        restart();
+        return;
+    }
     
     for (let i=0; i<wordArray.length; i++) {
         console.log(wordArray[i])
@@ -176,6 +180,8 @@ function restart() {
     Array.from(alphabet.children).forEach( card => {
         card.style.display = "flex"
         })
+    
+    nameEl.focus();
 
 }
 
