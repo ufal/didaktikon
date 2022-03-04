@@ -9,11 +9,11 @@ body {
   background-color: rgb(32, 53, 81);
   padding: 0;
   margin: 0;
-  overflow: scroll;
+  /*overflow: scroll;*/
 }
 #center {
   height: 100vh;
-  width: 100vw;
+  width: 99vw; /*původně 100*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,6 +140,19 @@ p {
 
 
 @media screen and (min-width: 100px) and (max-width: 500px) {
+  #center 
+  {
+    display:block;
+    height:auto;
+  }
+  #text-container 
+  {
+    margin:30px;
+    margin-top:45px;
+  }
+  p{
+    font-size:5vw;
+  }
   .a img {
     width: 3.5vh;
     height: 3.5vh;
@@ -148,14 +161,14 @@ p {
   #next-button {
     position: fixed;
     left: 93%;
-    top: 50%;
+    top: 5%;
     transform: translate(-50%, -50%);
   
   }
   #prev-button {
     position: fixed;
     left: 7%;
-    top: 50%;
+    top: 5%;
     transform: translate(-50%, -50%);
   }
 
