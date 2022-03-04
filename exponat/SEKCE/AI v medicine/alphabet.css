@@ -226,7 +226,7 @@ h3 {
 
 .text-block {
     display: none;
-    font-size: 5vh;
+    font-size: 2em;
 
 }
 
@@ -330,6 +330,11 @@ h3 {
         width: 150px;
         transition: 0.3s;
 
+    }
+    .text-block {
+        display: none;
+        font-size: 1.25em;
+    
     }
 
     h1 {
