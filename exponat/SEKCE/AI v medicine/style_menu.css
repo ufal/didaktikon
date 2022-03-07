@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial|Open Sans');
+*, *::before, *::after {
+  /* box-sizing: border-box; */
+  font-family: 'Questrial'
+}
+.menu-header{
+    background-color: #203551;
+    text-align: right;
+}
+#menu-btn{
+    background-color: #203551;
+    border:none;
+    cursor: pointer;
+}
+circle:hover{
+    fill:#536c8b;
+}
+#menu-items{
+    flex-flow: column;
+    height:100vh;
+    background-color: #475b76;
+    display: none;
+}
+.menu-item{
+    text-align: center;
+    background-color: #475b76;
+    width:100vw;
+}
+.odd{
+    background-color:#687c98;
+    width:100vw;
+}
+a{
+    display: inline-block;
+    color:white;
+    text-decoration: none;
+    font-size: 4vw;
+    margin:10px;
+}
+a:hover{
+    border-bottom: solid #687C98 3px; 
+}
+.odd a:hover{
+    border-bottom: solid #475b76 3px; 
+}
+.last{
+    background-color: #475b76;
+    height:100%;
+}
+/*TODO: vložit všude*/
