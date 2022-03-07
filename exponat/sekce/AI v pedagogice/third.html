@@ -10,8 +10,39 @@
     <link href='two_columns.css' rel='stylesheet'>
     <script defer src="two_columns.js"></script>
 
+    <link rel="stylesheet" href="style_menu.css" >
+    <script defer src="script_menu.js"></script>
   </head>
   <body>
+
+    <div class="menu-header">
+        <button id="menu-btn" onclick="showMenu()">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" fill="#475b76" id="circle2" style="stroke-width:0.485437" r="25" />
+                <path d="M 13.185675,15.139108 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path4" />
+                <path d="M 13.185675,24.906275 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path6" />
+                <path d="M 13.185675,34.673441 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path8" />
+            </svg>
+        </button>
+    </div>
+    <div id="menu-items">
+        <div class="menu-item">
+            <a href="#">AI v náboženství</a>
+        </div>
+        <div class="menu-item odd">
+            <a href="#">AI v pedagogice</a>
+        </div>
+        <div class="menu-item">
+            <a href="#">AI pro děti</a>
+        </div>
+        <div class="menu-item odd">
+            <a href="#">AI v medicíně</a>
+        </div>
+        <div class="last">
+            <p></p>
+        </div>
+    </div>
+
     <a id='prev-button' href='second.html' class='a'>
         <img src='arrow_left_white.png'>
       </a>
