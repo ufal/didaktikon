@@ -3,6 +3,7 @@
   /* box-sizing: border-box; */
   font-family: 'Questrial'
 }
+body{margin:0px;}
 .menu-header{
     background-color: #203551;
     text-align: right;
@@ -11,6 +12,7 @@
     background-color: #203551;
     border:none;
     cursor: pointer;
+    margin:10px;
 }
 circle:hover{
     fill:#536c8b;
@@ -20,21 +22,22 @@ circle:hover{
     height:100vh;
     background-color: #475b76;
     display: none;
+    width: 99.1vw;
 }
 .menu-item{
     text-align: center;
     background-color: #475b76;
-    width:100vw;
+    width:99.1vw;
 }
 .odd{
     background-color:#687c98;
-    width:100vw;
+    width:99.1vw;
 }
 a{
     display: inline-block;
     color:white;
     text-decoration: none;
-    font-size: 4vw;
+    font-size: 3vw;
     margin:10px;
 }
 a:hover{
@@ -47,4 +50,7 @@ a:hover{
     background-color: #475b76;
     height:100%;
 }
-/*TODO: vložit všude*/
+@media screen and (min-width: 100px) and (max-width: 500px) {
+a{font-size:4vh;}
+
+}
