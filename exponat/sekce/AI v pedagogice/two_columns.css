@@ -14,7 +14,7 @@ body {
 }
 
 p {
-    font-size: 3.5vh;
+    font-size: 2vw;
     margin:10px;
 }
 
@@ -77,7 +77,7 @@ p {
     background: linear-gradient(180deg, rgb(60, 77, 154) 0%, rgb(77, 170, 193) 100%, rgb(142, 212, 226) 100%);
     color: white;
     border-radius: 16px;
-    margin: auto;
+    margin: auto 20px;
     height: 100%;
     width: 35%;
     overflow: scroll;
@@ -92,7 +92,7 @@ p {
 
    
     background-color: rgb(225, 225, 225);
-    width: 100vw;
+    width: 100%;
 
     display: flex;
     align-items: center;
@@ -197,13 +197,21 @@ p {
   }
 
   @media screen and (min-width: 100px) and (max-width: 500px) {
-   
+   p{
+       font-size:3vh;
+   }
+   .nadpis{
+    margin-top:80px;
+   }
     .containers{
         display: block;
+        
     }
     .container{
         width:90%;
+        margin:auto;
         margin-top:15px;
+        
     }
     .a img {
         width: 3.5vh;
@@ -212,15 +220,15 @@ p {
     
       #next-button {
         position: fixed;
-        left: 93%;
-        top: 50%;
+        left: 21%;
+        top: 5%;
         transform: translate(-50%, -50%);
       
       }
       #prev-button {
         position: fixed;
         left: 7%;
-        top: 50%;
+        top: 5%;
         transform: translate(-50%, -50%);
       }
       #char_container {

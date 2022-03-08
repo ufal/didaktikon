@@ -144,6 +144,7 @@ p {
   {
     display:block;
     height:auto;
+    margin-top:80px;
   }
   #text-container 
   {
@@ -160,7 +161,7 @@ p {
 
   #next-button {
     position: fixed;
-    left: 93%;
+    left: 21%;
     top: 5%;
     transform: translate(-50%, -50%);
   

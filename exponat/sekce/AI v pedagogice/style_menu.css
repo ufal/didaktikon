@@ -52,5 +52,10 @@ a:hover{
 }
 @media screen and (min-width: 100px) and (max-width: 500px) {
 a{font-size:4vh;}
-
+.menu-header{
+    position:fixed;
+    top:0;
+    right:0;
+    width:100%;
+}
 }

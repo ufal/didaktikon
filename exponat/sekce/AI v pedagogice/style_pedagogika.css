@@ -20,8 +20,8 @@ h1{
     font-size: 3vw;
 }
 #center {
-  height: 100vh;
-  width: 99vw; /*původně 100*/
+ /* height: 100vh;*/
+  width: 100%; /*původně 100*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,6 +33,7 @@ h1{
   /* overflow-y:auto; */
   text-align: left;
   /* overflow: scroll; */
+  margin-left:10%;
   
 }
 
@@ -89,7 +90,7 @@ p {
   height: 70vh;
   margin-left: 20px;
   margin-bottom: 20px;
-
+margin-right:10%;
 
 }
 .question{
@@ -151,15 +152,24 @@ p {
 
 
 @media screen and (min-width: 100px) and (max-width: 500px) {
+  h1{
+    margin: 20px;
+    
+    z-index: 100;
+    font-size: 5vh;
+}
+.our-img{
+  margin:auto;
+}
   #center 
   {
+    margin-top:80px;
     display:block;
     height:auto;
   }
   #text-container 
   {
     margin:30px;
-    margin-top:45px;
   }
   p{
     font-size:5vw;
@@ -171,15 +181,15 @@ p {
 
   #next-button {
     position: fixed;
-    left: 93%;
-    top: 50%;
+    left: 21%;
+    top: 5%;
     transform: translate(-50%, -50%);
   
   }
   #prev-button {
     position: fixed;
     left: 7%;
-    top: 50%;
+    top: 5%;
     transform: translate(-50%, -50%);
   }
 

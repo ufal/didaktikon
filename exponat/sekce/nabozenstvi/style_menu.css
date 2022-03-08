@@ -7,6 +7,7 @@ body{margin:0px;}
 .menu-header{
     background-color: #203551;
     text-align: right;
+    
 }
 #menu-btn{
     background-color: #203551;
@@ -52,5 +53,11 @@ a:hover{
 }
 @media screen and (min-width: 100px) and (max-width: 500px) {
 a{font-size:4vh;}
+.menu-header{
+    position:fixed;
+    top:0;
+    right:0;
+    width:100%;
+}
 
 }
