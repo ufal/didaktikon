@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="50"
+   height="50"
+   viewBox="0 0 50 50"
+   fill="none"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="btn.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="7.0291262"
+     inkscape:cx="51.428867"
+     inkscape:cy="51.5"
+     inkscape:window-width="2880"
+     inkscape:window-height="1526"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <circle
+     cx="25"
+     cy="25"
+     fill="#475b76"
+     id="circle2"
+     style="stroke-width:0.485437"
+     r="25" />
+  <path
+     d="M 13.185675,15.139108 H 37.115233"
+     stroke="#ffffff"
+     stroke-width="3.57143"
+     stroke-linecap="round"
+     id="path4" />
+  <path
+     d="M 13.185675,24.906275 H 37.115233"
+     stroke="#ffffff"
+     stroke-width="3.57143"
+     stroke-linecap="round"
+     id="path6" />
+  <path
+     d="M 13.185675,34.673441 H 37.115233"
+     stroke="#ffffff"
+     stroke-width="3.57143"
+     stroke-linecap="round"
+     id="path8" />
+</svg>

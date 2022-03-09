@@ -1,0 +1,120 @@
+body{
+    margin:0;
+    font-family: 'Questrial';
+    background-color: #1B344C;
+    text-align: center;
+    color: white;
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+}
+.navbar-nav{
+    background-color:#1B344C;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav-item{
+    float:left;
+}
+#fake-filler{
+    display: none;
+    padding:0;
+    margin:0;
+}
+.nav-link{
+    display: block;
+    text-align: center;
+    padding: 16px 0 16px 10px;
+    text-decoration:none;
+    color: white;
+}
+.nav-link:hover{
+    color: rgb(184, 184, 184);
+}
+.navbar-brand{
+    float:right; /*TODO*/
+}
+.logo{
+    height: 30px;
+    margin-top:10px;
+    margin-right: 20px;
+    margin-left:10px;
+    margin-bottom:5px;
+}
+.navbar-toggler{
+    display:none;
+}
+.navbar-brand.order-md-last {
+    margin-right:0;
+    padding-right: 0;
+}
+
+li.nav-item {
+padding: 0px 15px 0px 5px;
+}
+
+@media only screen and (max-width: 768px) { /*for tablets*/
+    .navbar-brand{
+        float:left; /*TODO*/
+    }
+}
+@media only screen and (max-width: 600px) { /*for phones*/
+    .navbar{
+        background-color:#1B344C;
+    }
+    .navbar-brand{
+        float:left; /*TODO*/
+    }
+    .navbar-toggler{
+        display:inline;
+        float:right;
+        background-color:#1B344C;
+        margin:4px;
+        padding:0px 8px;
+        border-style: solid;
+        border-color:rgb(223, 223, 223);
+        border-radius: 5px;
+        border-width: 0.5px;
+        margin-right:10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+    }
+    .navbar-toggler-icon{
+        padding:4px;
+        width: 28px; height: 28px;
+        background-image: url("toggler_icon.png");  
+        background-repeat: no-repeat;   
+        background-position: center;
+        display: block;
+    }
+
+    .nav-items{
+        display: none;
+    }
+    .nav-items.responsive{
+        display: block;
+        animation: growDown 420ms ease-in-out forwards;
+    }
+    .nav-link{
+
+        float: none;
+        display:inline-block;
+        text-align: center;
+        padding:10px;
+        margin:auto;
+    }
+    .nav-item{
+        display:block;
+        float:none;
+    }
+    #fake-filler{
+        padding:14px;
+        display:block;
+    }
+
+}

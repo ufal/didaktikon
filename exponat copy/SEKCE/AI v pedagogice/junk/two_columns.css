@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+
+body {
+    position: absolute;
+    
+
+    color:white;
+    background-color: rgb(32, 53, 81);
+    padding: 0;
+    margin: 0;
+    font-family: 'Questrial';
+    text-align: center;
+
+}
+
+p {
+    font-size: 25px;
+    margin:10px;
+}
+
+.woop {
+    display: inline-block;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 15px; 
+}
+.controls2{
+    margin-top:15px;
+}
+/*
+.btn {
+    font-family: 'Questrial';
+    font-size: 30px;
+
+    font-weight: bold;
+    
+    color: white;
+    border: none;
+    transition: 0.3s;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 10px;
+  
+}*/
+.btn {
+    font-family: 'Questrial';
+    font-size: 2.5vw;
+  
+    font-weight: bold;
+    
+    color: white;
+    border: none;
+    transition: 0.3s;
+    border-radius: 16px;
+    padding: 10px;
+    /*margin: 10px;*/
+    background-color: rgb(68, 172, 169);
+  
+  }
+  .btn:hover {
+  
+    background-color: rgb(81, 193, 189);
+  
+  }
+
+.input {
+    font-size: 2.5vw;
+    outline: none;
+    border:none;
+    background-image:none;
+    background-color: white;
+    width: 200px;
+    border-radius: 16px;
+    padding: 8px ;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;  
+  
+  }
+#pro {
+    background-color: rgb(130, 209, 84);
+
+}
+#con {
+    background-color: rgb(231, 137, 75);
+}
+  
+#con:hover, #pro:hover {
+    background-color: rgb(74, 179, 175);
+    border: none;
+}
+
+
+.containers {
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    height: 72vh;
+    width: 100vw;
+    margin-top: 15px;
+
+
+}
+
+.container {
+
+    background: linear-gradient(180deg, rgb(60, 77, 154) 0%, rgb(77, 170, 193) 100%, rgb(142, 212, 226) 100%);
+    color: white;
+    border-radius: 16px;
+    margin: auto;
+    height: 100%;
+    width: 80%;
+    overflow: scroll;
+}
+.controls2{
+
+}
+.pool {
+
+    position: fixed;
+    bottom: 0;
+
+   
+    background-color: rgb(225, 225, 225);
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 27vh; */
+
+}
+
+#char_container {
+    padding: 4px;
+    border-radius: 16px;
+    background-color: rgba(71, 71, 71, 0.5);
+    
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+#char_container p {
+
+    margin: 4px;
+}
+
+.char_container {
+    padding: 4px;
+    border-radius: 16px;
+    background-color: rgba(71, 71, 71, 0.5);
+    margin:10px;
+   
+
+}
+
+.char_container p {
+    margin: 4px;
+}
+
+.hide {
+    display: none;
+}
+
+.my_text {
+    height: 27px;
+    color: rgb(53, 53, 53);
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    /* background-color: darkorange; */
+}
+
+.my_text p {
+    margin:0px;
+}
+
+#final {
+   
+    color: rgb(53, 53, 53);
+    font-weight: bold;
+   
+}
+
+@media screen and (min-width: 100px) and (max-width: 500px) 
+{
+    .containers{
+        display: block;
+    }
+}
