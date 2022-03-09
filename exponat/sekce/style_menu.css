@@ -1,51 +1,59 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial|Open Sans');
-*, *::before, *::after {
-  /* box-sizing: border-box; */
-  font-family: 'Questrial'
+
+.hide {
+    display: fixed;
 }
-body{margin:0px;}
 .menu-header{
-    /* background-color: #203551; */
     text-align: right;
+    display: fixed;
+    right: 10px;
+    top: 20px;
+    position: absolute;
+    
 }
+
 #menu-btn{
-    background-color: #203551;
-    border:none;
+    background: none;
+    border: none;
     cursor: pointer;
     margin:10px;
+
+
+   
+    
 }
-circle:hover{
-    fill:#536c8b;
-}
+
+
 #menu-items{
     flex-flow: column;
     height:100vh;
-    background-color: #475b76;
-    display: none;
-    width: 99.1vw;
+    background-color: red;
+  
+    width: 100%;
+    margin: 0;
 }
 .menu-item{
     text-align: center;
     background-color: #475b76;
-    width:99.1vw;
+    width:100%;
 }
 .odd{
     background-color:#687c98;
-    width:99.1vw;
+    width:100%;
 }
-a{
+a {
     display: inline-block;
     color:white;
     text-decoration: none;
     font-size: 3vw;
     margin:10px;
 }
-a:hover{
+/* a:hover{
     border-bottom: solid #687C98 3px; 
-}
-.odd a:hover{
+} */
+/* .odd a:hover{
     border-bottom: solid #475b76 3px; 
-}
+} */
 .last{
     background-color: #475b76;
     height:100%;
