@@ -1,36 +1,19 @@
 
-// let menuitems = document.getElementById("menu-items")
-
-
-// function showMenu(){
-//     if (menuitems.style.display == "none") {
-//         menuitems.style.display = "fixed";
-//       } else {
-//         menuitems.style.display = "none";
-//       }
-// }
-
+// let menuitems = document.getElementById("menu-items"
 let menubtn = document.getElementById("menu-btn")
 let menuitems = document.getElementById("menu-items")
-// let bar = document.getElementById("bar")
-var x = window.matchMedia("(max-width: 500px)")
 
-let display = 'fixed'
+let display = 'block'
 
 
 
 function showMenu(){
-    if (menuitems.style.display == "none") {
-        menuitems.style.display = display;
-
+    if (menuitems.classList.contains('hide')) {
+      menuitems.classList.remove('hide')
+      menuitems.classList.add('show-menu')
       } else {
-        menuitems.style.display = "none";
-        if(x.matches){
-  
-        }
-        else {
- 
-        }
-        
+      
+        menuitems.classList.remove('show-menu')
+        menuitems.classList.add('hide')
       }
 }

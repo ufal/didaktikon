@@ -1,41 +1,51 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial|Open Sans');
 
 .hide {
-    display: fixed;
+    display: none!important;
 }
-.menu-header{
-    text-align: right;
-    display: fixed;
-    right: 10px;
-    top: 20px;
-    position: absolute;
-    
+.show-menu {
+    display: block;
 }
+.menu-header {
 
+}
+body {
+    margin: 0;
+}
 #menu-btn{
     background: none;
     border: none;
     cursor: pointer;
-    margin:10px;
 
 
-   
-    
+    text-align: right;
+    right: 5px;
+    top: 10px;
+    margin: 0;
+    position: fixed;
+    z-index: 9998;
 }
 
 
 #menu-items{
-    flex-flow: column;
+
+    position: fixed;
+    z-index: 1000;
+   
     height:100vh;
-    background-color: red;
-  
+    background-color: #475b76ec;
+    padding-top: 40px;
     width: 100%;
     margin: 0;
+    /* margin-top: 30px; */
+    right: 0;
+    top: 0;
 }
 .menu-item{
     text-align: center;
-    background-color: #475b76;
+   
     width:100%;
+    margin: 0;
 }
 .odd{
     background-color:#687c98;
@@ -62,8 +72,8 @@ a {
 a{font-size:4vh;}
 .menu-header{
     position:fixed;
-    top:0;
-    right:0;
+    right: 15px;
+    top: 15px;
     width:100%;
 }
 }
