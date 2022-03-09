@@ -51,11 +51,11 @@ body {
     background-color:#687c98;
     width:100%;
 }
-a {
+.menu-item > a {
     display: inline-block;
     color:white;
     text-decoration: none;
-    font-size: 3vw;
+    font-size: 4vw;
     margin:10px;
 }
 /* a:hover{
