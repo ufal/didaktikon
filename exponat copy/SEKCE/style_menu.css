@@ -9,7 +9,7 @@ body{margin:0px;}
     text-align: right;
 }
 #menu-btn{
-    background-color: #203551;
+    background-color: #20355100;
     border:none;
     cursor: pointer;
     margin:10px;
@@ -22,17 +22,17 @@ circle:hover{
     height:100vh;
     background-color: #475b76;
     display: none;
-    width: 99.1vw;
+    width: 100%;
 }
 .menu-item{
     text-align: center;
     background-color: #475b76;
-    width:99.1vw;
-}
+    width:100%;
+}/*
 .odd{
     background-color:#687c98;
     width:99.1vw;
-}
+}*/
 a{
     display: inline-block;
     color:white;
@@ -40,12 +40,13 @@ a{
     font-size: 3vw;
     margin:10px;
 }
-a:hover{
-    border-bottom: solid #687C98 3px; 
+.menu-item:hover{
+    background-color:#687c98;
 }
+/*
 .odd a:hover{
     border-bottom: solid #475b76 3px; 
-}
+}*/
 .last{
     background-color: #475b76;
     height:100%;
