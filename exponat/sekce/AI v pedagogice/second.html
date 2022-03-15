@@ -13,38 +13,35 @@
     <script defer src="script.js"></script>
 
     <link rel="stylesheet" href="../style_menu.css" >
-    <script defer src="../script_menu_sipky.js"></script>
+    <script defer src="../script_menu.js"></script>
 
   </head>
   <body>
-
     <div class="menu-header">
       <button id="menu-btn" onclick="showMenu()">
-          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="25" cy="25" fill="#475b76" id="circle2" style="stroke-width:0.485437" r="25" />
+          <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M 13.185675,15.139108 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path4" />
               <path d="M 13.185675,24.906275 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path6" />
               <path d="M 13.185675,34.673441 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path8" />
           </svg>
       </button>
-  </div>
-  <div id="menu-items">
-    <div class="menu-item">
-      <a href="../nabozenstvi/first.html">AI v náboženství</a>
-  </div>
-  <div class="menu-item odd">
-      <a href="../AI v pedagogice/first.html">AI v pedagogice</a>
-  </div>
-  <div class="menu-item">
-      <a href="../AI pro deti/aiprodeti.html">AI pro děti</a>
-  </div>
-  <div class="menu-item odd">
-      <a href="../AI v medicine/index.html">AI v medicíně</a>
-  </div>
-      <div class="last">
-          <p></p>
-      </div>
-  </div>
+    </div>
+    <div id="menu-items" class="hide" >
+        <div class="menu-item">
+            <a href="../nabozenstvi/first.html">AI v náboženství</a>
+        </div>
+        <div class="menu-item">
+            <a href="../AI v pedagogice/first.html">AI v pedagogice</a>
+        </div>
+        <div class="menu-item">
+            <a href="../AI pro deti/aiprodeti.html">AI pro děti</a>
+        </div>
+        <div class="menu-item">
+            <a href="../AI v medicine/index.html">AI v medicíně</a>
+        </div>
+    </div>
+ 
+  
 
     <a id='prev-button' href='first.html' class='a'>
       <img src='arrow_left_white.png'>
@@ -53,9 +50,10 @@
       <img src='arrow_right_white.png'>     
     </a>
 
-
+    <h2>AI v pedagogice</h2>
     <div id='center'>
       <div id='text-container2'>
+        
         <p class="question">
           Líbilo by se vám, kdyby vyučující ve vaší třídě mohli měřit vaše emoce?
         </p>

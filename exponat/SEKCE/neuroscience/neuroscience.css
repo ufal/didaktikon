@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+*,
+*::before,
+*::after {
+  font-family: "Questrial", Helvetica, sans-serif;
+}
+
+body {
+  color: white;
+  background-color: rgb(32, 53, 81);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  /*overflow: scroll;*/
+}
+
+/* ------------------------------------ */
+#next-button {
+  left: 95%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#prev-button {
+  left: 5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#prev-button,
+#next-button {
+  position: fixed;
+  background-color: rgba(100, 148, 237, 0.402);
+  padding: 10px;
+  border-radius: 16px;
+  transition: 0.2s;
+}
+
+#prev-button:hover,
+#next-button:hover {
+  background-color: rgba(100, 148, 237, 0.84);
+}
+
+.a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.a img {
+  width: 3vw;
+  height: 3vw;
+}
+/* ------------------------------------ */
+
+b {
+  font-weight: 800;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3vw;
+}
+h3 {
+  text-align: center;
+  font-size: 2.7vw;
+}
+.neurotext {
+}
+.neurotext p {
+  font-size: 2.3vw;
+  text-align: justify;
+  padding-left: 50px;
+  padding-right: 50px;
+}
