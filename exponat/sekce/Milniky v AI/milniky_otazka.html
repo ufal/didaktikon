@@ -3,8 +3,51 @@
     <head>
         <title>Milníky AI</title>
         <link rel="stylesheet" href="milniky_style2.css">
+        <link rel="stylesheet" href="../style_menu.css" >
+        <script defer src="../script_menu.js"></script>
     </head>
     <body>
+        <div class="menu-header">
+            <button id="menu-btn" onclick="showMenu()">
+                <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 13.185675,15.139108 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path4" />
+                    <path d="M 13.185675,24.906275 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path6" />
+                    <path d="M 13.185675,34.673441 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path8" />
+                </svg>
+            </button>
+        </div>
+        <div id="menu-items" class="hide" >
+            <div class="menu-item">
+              <a class="menu-href" href="#"></a>
+              </div>
+              <div class="menu-item">
+                  <a class="menu-href" href="#"></a>
+              </div>
+              <div class="menu-item">
+                  <a class="menu-href" href="#"></a>
+              </div>
+              <div class="menu-item">
+                  <a class="menu-href" href="#"></a>
+              </div>
+              <div class="menu-item">
+              <a class="menu-href" href="#"></a>
+              </div>
+              <div class="menu-item">
+                  <a class="menu-href" href="#"></a>
+              </div>
+              <div class="menu-item">
+                  <a class="menu-href" href="#"></a>
+              </div>
+              <div class="menu-item">
+                  <a class="menu-href" href="#"></a>
+              </div>
+              <div class="menu-item">
+              <a class="menu-href" href="#"></a>
+              </div>
+         
+          </div>      
+          <div id='cover' onclick='unshow()'>
+          </div>
         <div id="question-container">
             <div>
                 <p id="question">Ve kterém roce vznikl první chatbot?</p>
@@ -28,7 +71,11 @@
                 <button id="next-btn" >Další otázka</button>
             </div>
         </div>
-
+        <div id="vysledky">
+            <p>Uhodli jste správně</p>
+            <p id="vysledek"></p>
+            <p>otázek</p>
+        </div>
         <script src="milniky_script2.js"></script>
     </body>
 </html>

@@ -10,7 +10,7 @@ const answerComment = document.getElementById("answer-comment")
 const answerNote = document.getElementById("answer-note")
 const answerImage = document.getElementById("answer-image")
 let currentQuestionIndex=0  
-let correctIndex=0
+let correctAnswers=0
 
 const questions = [
     {
@@ -116,10 +116,55 @@ const questions = [
 
 const answers = [
     {
-        answer: 'Ve kterém roce vznikl první chatbot?',
-        comment: 'chatbot = program, se kterým uživatel komunikuje pomocí krátkých textových zpráv',
-        note: ''
+        answer:'1966',
+        comment: 'První chatbot se jmenoval ELIZA a vznikl v roce 1966',
+        note: 'Představoval psychologa, nebyl moc inteligentní, používal jen několik jednoduchých pravidel a vět a hlavně se hodně ptal.'
     },
+    {
+        answer:'1954',
+        comment: 'První automatický překlad byl z ruštiny do angličtiny v rámci Georgetown–IBM experimentu v roce 1954',
+        note: 'Byl založený na jednoduchých pravidlech, v podstatě překládal slovo po slově podle slovníku.'
+    },
+    {
+        answer:'1999',
+        comment: 'První automatické popisování obrázků: 1999 Mori, Takahashi, Oka',
+        note: 'Vygenerovat popisek pomocí pravidel je prakticky nemožné, první systémy proto vznikly až s rozvojem strojového učení. Popisek obrázku generuje na základě popisků podobných obrázků v trénovacích datech.'
+    },
+    {
+        answer:'1949',
+        comment: 'Elmer a Elsie',
+        note: 'Náhodně se procházeli, reagovali na světlo a dotek, jejich “mozky” měly dvě umělé neuronové buňky'
+    },
+    {
+        answer:'1977',
+        comment: 'Tsukuba Mechanical Engineering Laboratory',
+        note: '1977 Tsukuba (speciálně upravená silnice, max 30 km/h), 1985 ALV (standardní silnice), 1995 CMU NavLab 5 (od pobřeží k pobřeží, průměrně 100 km/h), 2018 Waymo (samořídící taxi)'
+    },
+    {
+        answer:'1997',
+        comment: 'Deep Blue vs Garry Kasparov',
+        note: 'Jednoduchý pravidlový systém, těžké je to že možných posloupností tahů je příliš mnoho. Nárůst výkonu počítačů umožnil propočítat více tahů než kolik zvládne člověk.'
+    },
+    {
+        answer:'2016',
+        comment: 'AlphaGo vs Lee Sedol',
+        note: 'Možných poslopností tahů v go je mnohem víc než v šachách, ani nejvýkonnější počítač jich nezvládne propočítat dost. Proto se AlphaGo nejdřív učí z partií odehraných lidmi, a pak dál zdokonaluje svou stragii zlepšuje hraním sama proti sobě (reinforcement learning). Zvládne tak odehrát miliony zápasů, takže má výrazně větší zkušenosti než může mít člověk.'
+    },
+    {
+        answer:'2018',
+        comment: 'Portrét Edmonda Belamy',
+        note: 'Strojové učení využívající metodu GAN se učilo malovat z trénovacích dat obsahujících 15 000 portrétů. Obraz (tisk na plátně, 70x70 cm) se vydražil za 432 500 amerických dolarů (asi 10 000 000 Kč).'
+    },
+    {
+        answer:'2016',
+        comment: 'Jiří Materna: Poezie umělého světa',
+        note: 'Neuronový jazykový model (biLSTM) se učil psát podle amatérských básní na webu pismak.cz'
+    },
+    {
+        answer:'2021',
+        comment: 'AI: Když robot píše hru',
+        note: 'Systém THEaiTRobot, založený na neuronovém jazykovém modelu GPT-2, který si načetl asi 8 000 000 článků z internetu. Premiéra 26.2.2021 ve Švandově divadle v Praze.'
+    }
 ]
 
 nextBtn.addEventListener('click',showQuestion)
@@ -133,10 +178,11 @@ for (let i = 0; i < questionBtns.length; i++) {
 function Evaluate(index){
     if(questions[currentQuestionIndex].answers[index].correct){
         document.getElementById(index).style.backgroundColor="rgb(161, 211, 100)"
+        correctAnswers++
     }
     else{
         document.getElementById(index).style.backgroundColor="rgb(230, 101, 101)"
-        
+        let correctIndex=0
         for(let i = 0; i < 3; i++) {
             if(questions[currentQuestionIndex].answers[i].correct){
                 correctIndex=i
@@ -144,27 +190,48 @@ function Evaluate(index){
         }
         document.getElementById(correctIndex).style.backgroundColor="rgb(161, 211, 100)"
     }
-    setTimeout(showAnswer, 1500)
+    setTimeout(showAnswer, 1000)
 }
 
 function showAnswer(){
     answerContainer.style.display="grid"
     questionContainer.style.display="none"
-    answer.innerHTML=questions[currentQuestionIndex].answers[correctIndex].text
-    answerComment.innerHTML="Ahoj"
-    answerNote.innerHTML="Jak je?"
+    answerImage.src="answer_images/" + currentQuestionIndex + ".png"
+    answer.innerHTML=answers[currentQuestionIndex].answer
+    answerComment.innerHTML=answers[currentQuestionIndex].comment
+    answerNote.innerHTML=answers[currentQuestionIndex].note
+    if(currentQuestionIndex==questions.length-1){
+        nextBtn.innerHTML = "Vyhodnocení kvízu"
+        nextBtn.style.width="60%"
+        nextBtn.style.backgroundColor="rgb(120, 60, 154)"
+    }
 }
 
 function showQuestion(){
     currentQuestionIndex++
-    alert(currentQuestionIndex)
-    answerContainer.style.display="none"
-    questionContainer.style.display="grid"
-    question.innerHTML=questions[currentQuestionIndex].question
-    questionNote.innerHTML=questions[currentQuestionIndex].note
-    for(let i = 0; i < 3; i++) {
-        let btn = document.getElementById(i)
-        btn.innerHTML=questions[currentQuestionIndex].answers[i].text
-        btn.style.backgroundColor="rgb(225, 225, 225)"
+    if(currentQuestionIndex==questions.length){
+        answerContainer.style.display="none"
+        questionContainer.style.display="none"
+        document.getElementById("vysledky").style.display="block"
+        let vysledek = document.getElementById("vysledek")
+        vysledek.innerHTML=correctAnswers + "/" + questions.length
+        if(correctAnswers>=5){
+            vysledek.style.color="rgb(161, 211, 100)"
+        }
+        else{
+            vysledek.style.color="rgb(230, 101, 101)"
+        }
+    }
+    else{
+        answerContainer.style.display="none"
+        questionContainer.style.display="grid"
+        question.innerHTML=questions[currentQuestionIndex].question
+        questionNote.innerHTML=questions[currentQuestionIndex].note
+        for(let i = 0; i < 3; i++) {
+            let btn = document.getElementById(i)
+            btn.innerHTML=questions[currentQuestionIndex].answers[i].text
+            btn.style.backgroundColor="rgb(225, 225, 225)"
+        }
+        questionImage.src="question_images/" + currentQuestionIndex + ".png"
     }
 }

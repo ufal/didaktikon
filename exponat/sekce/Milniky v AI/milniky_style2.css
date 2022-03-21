@@ -147,3 +147,9 @@ li{
 .kviz-btn:hover{
     background-color: rgba(68, 172, 169, 0.664);
 }
+
+#vysledky{
+    text-align: center;
+    display: none;
+    margin-top:5%;
+}
