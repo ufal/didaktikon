@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial|Open Sans');
+*, *::before, *::after {
+    /* box-sizing: border-box; */
+    font-size: 2.5vw;
+    font-family: 'Questrial'
+}
+  
+body {
+    color:white;
+    background-color: rgb(32, 53, 81);
+    padding: 0;
+    margin: 0;
+}
+.content{
+    margin:3% 8%;
+}
+h1{
+   font-size: 3vw;
+}
+#priklad-div{
+  background: linear-gradient(90deg, rgb(120, 60, 154) 0%, rgb(77, 193, 170) 100%, rgb(142, 212, 226) 100%);
+  color: white;
+  border-radius: 16px;
+  padding:10px;
+  
+}
+#priklad{
+    margin-left:10px;
+    color:rgb(232, 215, 241);
+    font-size: 2vw;
+}
+.item{
+    margin-top: 40px;
+}
+.item-text{
+    margin:5px 0;
+    font-size: 2vw;
+}
+li{
+    font-size: 2vw;
+}
+.item-note{
+    margin-left:50px;
+    font-size: 2vw;
+}
+.icon{
+    width:35px;
+}
+/*
+.old{
+    color:rgb(230, 101, 101);
+}
+.new{
+    color:rgb(161, 211, 100);
+}*/
+
+.kviz-btn{
+    text-decoration: none;
+    background-color: rgb(68, 172, 169);
+    border-radius: 16px;
+    padding:10px;
+    font-size: 2vw;
+    margin: 40px 40%;
+    width:20%;
+    transition: 0.3s;
+    font-weight: bold;
+    color:white;
+    display: inline-block;
+    text-align: center;
+}
+.kviz-btn:hover{
+    background-color: rgba(68, 172, 169, 0.664);
+}
+
+/*QUESTION PAGE*/
+#question-container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width:90%;
+    margin:5%;
+}
+#question {
+    background: linear-gradient(90deg, rgb(120, 60, 154) 0%, rgb(77, 193, 170) 100%, rgb(142, 212, 226) 100%);
+    color: white;
+    border-radius: 16px;
+    padding:10px;
+  }
+  
+  #question-buttons {
+    display: grid;
+    /* grid-template-columns: repeat(2, auto); */
+    gap: 10px;
+    margin: 10px 0 20px 0;
+  }
+  .btn {
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    padding:10px;
+    
+    background-color: rgb(225, 225, 225);
+    transition: 0.3s;
+  }
+  .btn:hover {
+    background-color: rgb(255, 255, 255);
+    
+  }
+  #question-image{
+      margin:5%;
+      width:90%;
+  }
+  #question-note{
+      font-size: 2vw;
+  }
+
+/*ANSWER PAGE*/
+  #answer{
+    color: rgb(161, 211, 100);
+  }
+#answer-container{
+    width:90%;
+    margin:5%;
+    display: none;
+    grid-template-columns: 60% 40%;
+}
+#answer-image{
+    width:90%;
+}
+#answer-comment{
+    color:rgb(68, 172, 169);
+}
+#next-btn{
+    border: none;
+    outline: none;
+    background-color: rgb(68, 172, 169);
+    border-radius: 16px;
+    padding:10px;
+    font-size: 2vw;
+    width:40%;
+    transition: 0.3s;
+    font-weight: bold;
+    color:white;
+    display: inline-block;
+    text-align: center;
+}
+.kviz-btn:hover{
+    background-color: rgba(68, 172, 169, 0.664);
+}
