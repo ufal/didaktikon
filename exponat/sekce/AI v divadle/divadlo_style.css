@@ -66,16 +66,16 @@ h1{
 margin-right:50px;
 }
 #prvni{
-    background-color: rgb(120, 60, 154);
+    background-color: #f15353;
     margin-left:50px;
     margin-top:90px;
 }
 #druhy{
-    background-color: rgb(77, 193, 170);
+    background-color: #f17553;
     margin-left:90px;
 }
 #treti{
-    background-color: rgb(142, 212, 226);
+    background-color: #7baf50;
     margin-left:130px;
 }
 
@@ -132,4 +132,93 @@ h2{
 }
 .damon-{
   color: #4493b8;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 15px; 
+}
+.btn {
+  font-family: 'Questrial';
+  font-size: 2.5vw;
+
+  font-weight: bold;
+  
+  color: white;
+  border: none;
+  transition: 0.3s;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(68, 172, 169);
+
+}
+.btn:hover {
+  background-color: rgb(81, 193, 189);
+}
+.question, #pie-chart{
+  text-align: center;
+}
+
+/*PIE CHART*/
+@property --p{
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+.pie {
+  --p:20;
+  --b:22px;
+  --c:darkred;
+  --w:150px;
+  
+  width:var(--w);
+  aspect-ratio:1;
+  position:relative;
+  display:inline-grid;
+  margin:5px;
+  place-content:center;
+  font-size:25px;
+  font-weight:bold;
+}
+.pie:before,
+.pie:after {
+  content:"";
+  position:absolute;
+  border-radius:50%;
+}
+.pie:before {
+  inset:0;
+  background:
+    radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+  -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+          mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+}
+.pie:after {
+  inset:calc(50% - var(--b)/2);
+  background:var(--c);
+  transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+}
+.animate {
+  animation:p 1s .5s both;
+}
+.no-round:before {
+  background-size:0 0,auto;
+}
+.no-round:after {
+  content:none;
+}
+@keyframes p {
+  from{--p:0}
+}
+#pie-chart{
+  display:none;
+}
+
+/*ROBOT*/
+.ai-robot{
+  text-align:center;
 }

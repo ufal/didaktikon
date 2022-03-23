@@ -49,36 +49,33 @@
           <div id='cover' onclick='unshow()'>
           </div>
 
-        <a id='next-button' href='divadlo_kviz_2.html' class='a'>
+        <a id='next-button' href='divadlo_robot.html' class='a'>
             <img src='arrow_right_white.png'>     
         </a>
-        <a id='prev-button' href='divadlo_2_stranka.html' class='a'>
+        <a id='prev-button' href='divadlo_kviz_2.html' class='a'>
             <img src='arrow_left_white.png'>     
         </a>
 
         <div class="content">
-            <b>Vstup:</b> toto zadáme jako začátek a necháme THEaiTRobota generovat pokračování… 
-            <br>
-            <br>
-            <div class="scenar">
-                <p class="prvni-robot-">1. Robot</p>
-                <p class="prvni-robot">Pane, stroje nemohou pracovat. Nemůžeme rozmnožovat Roboty.</p>
-
-                <p class="druhy-robot-">2. Robot</p>
-                <p class="druhy-robot">Znásobili jsme práci. Nemáme už kam dát, co jsme vyrobili.</p>
-
-                <p class="alquist-">Alquist</p>
-                <p class="alquist">Pro koho?</p>
-
-                <p class="druhy-robot-">2. Robot</p>
-                <p class="druhy-robot">Pro příští pokolení.</p>
-
-                <p class="prvni-robot-">1. Robot</p>
-                <p class="prvni-robot">Jen Roboty nemůžeme vyrábět. Stroje vydávají jenom krvavé kusy masa. Kůže nelne k masu a maso ke kostem. Beztvaré chuchvalce prší ze strojů.</p>
+            <p class="question">
+                Který z výstupů myslíte, že napsala umělá inteligence?
+            </p>
+            <form class='controls'>
+                <div id='first-section' >
+                  <button type='button' class='btn' onclick="check('A')">Výstup A</button>
+                  <button type='button' class='btn' onclick="check('B')">Výstup B</button>
+                </div>
+            </form>    
+            <p id="vyhodnoceni" class="question"></p>
             
-                <p class="druhy-robot-">2. Robot</p>
-                <p class="druhy-robot">Lidem bylo známo tajemství života. Pověz nám jejich tajemství.</p>
-            </div>          
+            <div id="pie-chart">
+                <p>Správně odpovědělo</p>
+                <div class="pie animate" style="--p:90;--c:lightgreen">90%</div>
+                <p>návštěvníků</p>
+            </div>
+            <script src="divadlo_script.js"></script>
+
+
         </div>
         
     </body>
