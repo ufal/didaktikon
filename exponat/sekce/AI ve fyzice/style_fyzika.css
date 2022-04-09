@@ -73,21 +73,25 @@ h1{
 }
 #video{
     width:90%;
-    height:100vh;
+    height:700px;
 }
 #popisek-videa{
   font-size: small;
 }
 
 
-.questsions{
+.questions{
   text-align: center;
 }
 .question{
     text-align: center;
-    margin: 40px 8%;
+    margin: 60px 8%;
+}
+#question2{
+  margin-top: 150px;
 }
 .text-input{
+  text-align: center;
   font-size: 2vw;
   outline: none;
   border:none;
@@ -130,6 +134,4 @@ h1{
 
   background-color: rgb(81, 193, 189);
   border: none;
-
-
 }

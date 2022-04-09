@@ -12,9 +12,7 @@ let finalElement = document.querySelector('#final')
 proButton.addEventListener('click', function () {
     console.log('works')
 
-    if (statementContainer.dataset.correct === 'true') {
-        console.log('works2')
-        
+    
 
         let node = document.createElement("DIV");
         node.classList.add('char_container')
@@ -28,18 +26,10 @@ proButton.addEventListener('click', function () {
             myTextElement.classList.add('hide')
         }
         updateContent()
-        
 
-    } else {
-
-        myTextElement.classList.remove('hide')
-
-    }
     
 })
 conButton.addEventListener('click', function () {
-
-    if (statementContainer.dataset.correct === 'false') {
 
         let node = document.createElement("DIV");
         node.classList.add('char_container')
@@ -55,34 +45,44 @@ conButton.addEventListener('click', function () {
 
         updateContent()
 
-    } else {
-        myTextElement.classList.remove('hide')
-    }
 
 })
 
 const statements = [
     {
-        statement: 'Citlivá data o našem prožívání jsou zpracovávána na serverech neznámo kde a nemáme je plně pod kontrolou',
-        correct: false
+        statement: 'Učitel může lépe rozpoznat jaké emoce při učení děti/studenti mají.'
     },
 
     {
-        statement: 'Učitel může zjistit, co studenty baví a z čeho přesně mají strach',
-        correct: true
+        statement: 'Data o tom, jak „se děti mají“ bude zpracovávat vzdálený server, o kterém pravděpodobně nebudeme vědět, co přesně se s našimi daty děje.'
+    },
+
+    {
+        statement: 'Učitel může lépe přizpůsobit výuku, když bude vědět, co děti baví nebo naopak stresuje.'
+    },
+
+    {
+        statement: 'Děti si sami díky programu budou moci uvědomit, jaké emoce prožívají a například.'
+    },
+
+    {
+        statement: 'Program ne vždy rozpozná emoce správně, protože dělá jako každý chyby.'
+    },
+
+    {
+        statement: 'Program nerozpozná dobře, jestli jsme smutní, protože nám nejde matematika nebo proto, že jsme se pohádali s někým blízkým.'
     }
     
 
 ]
 
-let indeces = [0,1]
 
+let index=statements.length
 
 function updateContent() {
-    if (indeces.length > 0) {
-        statementContainer.innerHTML = `<p>${statements[indeces[0]].statement}</p>`
-        statementContainer.dataset.correct = statements[indeces[0]].correct
-        indeces.shift()
+    if (index > 0) {
+        statementContainer.innerHTML = `<p>${statements[index-1].statement}</p>`
+        index--
     } else {
         woopElement.classList.add('hide')
         finalElement.classList.remove('hide')

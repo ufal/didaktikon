@@ -13,7 +13,7 @@
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="../style_menu.css" >
     <script defer src="../script_menu.js"></script>
-
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   </head>
   <body>
     <div class="menu-header">
@@ -66,31 +66,46 @@
 
 
     <h1 class="nadpis">AI v pedagogice</h1>
-    <div id='center'>
+    <div class='center'>
       
-      <div id='text-container'>
-        
-        <p>
+      <div class="text-container">
+        <div>
+        <p id="text1">
           Trendem v moderní pedagogice je 
           přizpůsobování učebního procesu 
-          „na míru“ tomu, kdo se učí. <br><br>
-          Jednou z možností je využití AI pro 
+          „na míru“ tomu, kdo se učí. </p>
+        <p id="text2"> Jednou z možností je využití AI pro 
           zjišťování emocí každého studenta, 
           které výuka ve studentech vyvolává 
           a mít tak možnost jí přizpůsobit tak, 
           aby u studentů převládali pozitivní 
-          emoce.<br><br>
-          Na obrázku vidíte výsledky 
+          emoce.</p> 
+        <p id="text3"> Na obrázku vidíte výsledky 
           programu, který na základě 
-          algoritmů umí rozpoznat emoce.
-        </p>
-        
+          algoritmů umí rozpoznat emoce.</p> 
+        </div>
+        <div class="emotions">
+          <div id="div-happy">
+            <img class="emoji"  id="img-happy" src="happy.png">
+            <p id="pointer"><img src="pointer.png">Klikni na mě</p>
+          </div>          
+          <img class="emoji"  id="img-angry" src="super sad.png">
+          <img class="emoji" id="img-super-happy" src="super smile.png">
+          
+        </div>
       </div>
-      <img class='our-img' src="emoce.PNG">
+      
     </div>
 
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
 
+    <script src="modals.js"></script>
     
   </body>
 </html>
