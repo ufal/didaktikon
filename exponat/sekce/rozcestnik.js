@@ -1,3 +1,4 @@
+let buttons = document.getElementsByClassName("bubble")
 
 let odkazy = [["../Milniky v AI/milniky_prvni_stranka.html","Milníky AI"],              
               ["../AI pro deti/deti_index.html","AI očima dětí"],
@@ -10,6 +11,9 @@ let odkazy = [["../Milniky v AI/milniky_prvni_stranka.html","Milníky AI"],
               ["../psychologie/psychologie_index.html","AI v psychologii (ve fázi příprav)"]        
             ]
 
+for (let i = 0; i < buttons.length; i++) {
+    buttons.onclick = "location.href='google.com';";
+    } 
 
 
 // let bubbleElement = document.getElementById('test')

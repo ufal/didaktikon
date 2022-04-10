@@ -355,7 +355,33 @@ h3 {
 
 }
 
+/*ŠIPKY:*/
+#next-button {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+  }
+  
+  #next-button {
+    background-color: rgba(100, 148, 237, 0.402);
+    padding: 10px;
+    border-radius: 16px;
+    transition: 0.2s;
+  }
+ #next-button:hover {
+    background-color: rgba(100, 148, 237, 0.84);
+  }
+  .a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
 
+  .a img {
+    width: 3vw;
+    height: 3vw;
+  }
 
 
 
