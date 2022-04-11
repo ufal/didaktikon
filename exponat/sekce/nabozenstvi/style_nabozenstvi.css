@@ -19,17 +19,19 @@ h1{
   margin:8%;
   margin-top:5%;
 }
-
+.red{
+  color: #f15353;
+}
 .yellow{
   color:#ffd953;
 }
-#orange{
+.orange{
   color:#f17553;
 }
-#blue{
+.blue{
 color:#4493b8;
 }
-#green{
+.green{
 color:#7baf50;
 }
 .grid-container{
@@ -104,7 +106,7 @@ p {
   font-size: 3vw;
 
 }
-#p1,#p2{
+#p1,#p2,#p3,#p4{
   opacity: 0;
   transform:scale(0.5)
 }
@@ -116,16 +118,16 @@ p {
   animation: prijed 2s forwards;
   animation-delay: 2s;
 }
-/*
+
 #p3{
   animation: prijed 2s forwards;
-  animation-delay: 4s;
+  animation-delay: 6s;
 }
 
 #p4{
   animation: prijed 2s forwards;
-  animation-delay: 5s;
-}*/
+  animation-delay: 8s;
+}
 
 @keyframes prijed{
   from{
@@ -136,6 +138,28 @@ p {
     opacity: 1;
     transform:scale(1)
   }
+}
+
+.question-mark{
+  font-size:200px;
+  margin:0;
+}
+
+.question-container{
+  display: grid;
+  grid-template-columns: 20% 80% ;
+}
+
+#qp1, #qp2, #qp3, #qp4{
+  text-align: left;
+  display: block;
+  transform:scale(0,1);
+  transform-origin: top left;
+
+  transition: transform 0.7s ease-in-out;
+}
+.bluegreen{
+  color: rgb(81, 193, 189);
 }
 
 #next-button {
@@ -194,7 +218,7 @@ p {
 
 .btn {
   font-family: 'Questrial';
-  font-size: 4vw;
+  font-size: 2vw;
 
   font-weight: bold;
   
@@ -218,7 +242,7 @@ p {
 }
 
 .input {
-  font-size: 4vw;
+  font-size: 2vw;
   outline: none;
   border:none;
   background-image:none;
@@ -235,6 +259,62 @@ p {
 
 .hide {
   display: none;
+}
+
+.questions-{
+  text-align: center;
+}
+.question-{
+    text-align: center;
+    margin: 60px 8%;
+}
+#question2-{
+  margin-top: 150px;
+}
+.text-input-{
+  text-align: center;
+  font-size: 2vw;
+  outline: none;
+  border:none;
+  background-image:none;
+  background-color: white;
+  width: 80%;
+  margin: 0 9%;
+  border-radius: 16px;
+  padding: 10px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;  
+}
+
+.btn- {
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  padding:10px;
+  font-size: 2vw;
+  background-color: rgb(225, 225, 225);
+  transition: 0.3s;
+  margin: 40px 40%;
+  width:20%;
+}
+
+.btn-:hover {
+  background-color: rgb(255, 255, 255);
+  
+}
+.submit-btn-, .next-btn-, .new-btn- {
+  font-weight: bold;
+  background-color: rgb(68, 172, 169);
+  color: white;
+  border: none;
+
+}
+
+.submit-btn-:hover, .next-btn-:hover, .new-btn-:hover {
+
+  background-color: rgb(81, 193, 189);
+  border: none;
 }
 
 

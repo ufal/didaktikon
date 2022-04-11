@@ -12,3 +12,18 @@ function show() {
 function submit() {
 
 }
+
+function showQ(id){
+let par = document.getElementById(id)
+
+par.style.display="block"
+par.style.transform="scale(1,1)"
+}
+
+function unshowQ(id){
+    let par = document.getElementById(id)
+    
+    par.style.display="block"
+    par.style.transform="scale(0,1)"
+    
+    }
