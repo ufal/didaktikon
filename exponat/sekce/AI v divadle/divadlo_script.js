@@ -12,3 +12,32 @@ function check(vystup){
     }
     document.getElementById("pie-chart").style.display="block"
 }
+
+let btns = document.getElementsByClassName("btn")
+btns[0].addEventListener("click", () => {
+ 
+    // Fetching Button value
+    let btnValue = btns[0].value;
+ 
+    // jQuery Ajax Post Request
+    $.post('action.php', {
+        btnValue: btnValue
+    }, (response) => {
+        // response from PHP back-end
+        console.log(response);
+    });
+});
+
+btns[1].addEventListener("click", () => {
+ 
+    // Fetching Button value
+    let btnValue = btns[1].value;
+ 
+    // jQuery Ajax Post Request
+    $.post('action.php', {
+        btnValue: btnValue
+    }, (response) => {
+        // response from PHP back-end
+        console.log(response);
+    });
+});
