@@ -1,0 +1,10 @@
+chatbot: https://www.shutterstock.com/image-photo/chatbot-conversation-on-smartphone-screen-app-1118098829
+transaltion: https://www.shutterstock.com/image-vector/translating-app-on-mobile-phone-people-1822044449
+image-regonition: https://www.shutterstock.com/image-vector/image-detection-classification-artificial-intelligence-concept-1244299747
+(^^mírně sporné, má to být popisování obrázků..)
+autonomní roboti: https://www.shutterstock.com/image-illustration/robot-arm-picks-box-autonomous-transportation-1915255396
+automatické auto: https://www.shutterstock.com/image-vector/autonomous-smart-car-scans-road-operates-635238704
+šachy: https://www.shutterstock.com/image-vector/modern-robot-playing-chess-man-concept-708579985
+ai go: https://www.shutterstock.com/image-illustration/artificial-intelligence-playing-traditional-board-game-403937830
+robot maluje: https://www.shutterstock.com/image-vector/robot-learning-write-vector-illustration-futuristic-1728325402
+ai píše: https://www.shutterstock.com/image-illustration/3d-rendering-robot-holding-pen-blank-795526426
