@@ -3,6 +3,6 @@
 </head>
 <body>
     <?php 
-    echo "<p>Zkouška databáze</p>"    ;
+    echo "<p>echo: Zkouška databáze</p>"    ;
     ?>
 </body>
