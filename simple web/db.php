@@ -1,3 +1,6 @@
+<head>
+  <meta charset="UTF-8">
+</head>
 <?php
 $server = "localhost";
 $database = "aivkDB";
@@ -14,6 +17,6 @@ if($conn->connect_error){
 else{
     echo "<p>Úspěšně připojeno</p>";
 }
-$sql="INSERT INTO Fyzika VALUES ('pokus1', 'pokus2');";
+$sql="INSERT INTO Fyzika VALUES (2,'pokus1', 'pokus2');";
 $conn->query($sql);
 ?>
