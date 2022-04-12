@@ -10,7 +10,7 @@ $username = "mazna";
 $password = "Aivk_Maz7!";
 
 //Create connection
-$conn = mysql_connect($server, $username, $password, $database);
+$conn = new mysqli($server, $username, $password, $database);
 
 //Check connection
 if($conn->connect_error){
