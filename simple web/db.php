@@ -1,6 +1,8 @@
 <head>
   <meta charset="UTF-8">
 </head>
+<body>
+    <p>Zkouška databáze</p>
 <?php
 $server = "localhost";
 $database = "aivkDB";
@@ -20,3 +22,4 @@ else{
 $sql="INSERT INTO Fyzika VALUES (2,'pokus1', 'pokus2');";
 $conn->query($sql);
 ?>
+</body>
