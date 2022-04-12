@@ -3,7 +3,13 @@
   /* box-sizing: border-box; */
   font-family: 'Questrial'
 }
-
+#nadpis{
+  padding: 20px;
+  padding-top: 40px;
+  margin: 0;
+  font-size: 5vw;
+  text-align: center;
+}
 body {
   color:white;
   background-color: rgb(32, 53, 81);
@@ -16,8 +22,7 @@ h1{
 }
 #center {
   text-align: center;
-  margin:8%;
-  margin-top:5%;
+  margin:0 8%;
 }
 .red{
   color: #f15353;

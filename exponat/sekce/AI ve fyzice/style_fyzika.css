@@ -10,7 +10,15 @@ body {
   color:white;
   background-color: rgb(32, 53, 81);
 }
-
+#nadpis{
+  
+    padding: 20px;
+      padding-top: 40px;
+      margin: 0;
+      font-size: 5vw;
+    text-align:center;
+  
+}
 
 /*ŠIPKY:*/
 #next-button {
@@ -70,10 +78,11 @@ h1{
 }
 .center{
     margin:10px;
+    text-align: center;
 }
 #video{
     width:90%;
-    height:700px;
+   /* height:700px;*/
 }
 #popisek-videa{
   font-size: small;
