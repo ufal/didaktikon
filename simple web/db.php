@@ -5,6 +5,8 @@
     <?php 
     echo "<p>echo2: Zkouška databáze</p>";
 
+    // Report all PHP errors
+error_reporting(E_ALL);
 
 $server = "localhost";
 $database = "aivkDB";
