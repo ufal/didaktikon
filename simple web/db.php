@@ -19,8 +19,7 @@ if($conn->connect_error){
 else{
     echo "<p>Úspěšně připojeno</p>";
 }
-$sql="INSERT INTO Fyzika VALUES (2,'pokus1', 'pokus2');";
-$conn->query($sql);
+
 ?>
 
 </body>
