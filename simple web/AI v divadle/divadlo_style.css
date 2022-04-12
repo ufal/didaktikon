@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial|Open Sans');
+*, *::before, *::after {
+    /* box-sizing: border-box; */
+    font-size: 2.5vw;
+    font-family: 'Questrial'
+}
+  
+body {
+    color:white;
+    background-color: rgb(32, 53, 81);
+    padding: 0;
+    margin: 0;
+}
+
+
+/*ŠIPKY:*/
+#next-button {
+    position: fixed;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #prev-button {
+    position: fixed;
+    left: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #prev-button, #next-button {
+    background-color: rgba(100, 148, 237, 0.402);
+    padding: 10px;
+    border-radius: 16px;
+    transition: 0.2s;
+  }
+  #prev-button:hover, #next-button:hover {
+    background-color: rgba(100, 148, 237, 0.84);
+  }
+  .a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  .a:hover {
+  
+  }
+  .a img {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  /*CONTENT*/
+.content{
+    margin:3% 8%;
+    text-align:center;
+}
+h1{
+  text-align:center;
+  padding: 20px;
+  padding-top: 40px;
+  margin: 0;
+  font-size: 5vw;
+ }
+ h2{
+  
+   font-size:3vw;
+ }
+ #video{
+    width:90%;
+   /* height:700px;*/
+}
+.kroky-ai{
+    padding:16px;
+    border-radius: 16px;
+margin-right:50px;
+}
+#prvni{
+    background-color: #f15353;
+    margin-left:50px;
+    margin-top:90px;
+}
+#druhy{
+    background-color: #f17553;
+    margin-left:90px;
+}
+#treti{
+    background-color: #7baf50;
+    margin-left:130px;
+}
+
+/*KVIZ*/
+.scenar{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding:5px;
+}
+.dva-vystupy{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.vystup{
+  margin:20px;
+}
+.vystup:hover{
+  border-radius:16px;
+  background-color: rgba(54, 81, 131, 0.402);
+}
+h2{
+  padding:5px;
+}
+.prvni-robot, .druhy-robot, .alquist, .damon{
+  margin:5px;
+  border-radius: 16px;
+  padding: 5px;
+  border: 3px solid;
+  font-size:2vw;
+}
+.prvni-robot-, .druhy-robot-, .alquist-, .damon-{
+  font-size:2vw;
+}
+.prvni-robot{
+  border-color: #7baf50;
+}
+.druhy-robot{
+  border-color: #f15353;
+}
+.alquist{
+  border-color: #f17553;
+}
+.damon{
+  border-color: #4493b8;
+}
+.prvni-robot-{
+  color: #7baf50;
+}
+.druhy-robot-{
+  color: #f15353;
+}
+.alquist-{
+  color: #f17553;
+}
+.damon-{
+  color: #4493b8;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 15px; 
+}
+.btn {
+  font-family: 'Questrial';
+  font-size: 2.5vw;
+
+  font-weight: bold;
+  
+  color: white;
+  border: none;
+  transition: 0.3s;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(68, 172, 169);
+
+}
+.btn:hover {
+  background-color: rgb(81, 193, 189);
+}
+.question, #pie-chart{
+  text-align: center;
+}
+
+/*PIE CHART*/
+@property --p{
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+.pie {
+  --p:20;
+  --b:22px;
+  --c:darkred;
+  --w:150px;
+  
+  width:var(--w);
+  aspect-ratio:1;
+  position:relative;
+  display:inline-grid;
+  margin:5px;
+  place-content:center;
+  font-size:25px;
+  font-weight:bold;
+}
+.pie:before,
+.pie:after {
+  content:"";
+  position:absolute;
+  border-radius:50%;
+}
+.pie:before {
+  inset:0;
+  background:
+    radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+  -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+          mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+}
+.pie:after {
+  inset:calc(50% - var(--b)/2);
+  background:var(--c);
+  transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+}
+.animate {
+  animation:p 1s .5s both;
+}
+.no-round:before {
+  background-size:0 0,auto;
+}
+.no-round:after {
+  content:none;
+}
+@keyframes p {
+  from{--p:0}
+}
+#pie-chart{
+  display:none;
+}
+
+/*ROBOT*/
+.ai-robot{
+  text-align:center;
+  padding: 25px;
+}
