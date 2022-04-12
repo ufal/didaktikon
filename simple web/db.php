@@ -11,4 +11,6 @@ $conn = new mysqli($server, $username, $password, $database);
 if($conn->connect_error){
     die("Chyba připojení: ".$conn->connect_error);
 }
+$sql="INSERT INTO Fyzika VALUES ('pokus1', 'pokus2');";
+$conn->query($sql);
 ?>
