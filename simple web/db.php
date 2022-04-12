@@ -3,7 +3,7 @@
 </head>
 <body>
     <?php 
-    echo "<p>echo: Zkouška databáze</p>";
+    echo "<p>echo2: Zkouška databáze</p>";
 
 
 $server = "localhost";
