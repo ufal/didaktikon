@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial|Open Sans');
+*, *::before, *::after {
+  font-family: 'Questrial'
+}
+
+*{
+    margin:0;
+}
+body {
+  color:white;
+  background-color: rgb(32, 53, 81);
+}
+
+
+/*ŠIPKY:*/
+#next-button {
+    position: fixed;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  
+  }
+  #prev-button {
+    position: fixed;
+    left: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #prev-button, #next-button {
+    background-color: rgba(100, 148, 237, 0.402);
+    padding: 10px;
+    border-radius: 16px;
+    transition: 0.2s;
+  }
+  
+  #prev-button:hover, #next-button:hover {
+    background-color: rgba(100, 148, 237, 0.84);
+  }
+  
+  
+  .a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    text-decoration: none;
+   
+  }
+  
+  .a:hover {
+  
+  }
+  .a img {
+    width: 3vw;
+    height: 3vw;
+  
+  }
+
+/*TĚLO*/
+p{
+    font-size: 3vw;
+}
+h1{
+    margin: 10px;
+    margin-left:50px;
+    margin-bottom:20px;
+    z-index: 100;
+    font-size: 3vw;
+}
+.center{
+    margin:10px;
+}
+#video{
+    width:90%;
+    height:700px;
+}
+#popisek-videa{
+  font-size: small;
+}
+
+
+.questions{
+  text-align: center;
+}
+.question{
+    text-align: center;
+    margin: 60px 8%;
+}
+#question2{
+  margin-top: 150px;
+}
+.text-input{
+  text-align: center;
+  font-size: 2vw;
+  outline: none;
+  border:none;
+  background-image:none;
+  background-color: white;
+  width: 80%;
+  margin: 0 9%;
+  border-radius: 16px;
+  padding: 10px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;  
+}
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  padding:10px;
+  font-size: 2vw;
+  background-color: rgb(225, 225, 225);
+  transition: 0.3s;
+  margin: 40px 40%;
+  width:20%;
+}
+
+.btn:hover {
+  background-color: rgb(255, 255, 255);
+  
+}
+.submit-btn, .next-btn, .new-btn {
+  font-weight: bold;
+  background-color: rgb(68, 172, 169);
+  color: white;
+  border: none;
+
+}
+
+.submit-btn:hover, .next-btn:hover, .new-btn:hover {
+
+  background-color: rgb(81, 193, 189);
+  border: none;
+}
