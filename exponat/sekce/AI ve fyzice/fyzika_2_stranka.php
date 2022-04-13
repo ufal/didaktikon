@@ -70,7 +70,7 @@
             <input class='text-input' type="text" name="prvni-otazka" value="">
             <p class="question" id="question2">Proč je právě v <span style="color:rgb(81, 193, 189)">částicové fyzice</span> umělá inteligence tak užitečná? V čem je rozpoznávání různých typů částic jiné než třeba rozpoznávání dopravních značek?</p>
             <input class='text-input' type="text" name="druha-otazka" value=""><br>
-            <input  class="submit-btn btn" type="submit">Odeslat odpovědi</input>
+            <input  class="submit-btn btn" type="submit" value="Odeslat odpovědi">
             </form>
         <?php } ?>
         
