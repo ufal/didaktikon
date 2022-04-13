@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>AI ve fyzice</title>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="style_fyzika.css">
         <link rel="stylesheet" href="../style_menu.css" >
         <script defer src="../script_menu.js"></script>
