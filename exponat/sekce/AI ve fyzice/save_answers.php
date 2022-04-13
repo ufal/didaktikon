@@ -2,7 +2,7 @@
 <meta charset="UTF-8">
 </head>
 <?php 
-include "db.php";
+include "../db.php";
 $prvni_otazka=$_POST["prvni-otazka"];
 $druha_otazka=$_POST["druha-otazka"];
 

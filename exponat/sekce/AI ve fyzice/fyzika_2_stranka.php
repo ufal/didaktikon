@@ -64,7 +64,7 @@
             <?php
         }
         else{ ?>
-            <form action="" method="post" class="questions">
+            <form action="save_answers.php" method="post" class="questions">
             <p class="question">Zaznělo, že umělá inteligence je vlastně <span style="color:rgb(167, 116, 196)">počítačový algoritmus</span>. Jak si ale představit algoritmus, co to vlastně je?</p>
             <input class='text-input' type="text" name="prvni-otazka" value="">
             <p class="question" id="question2">Proč je právě v <span style="color:rgb(81, 193, 189)">částicové fyzice</span> umělá inteligence tak užitečná? V čem je rozpoznávání různých typů částic jiné než třeba rozpoznávání dopravních značek?</p>
