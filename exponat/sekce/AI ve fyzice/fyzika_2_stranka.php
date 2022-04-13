@@ -61,7 +61,10 @@
         
         <?php if(isset($_GET["vyplneno"])){
             ?>
-                <h1>Děkujeme za vaše odpovědi</h1>
+            <div id="diky-div">
+                <h1 id="podekovani">Děkujeme za vaše odpovědi</h1>
+                <img src="happier.png">
+            </div>
             <?php
         }
         else{ ?>

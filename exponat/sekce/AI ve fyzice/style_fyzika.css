@@ -19,6 +19,16 @@ body {
     text-align:center;
   
 }
+#diky-div{
+  text-align: center;
+  margin:10%;
+}
+#podekovani{
+  
+  color:rgb(81, 193, 189);
+  
+  font-size: 5vw;
+}
 
 /*ŠIPKY:*/
 #next-button {
