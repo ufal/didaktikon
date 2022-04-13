@@ -1,5 +1,5 @@
 <?php
-include "db.php";
+include "../db.php";
  
     // Checking, if post value is
     // set by user or not
@@ -9,10 +9,10 @@ include "db.php";
         // in $btnValue variable
         $btnValue = $_POST['btnValue'];
         if($btnValue=="A"){
-            $sql="INSERT INTO Nabozenstvi(Odpoved) VALUES ('1');";
+            $sql="INSERT INTO Divadlo(Odpoved) VALUES (TRUE);";
         }
         else if($btnValue == "B"){
-            $sql="INSERT INTO Nabozenstvi(Odpoved) VALUES ('0');";
+            $sql="INSERT INTO Divadlo(Odpoved) VALUES (FALSE);";
         }
         $conn->query($sql);
 

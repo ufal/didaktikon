@@ -217,9 +217,11 @@ function showQuestion(){
         vysledek.innerHTML=correctAnswers + "/" + questions.length
         if(correctAnswers>=5){
             vysledek.style.color="rgb(161, 211, 100)"
+            document.getElementById("smajlik").src="happier.png"
         }
         else{
             vysledek.style.color="rgb(230, 101, 101)"
+            document.getElementById("smajlik").src="super sad.png"
         }
     }
     else{
