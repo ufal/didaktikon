@@ -148,7 +148,7 @@ const answers = [
     {
         answer:'2016',
         comment: 'AlphaGo vs Lee Sedol',
-        note: 'Možných poslopností tahů v go je mnohem víc než v šachách, ani nejvýkonnější počítač jich nezvládne propočítat dost. Proto se AlphaGo nejdřív učí z partií odehraných lidmi, a pak dál zdokonaluje svou stragii zlepšuje hraním sama proti sobě (reinforcement learning). Zvládne tak odehrát miliony zápasů, takže má výrazně větší zkušenosti než může mít člověk.'
+        note: 'Možných poslopností tahů v go je mnohem víc než v šachách, ani nejvýkonnější počítač jich nezvládne propočítat dost. Proto se AlphaGo nejdřív učí z partií odehraných lidmi, a pak dál zdokonaluje svou strategii zlepšuje hraním sama proti sobě (reinforcement learning). Zvládne tak odehrát miliony zápasů, takže má výrazně větší zkušenosti než může mít člověk.'
     },
     {
         answer:'2018',
@@ -204,6 +204,7 @@ function showAnswer(){
         nextBtn.innerHTML = "Vyhodnocení kvízu"
         nextBtn.style.width="60%"
         nextBtn.style.backgroundColor="rgb(120, 60, 154)"
+        
     }
 }
 
@@ -215,6 +216,7 @@ function showQuestion(){
         document.getElementById("vysledky").style.display="block"
         let vysledek = document.getElementById("vysledek")
         vysledek.innerHTML=correctAnswers + "/" + questions.length
+        document.getElementById("next-button").style.display="inline"
         if(correctAnswers>=5){
             vysledek.style.color="rgb(161, 211, 100)"
             document.getElementById("smajlik").src="happier.png"
@@ -234,6 +236,6 @@ function showQuestion(){
             btn.innerHTML=questions[currentQuestionIndex].answers[i].text
             btn.style.backgroundColor="rgb(225, 225, 225)"
         }
-        questionImage.src="question_images/" + currentQuestionIndex + ".png"
+        questionImage.src="question_images/" + currentQuestionIndex + ".jpg"
     }
 }

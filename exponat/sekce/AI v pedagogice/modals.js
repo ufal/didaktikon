@@ -10,17 +10,17 @@
       var captionText = document.getElementById("caption");
       img1.onclick = function(){
         modal.style.display = "block";
-        modalImg.src = "emotions_happy.png";
+        modalImg.src = "emotions_happy.jpg";
         captionText.innerHTML = "Šťastný žák";
       }
       img2.onclick = function(){
         modal.style.display = "block";
-        modalImg.src = "emotions_angry.png";
+        modalImg.src = "emotions_angry.jpg";
         captionText.innerHTML = "Naštvaný žák";
       }
       img3.onclick = function(){
         modal.style.display = "block";
-        modalImg.src = "emotions_super_happy.png";
+        modalImg.src = "emotions_super_happy.jpg";
         captionText.innerHTML = "Veselý žák";
       }
       

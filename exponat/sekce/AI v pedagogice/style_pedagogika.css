@@ -57,12 +57,19 @@ p {
   font-size: 2.5vw;
 }
 
-#next-button {
+#next-button{
   position: fixed;
   left: 95%;
   top: 50%;
   transform: translate(-50%, -50%);
 
+}
+#rozcestnik {
+  position: fixed;
+  left: 95%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
 }
 #prev-button {
   position: fixed;
@@ -71,14 +78,14 @@ p {
   transform: translate(-50%, -50%);
 }
 
-#prev-button, #next-button {
+#prev-button, #next-button, #rozcestnik {
   background-color: rgba(100, 148, 237, 0.402);
   padding: 10px;
   border-radius: 16px;
   transition: 0.2s;
 }
 
-#prev-button:hover, #next-button:hover {
+#prev-button:hover, #next-button:hover, #rozcestnik:hover {
   background-color: rgba(100, 148, 237, 0.84);
 }
 
@@ -210,7 +217,9 @@ margin-right:10%;
       transform: translate(0,-20px);
     }
   }
-
+#analyzing{
+  width:90%;
+}
 
 /*MODALS*/
 /* The Modal (background) */
@@ -232,8 +241,7 @@ margin-right:10%;
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  width: 70%;
 }
 
 /* Caption of Modal Image */

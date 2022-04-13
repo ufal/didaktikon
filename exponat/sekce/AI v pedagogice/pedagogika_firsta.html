@@ -1,0 +1,112 @@
+
+<!doctype html>
+<html lang="cs">
+  <head>
+    <title>AI v pedagogice</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+ 
+    <link href='https://fonts.googleapis.com/css?family=Questrial|Open Sans' rel='stylesheet'> 
+    <link href='style_pedagogika.css' rel='stylesheet'>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="../style_menu.css" >
+    <script defer src="../script_menu.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  </head>
+  <body>
+    <div class="menu-header">
+      <button id="menu-btn" onclick="showMenu()">
+          <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 13.185675,15.139108 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path4" />
+              <path d="M 13.185675,24.906275 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path6" />
+              <path d="M 13.185675,34.673441 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path8" />
+          </svg>
+      </button>
+  </div>
+  <div id="menu-items" class="hide" >
+    <div class="menu-item">
+      <a class="menu-href" href="#"></a>
+  </div>
+  <div class="menu-item">
+      <a class="menu-href" href="#"></a>
+  </div>
+  <div class="menu-item">
+      <a class="menu-href" href="#"></a>
+  </div>
+  <div class="menu-item">
+      <a class="menu-href" href="#"></a>
+  </div>
+  <div class="menu-item">
+    <a class="menu-href" href="#"></a>
+</div>
+<div class="menu-item">
+    <a class="menu-href" href="#"></a>
+</div>
+<div class="menu-item">
+    <a class="menu-href" href="#"></a>
+</div>
+<div class="menu-item">
+  <a class="menu-href" href="#"></a>
+</div>
+<div class="menu-item">
+<a class="menu-href" href="#"></a>
+</div>
+ 
+  </div>
+
+  <div id='cover' onclick='unshow()'>
+  </div>
+    
+  <a id='prev-button' href='pedagogika_first.html' class='a'>
+    <img src='arrow_left_white.png'>
+  </a>
+    <a id='next-button' href='pedagogika_second.html' class='a'>
+      <img src='arrow_right_white.png'>     
+    </a>
+
+
+    <h1 id="nadpis">AI v pedagogice</h1>
+    <div class='center'>
+      <div class="text-container">
+        <div>
+        <p id="text1">
+          Trendem v moderní pedagogice je 
+          přizpůsobování učebního procesu 
+          „na míru“ tomu, kdo se učí. </p>
+        <p id="text2"> Jednou z možností je využití AI pro 
+          zjišťování emocí každého studenta, 
+          které výuka ve studentech vyvolává 
+          a mít tak možnost jí přizpůsobit tak, 
+          aby u studentů převládali pozitivní 
+          emoce.</p> 
+        <p id="text3"> Na obrázku vidíte výsledky 
+          programu, který na základě 
+          algoritmů umí rozpoznat emoce.</p> 
+        </div>
+        <div class="emotions">
+          <div id="div-happy">
+            <img class="emoji"  id="img-happy" src="happy.png">
+            <p id="pointer"><img src="pointer.png">Klikni na mě</p>
+          </div>          
+          <img class="emoji"  id="img-angry" src="super sad.png">
+          <img class="emoji" id="img-super-happy" src="super smile.png">
+          
+        </div>
+      </div>
+      
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+    <script src="modals.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,180 @@
+body {
+    font-family: 'Questrial';
+    background-color:  rgb(32, 53, 81);
+    color:  white;
+    text-align: center;
+    margin: 0;
+}
+#deti h1 {
+    padding: 20px;
+    padding-top: 40px;
+    margin: 0;
+    z-index: 100;
+    font-size: 5vw;
+}
+
+.hide {
+    display: none;
+}
+
+#hide {
+    display: none;
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#gallery::after {
+    content: "";
+    flex-basis: calc(50%);
+}
+
+#gallery > .picture {
+    margin: 20px;
+    border: solid 4px rgb(255, 255, 255);
+    position: relative;
+    max-height: 30vw;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+
+#gallery > .picture > .img {
+    position: relative;
+    height: 30vw;
+    
+}
+
+#gallery > .picture  >  .refresh {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 9998;
+}
+
+#gallery  .expand {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    right: 80px;
+    z-index: 9998;
+}
+
+.cover_gallery {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.432);
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cover_gallery img {
+    height: 80vh;
+}
+
+
+#gallery > .picture  >  .turn > img {
+    position: relative;
+    height: 30vw;
+}
+
+#gallery > .picture  > .turn {
+    position: relative;
+    height: 30vw;
+}
+
+/* -------------------------------------------------------- */
+#gallery #div_5C003 {
+    background-color: white;
+    /* border-radius: 20px; */
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 20vw;
+    height: 12vw;
+    /* z-index: 9999; */
+}
+
+#gallery  #div_2010 {
+    background-color: white;
+    /* border-radius: 20px; */
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 30vw;
+    height: 4vw;
+    /* z-index: 9998; */
+    
+}
+
+
+/* -------------------------------------------------------- */
+
+.btn {
+  width: 70px;
+  height: 70px;
+  margin: 8px;
+
+  font-weight: bold;
+  background-color: rgba(68, 172, 169, 0.507);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: rgb(81, 193, 189);
+  border: none;
+}
+
+.turning_animation {
+    animation-name: turning_animation;
+    animation-duration: 1s;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+}
+
+@keyframes turning_animation {
+    0% { filter: blur(0px); transform: rotate(0deg) }
+    60% { filter: blur(7px)} 
+    100% { filter: blur(0px); transform: rotate(360deg);}
+}
+
+/*ŠIPKY:*/
+#next-button {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+  }
+  
+  #next-button {
+    background-color: rgba(100, 148, 237, 0.402);
+    padding: 10px;
+    border-radius: 16px;
+    transition: 0.2s;
+  }
+ #next-button:hover {
+    background-color: rgba(100, 148, 237, 0.84);
+  }
+  .a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .a img {
+    width: 3vw;
+    height: 3vw;
+  }
