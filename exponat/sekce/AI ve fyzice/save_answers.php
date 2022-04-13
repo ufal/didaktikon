@@ -9,5 +9,5 @@ $druha_otazka=$_POST["druha-otazka"];
 $sql="INSERT INTO Fyzika (CoJeAlgoritmus, UzitecnostVCasticoveFyzice) VALUES ('$prvni_otazka', '$druha_otazka');";
 $conn->query($sql);
 
-Header("Location:fyzika_2_stranka.html?vyplneno=true");
+Header("Location:fyzika_2_stranka.php?vyplneno=true");
 ?>
