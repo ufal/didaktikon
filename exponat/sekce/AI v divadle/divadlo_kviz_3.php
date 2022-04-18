@@ -70,20 +70,19 @@
                   <input type='submit' class='btn' value="Výstup A" name="vystup">
                   <input type='submit' class='btn' value="Výstup B" name="vystup">
                 </div>
-            </form>    
-            <p id="vyhodnoceni" class="question"></p>
-            
-            <div id="pie-chart">
-                <p>Správně odpovědělo</p>
-                <div class="pie animate" style="--p:90;--c:lightgreen">
-                <?php if(isset($_GET["correct"]) and isset($_GET["all"])){
+            </form>  
+            <?php if(isset($_GET["correct"]) and isset($_GET["all"])){
                    $procenta= intval($_GET["correct"])/intval($_GET["all"])*100;
-                   echo $procenta . "%";
+                    echo"<p id='vyhodnoceni' class='question'></p>";
+                    echo "<div id='pie-chart'>";
+                    echo "<p>Správně odpovědělo</p>";
+                    echo "<div class='pie animate' style='--p:90;--c:lightgreen'>" . $procenta . "%</div>";  
+                    echo "<p>návštěvníků</p>";
+                    echo "</div>";
                 }
                 ?>
-                </div>
-                <p>návštěvníků</p>
-            </div>
+                
+            
             <script src="divadlo_script.js"></script>
 
 
