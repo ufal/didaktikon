@@ -63,7 +63,7 @@
     <a id='prev-button' href='pedagogika_first.html' class='a'>
       <img src='arrow_left_white.png'>
     </a>
-    <a id='next-button' href='pedagogika_third.html' class='a'>
+    <a id='next-button' href='pedagogika_third.php' class='a'>
       <img src='arrow_right_white.png'>     
     </a>
 
