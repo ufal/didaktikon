@@ -8,10 +8,10 @@ include "../db.php";
         // Getting the value of button
         // in $btnValue variable
         $btnValue = $_GET['vystup'];
-        if($btnValue == "A"){
+        if($btnValue == "Výstup A"){
             $sql="INSERT INTO Divadlo(Odpoved) VALUES (TRUE);";
         }
-        else if($btnValue == "B"){
+        else if($btnValue == "Výstup B"){
             $sql="INSERT INTO Divadlo(Odpoved) VALUES (FALSE);";
         }
         $conn->query($sql);
@@ -19,6 +19,6 @@ include "../db.php";
         $sql_correct="SELECT Count(Odpoved) FROM Nabozenstvi WHERE Odpoved='1';";
         $result = $conn->query($sql_correct);
 
-        Header("Location:divadlo_kviz_3.html?count=$result")
+        Header("Location:divadlo_kviz_3.html?count=$result");
     }
 ?>
