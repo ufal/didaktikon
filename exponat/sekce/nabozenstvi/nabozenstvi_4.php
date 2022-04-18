@@ -75,7 +75,7 @@
           Zkuste si představit, že jednou můžeme stvořit něco dokonalejšího, než 
           jsme my sami. <br><span  class="bluegreen">Jaký je smysl lidské tvořivosti?</span> 
         </p>
-        <?php if(isset($_GET["prvni"]=="true")){
+        <?php if(isset($_GET["prvni"])){
           echo "<p>Děkujeme za názor :)</p>";
         }
         else{
