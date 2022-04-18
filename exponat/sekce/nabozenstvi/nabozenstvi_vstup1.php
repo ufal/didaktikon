@@ -8,5 +8,5 @@ $vstup=$_POST["prvni-otazka"];
 $sql="INSERT INTO NabozenstviSmyslTvorivosti (Odpoved) VALUES ('$vstup');";
 $conn->query($sql);
 
-Header("Location:nabozenstvi_4.html?prvni=true");
+Header("Location:nabozenstvi_4.php?prvni=true");
 ?>

@@ -82,7 +82,7 @@
           ?>
           <form action="nabozenstvi_vstup1.php" method="post" class="questions-">
              <input class='text-input-' type="text" name="prvni-otazka" value="">
-             <input  class="submit-btn- btn-" type="submit">Poslat</input>
+             <input  class="submit-btn- btn-" type="submit" value="Poslat">
         </form>
         <?php
         }?>
