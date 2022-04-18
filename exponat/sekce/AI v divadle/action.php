@@ -20,8 +20,11 @@ include "../db.php";
         $sql_correct="SELECT Count(Odpoved) AS Pocet FROM Divadlo WHERE Odpoved='1';";
         $result = $conn->query($sql_correct);
         $row=$result->fetch_assoc();
-        echo $row["Pocet"];
-
-       Header('Location:divadlo_kviz_3.html');
+        $correct= $row["Pocet"];
+        $sql_correct="SELECT Count(Odpoved) AS Pocet FROM Divadlo ;";
+        $result = $conn->query($sql_correct);
+        $row=$result->fetch_assoc();
+        $all= $row["Pocet"];
+       Header('Location:divadlo_kviz_3.html?correct=$correct&all=$all');
     }
 ?>
