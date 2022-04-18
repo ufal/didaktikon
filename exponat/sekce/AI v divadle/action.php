@@ -11,9 +11,11 @@ include "../db.php";
         $btnValue = $_GET['vystup'];
         if($btnValue == "Výstup A"){
             $sql="INSERT INTO Divadlo(Odpoved) VALUES (TRUE);";
+            $vystup="A";
         }
         else if($btnValue == "Výstup B"){
             $sql="INSERT INTO Divadlo(Odpoved) VALUES (FALSE);";
+            $vystup="B";
         }
         $conn->query($sql);
 
@@ -25,7 +27,7 @@ include "../db.php";
         $result = $conn->query($sql_correct);
         $row=$result->fetch_assoc();
         $all= $row["Pocet"];
-        $vystup=substr($GET['vystup'],-1);
+        
        Header("Location:divadlo_kviz_3.html?correct=$correct&all=$all&vystup=$vystup");
     }
 ?>

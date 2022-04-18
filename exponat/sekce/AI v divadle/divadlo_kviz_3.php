@@ -82,7 +82,7 @@
                     echo "<p id='vyhodnoceni' class='question'></p>";
                     echo "<div id='pie-chart'>";
                     echo "<p>Správně odpovědělo</p>";
-                    echo "<div class='pie animate' style='--p:90;--c:lightgreen'>" . $procenta . "%</div>";  
+                    echo "<div class='pie animate' style='--p:" . $procenta . ";--c:lightgreen'>" . $procenta . "%</div>";  
                     echo "<p>návštěvníků</p>";
                     echo "</div>";
                 }
