@@ -22,6 +22,6 @@ include "../db.php";
 
         echo $row["Pocet"];
 
-        Header("Location:divadlo_kviz_3.html?count=$row['Pocet']");
+        //Header("Location:divadlo_kviz_3.html?count=$row['Pocet']");
     }
 ?>
