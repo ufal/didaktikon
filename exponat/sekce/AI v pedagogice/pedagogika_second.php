@@ -73,36 +73,49 @@
         <p class="question">
           Líbilo by se vám, kdyby vyučující ve vaší třídě mohli měřit vaše emoce?
         </p>
-        <form class='controls'>
+        <?php if(isset($_GET["prvni"])){
+          echo "<p>Děkujeme za názor :)</p>";
+        }
+        else{
+          ?>
+        <form class='controls' action="zpracuj1.php" method="post">
           <div id='first-section' >
-            <button type='button' class='btn' id='yes' onclick="show()">Ano</button>
-            <button type='button' class='btn' id='no' onclick="show()">Ne</button>
-            <button type='button' class='btn' id='idk' onclick="show()">Nevím</button>
+            <button type='button' class='btn' id='yes' onclick="show('Ano')">Ano</button>
+            <button type='button' class='btn' id='no' onclick="show('Ne')">Ne</button>
+            <button type='button' class='btn' id='idk' onclick="show('Nevím')">Nevím</button>
+            <input type='text' id='skryte-btn' name='first-question' style="display:none;">
           </div>
 
           <div class='hide' id='second-section'>
             <input class='input' type="text" id="why" name="why" placeholder="Proč?" >
-            <input type="submit" value="Poslat odpověď" id="submit" class='btn' onclick="submit()">
+            <input type="submit" value="Poslat odpověď" id="submit" class='btn'>
           </div>
+          <?php } ?>
 
         </form>
         <p class="question">
           Chtěli byste si zkusit program doma sami?
         </p>
+        <?php if(isset($_GET["druhe"])){
+          echo "<p>Děkujeme za názor :)</p>";
+        }
+        else{
+          ?>
         <form class='controls'>
-          <div id='first-section2' >
-            <button type='button' class='btn' id='yes' onclick="show2()">Ano</button>
-            <button type='button' class='btn' id='no' onclick="show2()">Ne</button>
-            <button type='button' class='btn' id='idk' onclick="show2()">Nevím</button>
+          <div id='first-section2' action="zpracuj2.php" method="post">
+            <button type='button' class='btn' id='yes' onclick="show2('Ano')">Ano</button>
+            <button type='button' class='btn' id='no' onclick="show2('Ne')">Ne</button>
+            <button type='button' class='btn' id='idk' onclick="show2('Nevím')">Nevím</button>
+            <input type='text' id='skryte-btn2' name='second-question' style="display:none;">
           </div>
 
           <div class='hide' id='second-section2'>
             <input class='input' type="text" id="why2" name="why2" placeholder="Proč?" >
-            <input type="submit" value="Poslat odpověď" id="submit" class='btn' onclick="submit()">
+            <input type="submit" value="Poslat odpověď" id="submit" class='btn'>
           </div>
 
         </form>
-
+        <?php } ?>
         
 
       </div>
