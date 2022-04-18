@@ -90,9 +90,11 @@
             <input class='input' type="text" id="why" name="why" placeholder="Proč?" >
             <input type="submit" value="Poslat odpověď" id="submit" class='btn'>
           </div>
+          </form>
           <?php } ?>
 
-        </form>
+        
+        <br><br><br>
         <p class="question">
           Chtěli byste si zkusit program doma sami?
         </p>
