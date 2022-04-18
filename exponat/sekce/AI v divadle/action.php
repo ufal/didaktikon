@@ -19,9 +19,9 @@ include "../db.php";
 
         $sql_correct="SELECT Count(Odpoved) AS Pocet FROM Divadlo WHERE Odpoved='1';";
         $result = $conn->query($sql_correct);
-
+        $row=$result->fetch_assoc();
         echo $row["Pocet"];
 
-        //Header("Location:divadlo_kviz_3.html?count=$row['Pocet']");
+        Header("Location:divadlo_kviz_3.html?count=$row['Pocet']");
     }
 ?>
