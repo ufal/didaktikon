@@ -22,6 +22,6 @@ include "../db.php";
         $row=$result->fetch_assoc();
         echo $row["Pocet"];
 
-        Header("Location:divadlo_kviz_3.html");
+       // Header("Location:divadlo_kviz_3.html");
     }
 ?>
