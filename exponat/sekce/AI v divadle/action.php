@@ -16,9 +16,12 @@ include "../db.php";
         }
         $conn->query($sql);
 
-        $sql_correct="SELECT Count(Odpoved) FROM Nabozenstvi WHERE Odpoved='1';";
+        $sql_correct="SELECT Count(Odpoved) AS Pocet FROM Divadlo WHERE Odpoved='1';";
         $result = $conn->query($sql_correct);
+        $row=$result->fetch_assoc();
 
-        Header("Location:divadlo_kviz_3.html?count=$result");
+        echo $row["Pocet"];
+
+        Header("Location:divadlo_kviz_3.html?count=$row['Pocet']");
     }
 ?>
