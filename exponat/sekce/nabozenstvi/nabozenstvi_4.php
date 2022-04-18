@@ -95,20 +95,26 @@
         </p>
         <p id="p4">Chtěli byste ho?</p>
        
-        
-        <form id="p4" class='controls'>
+        <?php if(isset($_GET["druhe"])){
+          echo "<p>Děkujeme za názor :)</p>";
+        }
+        else{
+          ?>
+        <form id="p4" class='controls' action="nabozenstvi_vstup2.php" method="post">
           <div id='first-section' >
-            <button type='button' class='btn' id='yes' onclick="show()">Ano</button>
-            <button type='button' class='btn' id='no' onclick="show()">Ne</button>
-            <button type='button' class='btn' id='idk' onclick="show()">Nevím</button>
+            <button type='button' class='btn' id='yes' onclick="show('Ano')">Ano</button>
+            <button type='button' class='btn' id='no' onclick="show('Ne')">Ne</button>
+            <button type='button' class='btn' id='idk' onclick="show('Nevím')">Nevím</button>
+            <input type='text' id='skryte-btn' name='second-question' style="display:none;">
           </div>
 
           <div class='hide' id='second-section'>
             <input class='input' type="text" id="why" name="why" placeholder="Proč?" >
-            <input type="submit" value="Poslat odpověď" id="submit" class='btn' onclick="submit()">
+            <input type="submit" value="Poslat odpověď" id="submit" class='btn'>
           </div>
 
         </form>
+        <?php } ?>
 
         
 

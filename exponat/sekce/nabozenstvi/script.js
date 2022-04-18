@@ -3,9 +3,10 @@ let secondSection = document.getElementById('second-section')
 
 
 
-function show() {
+function show(tlacitko) {
     firstSection.classList.add('hide')
     secondSection.classList.remove('hide')
+    document.getElementById('skryte-btn').value=tlacitko
 }
 
 
