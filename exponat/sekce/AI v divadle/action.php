@@ -18,7 +18,11 @@ include "../db.php";
 
         $sql_correct="SELECT Count(Odpoved) AS Pocet FROM Divadlo WHERE Odpoved='1';";
         $result = $conn->query($sql_correct);
+<<<<<<< HEAD
         $row=$result->fetch_assoc();
+=======
+        echo $result;
+>>>>>>> main
 
         echo $row["Pocet"];
 
