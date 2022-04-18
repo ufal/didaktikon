@@ -7,20 +7,21 @@ let secondColumn = document.getElementById('container_incorrect')
 let myTextElement = document.getElementById('my_text')
 let woopElement =document.querySelector('.woop')
 let finalElement = document.querySelector('#final')
-
+const odpovedi = []
+let i = 0
+let odpoved = document.getElementById("skryte-btn")
 
 proButton.addEventListener('click', function () {
     console.log('works')
-
-    
-
         let node = document.createElement("DIV");
         node.classList.add('char_container')
         let node_text = document.createElement("P")         
         let textnode = document.createTextNode(statementContainer.firstChild.innerHTML)      
         node_text.appendChild(textnode)
         node.appendChild(node_text)                    
-        firstColumn.appendChild(node)     
+        firstColumn.appendChild(node)   
+        odpovedi[i]=1
+        i++
 
         if (!('hide' in myTextElement.classList)) {
             myTextElement.classList.add('hide')
@@ -38,6 +39,8 @@ conButton.addEventListener('click', function () {
         node_text.appendChild(textnode)
         node.appendChild(node_text)                    
         secondColumn.appendChild(node) 
+        odpovedi[i]=0
+        i++
 
         if (!('hide' in myTextElement.classList)) {
             myTextElement.classList.add('hide')
@@ -83,12 +86,24 @@ function updateContent() {
     if (index > 0) {
         statementContainer.innerHTML = `<p>${statements[index-1].statement}</p>`
         index--
+        if(index==0){
+            proButton.type="submit"
+            conButton.type="submit"
+        }
     } else {
         woopElement.classList.add('hide')
         finalElement.classList.remove('hide')
         document.getElementById("next-button").classList.remove("hide")
+        odpoved.value=getOdpovedi()
     }
 
 }
 updateContent()
 
+function getOdpovedi(){
+    let text =""
+    for (let i = 0; i < odpovedi.length; i++) {
+        text += odpovedi[i];
+      } 
+    return text
+}

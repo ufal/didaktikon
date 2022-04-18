@@ -48,19 +48,29 @@
                     
                 </div>
                 
-
-                <form class='controls'>
-                    <button type='button' class='btn' id='pro'>Výhoda</button>
-                    <button type='button' class='btn' id='con'>Nevýhoda</button>
+                <?php 
+            if (isset($_GET["dokonceno"])){
+              ?>
+                <div id='final' >
+                    <h1>Děkujeme za názor!</h1>
+                </div>
+              <?php
+            } 
+            else{
+              ?>
+            
+                <form class='controls' action="zpracuj.php" method="post">
+                  <input type='text' id='skryte-btn' name='first-question' style="display:none;">
+                    <input type='button' class='btn' id='pro' value="Výhoda">
+                    <input type='button' class='btn' id='con' value="Nevýhoda">
+                    
                 </form>
-                
+                <?php } ?>
                 
                 
             </div>
 
-            <div id='final' class='hide'>
-                <h1>Děkujeme za názor!</h1>
-            </div>
+            
             
         </div>
 
