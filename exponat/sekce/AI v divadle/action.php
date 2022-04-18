@@ -25,6 +25,6 @@ include "../db.php";
         $result = $conn->query($sql_correct);
         $row=$result->fetch_assoc();
         $all= $row["Pocet"];
-       Header('Location:divadlo_kviz_3.html?correct=$correct&all=$all');
+       Header("Location:divadlo_kviz_3.html?correct=$correct&all=$all");
     }
 ?>

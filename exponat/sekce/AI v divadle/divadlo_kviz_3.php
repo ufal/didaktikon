@@ -75,7 +75,13 @@
             
             <div id="pie-chart">
                 <p>Správně odpovědělo</p>
-                <div class="pie animate" style="--p:90;--c:lightgreen">90%</div>
+                <div class="pie animate" style="--p:90;--c:lightgreen">
+                <?php if(isset($_GET["correct"]) and isset($_GET["all"])){
+                   $procenta= intval($_GET["correct"])/intval($_GET["all"])*100;
+                   echo $procenta . "%";
+                }
+                ?>
+                </div>
                 <p>návštěvníků</p>
             </div>
             <script src="divadlo_script.js"></script>
