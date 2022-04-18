@@ -1,10 +1,11 @@
 <?php
 include "../db.php";
- 
+ echo "ahoj";
     // Checking, if post value is
     // set by user or not
     if(isset($_GET['vystup']))
     {
+        echo "vystup je setly";
         // Getting the value of button
         // in $btnValue variable
         $btnValue = $_GET['vystup'];
