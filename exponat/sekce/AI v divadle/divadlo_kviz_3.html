@@ -65,10 +65,10 @@
             <p class="question">
                 Který z výstupů myslíte, že napsala umělá inteligence?
             </p>
-            <form class='controls'>
+            <form id="form" class='controls' action="action.php" method="get">
                 <div id='first-section' >
-                  <button type='button' class='btn' onclick="check('A')" value="A">Výstup A</button>
-                  <button type='button' class='btn' onclick="check('B')" value="B">Výstup B</button>
+                  <input type='button' class='btn' onclick="check('A')" value="A" name="vystup">Výstup A</input>
+                  <input type='button' class='btn' onclick="check('B')" value="B" name="vystup">Výstup B</input>
                 </div>
             </form>    
             <p id="vyhodnoceni" class="question"></p>

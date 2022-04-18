@@ -1,4 +1,5 @@
 let vyhodnoceni = document.getElementById("vyhodnoceni")
+let formular = document.getElementById("form") 
 
 function check(vystup){
     if(vystup=="A"){ /*správně*/
@@ -11,6 +12,7 @@ function check(vystup){
         vyhodnoceni.style.color="rgb(230, 101, 101)"
     }
     document.getElementById("pie-chart").style.display="block"
+    formular.submit()
 }
 
 let btns = document.getElementsByClassName("btn")
