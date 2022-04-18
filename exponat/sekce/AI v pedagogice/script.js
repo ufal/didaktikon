@@ -10,7 +10,7 @@ function show(tlacitko) {
     secondSection.classList.remove('hide')
     document.getElementById('skryte-btn').value=tlacitko
 }
-function show2(tlactiko) {
+function show2(tlacitko) {
     firstSection2.classList.add('hide')
     secondSection2.classList.remove('hide')
     document.getElementById('skryte-btn2').value=tlacitko
