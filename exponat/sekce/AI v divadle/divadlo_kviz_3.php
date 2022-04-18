@@ -72,14 +72,14 @@
                 </div>
             </form>  
             <?php if(isset($_GET["correct"]) and isset($_GET["all"])){
-                   $procenta= intval($_GET["correct"])/intval($_GET["all"])*100;
+                   $procenta= floor(intval($_GET["correct"])/intval($_GET["all"])*100);
                    if($_GET['vystup']=="A"){
                        $vyhodnoceni="Výborně :)";
                    }
                    else if($_GET['vystup']=="B"){
                        $vyhodnoceni="Bohužel :(";
                    }
-                    echo "<p id='vyhodnoceni' class='question'></p>";
+                    echo "<p id='vyhodnoceni' class='question'>" . $vyhodnoceni . "</p>";
                     echo "<div id='pie-chart'>";
                     echo "<p>Správně odpovědělo</p>";
                     echo "<div class='pie animate' style='--p:" . $procenta . ";--c:lightgreen'>" . $procenta . "%</div>";  
