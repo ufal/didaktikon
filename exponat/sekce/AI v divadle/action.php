@@ -28,6 +28,6 @@ include "../db.php";
         $row=$result->fetch_assoc();
         $all= $row["Pocet"];
         
-       Header("Location:divadlo_kviz_3.html?correct=$correct&all=$all&vystup=$vystup");
+       Header("Location:divadlo_kviz_3.php?correct=$correct&all=$all&vystup=$vystup");
     }
 ?>

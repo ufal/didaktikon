@@ -74,10 +74,10 @@
             <?php if(isset($_GET["correct"]) and isset($_GET["all"])){
                    $procenta= intval($_GET["correct"])/intval($_GET["all"])*100;
                    if($_GET['vystup']=="A"){
-                       $vyhodnoceni="Výborně :)"
+                       $vyhodnoceni="Výborně :)";
                    }
                    else if($_GET['vystup']=="B"){
-                       $vyhodnoceni="Bohužel :("
+                       $vyhodnoceni="Bohužel :(";
                    }
                     echo "<p id='vyhodnoceni' class='question'></p>";
                     echo "<div id='pie-chart'>";
