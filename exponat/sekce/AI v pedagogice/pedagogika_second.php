@@ -101,8 +101,8 @@
         }
         else{
           ?>
-        <form class='controls'>
-          <div id='first-section2' action="zpracuj2.php" method="post">
+        <form class='controls' action="zpracuj2.php" method="post">
+          <div id='first-section2' >
             <button type='button' class='btn' id='yes' onclick="show2('Ano')">Ano</button>
             <button type='button' class='btn' id='no' onclick="show2('Ne')">Ne</button>
             <button type='button' class='btn' id='idk' onclick="show2('Nevím')">Nevím</button>
