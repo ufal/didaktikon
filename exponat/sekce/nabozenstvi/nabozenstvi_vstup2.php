@@ -6,7 +6,7 @@ include "../db.php";
 $btn=$_POST["second-question"];
 $proc=$_POST["why"];
 
-$sql="INSERT INTO NabozenstviiPraprababicka (Odpoved, Proc) VALUES ('$vstup', '$proc');";
+$sql="INSERT INTO NabozenstviPraprababicka (Odpoved, Proc) VALUES ('$btn', '$proc');";
 $conn->query($sql);
 
 Header("Location:nabozenstvi_4.php?druhe=true");
