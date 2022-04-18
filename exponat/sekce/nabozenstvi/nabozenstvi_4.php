@@ -75,10 +75,18 @@
           Zkuste si představit, že jednou můžeme stvořit něco dokonalejšího, než 
           jsme my sami. <br><span  class="bluegreen">Jaký je smysl lidské tvořivosti?</span> 
         </p>
-        <form action="" method="post" class="questions-">
+        <?php if(isset($_GET["prvni"]=="true")){
+          echo "<p>Děkujeme za názor :)</p>";
+        }
+        else{
+          ?>
+          <form action="nabozenstvi_vstup1.php" method="post" class="questions-">
              <input class='text-input-' type="text" name="prvni-otazka" value="">
-             <button  class="submit-btn- btn-" type="button">Poslat</button>
+             <input  class="submit-btn- btn-" type="submit">Poslat</input>
         </form>
+        <?php
+        }?>
+        
         <p id="p3">
           Pro začátek se ale můžete zamyslet nad tím, že byste po vzoru Mindara 
           mohli mít doma <span class="yellow">"prapraprababičku", robota</span>, který by si pamatoval 
