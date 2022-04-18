@@ -18,6 +18,7 @@ include "../db.php";
 
         $sql_correct="SELECT Count(Odpoved) FROM Nabozenstvi WHERE Odpoved='1';";
         $result = $conn->query($sql_correct);
+        echo $result;
 
         Header("Location:divadlo_kviz_3.html?count=$result");
     }
