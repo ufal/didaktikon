@@ -51,16 +51,7 @@
                     
                 </div>
                 
-                <?php 
-            if (isset($_GET["dokonceno"])){
-              ?>
-                <div id='final' >
-                    <h1>Děkujeme za názor!</h1>
-                </div>
-              <?php
-            } 
-            else{
-              ?>
+              
             
                 <form class='controls' action="zpracuj.php" method="post">
                   <input type='text' id='skryte-btn' name='first-question' style="display:none;">
@@ -68,7 +59,10 @@
                     <input type='button' class='btn' id='con' value="Nevýhoda">
                     <input type="submit" value="Odeslat" id="submit" class='btn hide'>
                 </form>
-                <?php } ?>
+
+                <div id='final' class="hide">
+                    <h1>Děkujeme za názor!</h1>
+                </div>
                 
                 
             </div>
