@@ -88,7 +88,9 @@ p {
 #prev-button:hover, #next-button:hover, #rozcestnik:hover {
   background-color: rgba(100, 148, 237, 0.84);
 }
-
+/*#submit2{
+  display: none;
+}*/
 
 .a {
   display: flex;

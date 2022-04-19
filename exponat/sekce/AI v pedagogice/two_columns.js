@@ -95,8 +95,8 @@ function updateContent() {
         odpoved.value="110101"
         woopElement.classList.add('hide')
         finalElement.classList.remove('hide')
-        document.getElementById('submit').style.display="inline-block"
-        //document.getElementById("next-button").classList.remove("hide")
+        document.getElementById('submit2').classList.remove("hide")
+        document.getElementById("next-button").classList.remove("hide")
         
     }
 
