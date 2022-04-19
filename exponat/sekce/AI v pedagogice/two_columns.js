@@ -91,10 +91,13 @@ function updateContent() {
             conButton.type="submit"
         }*/
     } else {
+        //odpoved.value=getOdpovedi()
+        odpoved.value="110101"
         woopElement.classList.add('hide')
         finalElement.classList.remove('hide')
+        document.getElementById('submit').style.display="inline-block"
         //document.getElementById("next-button").classList.remove("hide")
-        odpoved.value=getOdpovedi()
+        
     }
 
 }

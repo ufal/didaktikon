@@ -66,7 +66,7 @@
                   <input type='text' id='skryte-btn' name='first-question' style="display:none;">
                     <input type='button' class='btn' id='pro' value="Výhoda">
                     <input type='button' class='btn' id='con' value="Nevýhoda">
-                    <input type="submit" value="Odeslat" id="submit" class='btn'>
+                    <input type="submit" value="Odeslat" id="submit" class='btn hide'>
                 </form>
                 <?php } ?>
                 

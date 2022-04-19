@@ -3,6 +3,7 @@
 </head>
 <?php 
 include "../db.php";
+echo "ahoj";
 $btn=$_POST["first-question"];
 echo $btn;
 $st1=substr($btn,0,1);
