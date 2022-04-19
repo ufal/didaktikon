@@ -57,17 +57,19 @@
                   <input type='text' id='skryte-btn' name='first-question' style="display:none;">
                     <input type='button' class='btn' id='pro' value="Výhoda">
                     <input type='button' class='btn' id='con' value="Nevýhoda">
-                    <input type="submit" value="Odeslat" id="submit" class='btn hide'>
-                </form>
+                    
+                
 
-                <div id='final' class="hide">
-                    <h1>Děkujeme za názor!</h1>
-                </div>
+                
                 
                 
             </div>
+            <div id='final' class="hide">
+            <input type="submit" value="Odeslat" id="submit" class='btn hide'>
+                    <h1>Děkujeme za názor!</h1>
+            </div>
 
-            
+            </form>
             
         </div>
 
