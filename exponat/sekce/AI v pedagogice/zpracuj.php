@@ -3,15 +3,14 @@
 </head>
 <?php 
 include "../db.php";
-echo "ahoj";
+
 $btn=$_POST["first-question"];
-echo $btn;
+
 $st1=substr($btn,0,1);
-echo $st1;
+
 $st2=substr($btn,1,1);
-echo $st2;
+
 $st3=substr($btn,2,1);
-echo $st3;
 $st4=substr($btn,3,1);
 $st5=substr($btn,4,1);
 $st6=substr($btn,5,1);

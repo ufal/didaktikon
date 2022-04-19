@@ -11,6 +11,8 @@ const answerNote = document.getElementById("answer-note")
 const answerImage = document.getElementById("answer-image")
 let currentQuestionIndex=0  
 let correctAnswers=0
+let odpovedi=[]
+let idx =0
 
 const questions = [
     {
@@ -176,6 +178,8 @@ for (let i = 0; i < questionBtns.length; i++) {
 } 
 
 function Evaluate(index){
+    odpovedi[idx]=questions[currentQuestionIndex].answers[index].text
+    idx++
     if(questions[currentQuestionIndex].answers[index].correct){
         document.getElementById(index).style.backgroundColor="rgb(161, 211, 100)"
         correctAnswers++
@@ -201,11 +205,21 @@ function showAnswer(){
     answerComment.innerHTML=answers[currentQuestionIndex].comment
     answerNote.innerHTML=answers[currentQuestionIndex].note
     if(currentQuestionIndex==questions.length-1){
-        nextBtn.innerHTML = "Vyhodnocení kvízu"
+        document.getElementById('skryte-btn').value=getOdpovedi()
+        nextBtn.value = "Vyhodnocení kvízu"
+        nextBtn.type="submit"
         nextBtn.style.width="60%"
         nextBtn.style.backgroundColor="rgb(120, 60, 154)"
         
     }
+}
+
+function getOdpovedi(){
+    let text =""
+    for (let i = 0; i < odpovedi.length; i++) {
+        text += odpovedi[i];
+      } 
+    return text
 }
 
 function showQuestion(){
