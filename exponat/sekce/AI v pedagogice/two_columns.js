@@ -92,7 +92,7 @@ function updateContent() {
         }*/
     } else {
         //odpoved.value=getOdpovedi()
-        odpoved.value=getOdpovedi
+        odpoved.value=getOdpovedi()
         woopElement.classList.add('hide')
         finalElement.classList.remove('hide')
         document.getElementById('submit2').classList.remove("hide")
