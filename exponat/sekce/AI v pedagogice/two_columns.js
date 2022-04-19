@@ -96,7 +96,7 @@ function updateContent() {
         woopElement.classList.add('hide')
         finalElement.classList.remove('hide')
         document.getElementById('submit2').classList.remove("hide")
-        document.getElementById("next-button").classList.remove("hide")
+        //document.getElementById("next-button").classList.remove("hide")
         
     }
 
