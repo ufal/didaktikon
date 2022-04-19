@@ -9,10 +9,32 @@
     </head>
     <body>
         
-
+<?php if (isset($_GET["odpovedi"])){?>
           <a id='next-button'  href='../rozcestnik.html' class='a'>
             <img src='home.png'>     
         </a>
+        <div id="vysledky">
+            <p>Uhodli jste správně</p>
+            <p id="vysledek" style="color:<?php if(intval($_GET['odpovedi'])>=5){
+                echo "rgb(161, 211, 100)";
+            }
+            else{
+                echo "rgb(230, 101, 101)";
+            }?>">
+            <?php echo $_GET["odpovedi"]; ?>/10</p>
+
+            <p>otázek</p>
+            <img id="smajlik" src="
+            <?php if(intval($_GET['odpovedi'])>=5){
+                echo "happier.png";
+            }
+            else{
+                echo "super sad.png";
+            }?>
+            ">
+        </div>
+        <?php } 
+        else {?>
         <div id="question-container">
             <div>
                 <p id="question">Ve kterém roce vznikl první chatbot?</p>
@@ -35,16 +57,12 @@
                 <p id="answer-note">Představoval psychologa, nebyl moc inteligentní, používal jen několik jednoduchých pravidel a vět a hlavně se hodně ptal.</p>
                 <form action="zpracuj.php" method="post">
                     <input type='text' id='skryte-btn' name='first-question' style="display:none;">
+                    <input type='text' id='skryte-btn2' name='vysledky' style="display:none;">
                     <input type="button" id="next-btn" value="Další otázka">
                 </form>
             </div>
-        </div>
-        <div id="vysledky">
-            <p>Uhodli jste správně</p>
-            <p id="vysledek"></p>
-            <p>otázek</p>
-            <img id="smajlik" src="">
-        </div>
+        </div> <?php } ?> 
+        
         <script src="milniky_script2.js"></script>
     </body>
 </html>

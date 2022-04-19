@@ -206,6 +206,7 @@ function showAnswer(){
     answerNote.innerHTML=answers[currentQuestionIndex].note
     if(currentQuestionIndex==questions.length-1){
         document.getElementById('skryte-btn').value=getOdpovedi()
+        document.getElementById('skryte-btn2').value=correctAnswers
         nextBtn.value = "Vyhodnocení kvízu"
         nextBtn.type="submit"
         nextBtn.style.width="60%"
