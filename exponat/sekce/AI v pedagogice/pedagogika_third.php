@@ -66,7 +66,10 @@
             </div>
             <div id='final' class="hide">
             <input type="submit" value="Odeslat" id="submit2" class='btn hide'>
-                    <h1>Děkujeme za názor!</h1>
+            <?php if(isset($_GET["dokonceno"])){
+              echo "<h1>Děkujeme za názor!</h1>";
+            }
+            ?>    
             </div>
 
             </form>

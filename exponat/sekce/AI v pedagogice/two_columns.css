@@ -41,7 +41,13 @@ p {
     border-radius: 16px;
     padding: 10px;
     margin: 10px;
-  
+    background-color: rgb(68, 172, 169);
+
+}
+.btn:hover {
+
+  background-color: rgb(81, 193, 189);
+
 }
 
 #pro {
