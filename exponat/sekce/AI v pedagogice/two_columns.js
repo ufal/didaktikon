@@ -86,14 +86,14 @@ function updateContent() {
     if (index > 0) {
         statementContainer.innerHTML = `<p>${statements[index-1].statement}</p>`
         index--
-        if(index==0){
+        /*if(index==0){
             proButton.type="submit"
             conButton.type="submit"
-        }
+        }*/
     } else {
         woopElement.classList.add('hide')
         finalElement.classList.remove('hide')
-        document.getElementById("next-button").classList.remove("hide")
+        //document.getElementById("next-button").classList.remove("hide")
         odpoved.value=getOdpovedi()
     }
 

@@ -19,9 +19,12 @@
     <a id='prev-button' href='pedagogika_second.php' class='a'>
         <img src='arrow_left_white.png'>
       </a>
-      <a id='next-button' href='../rozcestnik.html' class='a hide'>
+      <?php
+      if (isset($_GET["dokonceno"])){
+              ?>
+      <a id='next-button' href='../rozcestnik.html' class='a'>
         <img src='home.png'>     
-    </a>
+    </a><?php } ?>
 
 <p class="nadpis">Jaké důsledky AI v pedagogice považujete spíš za výhodu a které za nevýhodu:</p>
       <div class='containers'>
@@ -63,7 +66,7 @@
                   <input type='text' id='skryte-btn' name='first-question' style="display:none;">
                     <input type='button' class='btn' id='pro' value="Výhoda">
                     <input type='button' class='btn' id='con' value="Nevýhoda">
-                    
+                    <input type="submit" value="Odeslat" id="submit" class='btn'>
                 </form>
                 <?php } ?>
                 
