@@ -209,6 +209,7 @@ margin-right:10%;
     right:-40px;
     bottom: 0px;
     animation: updown 0.7s alternate infinite;
+    animation-delay: 6s;
   }
 
   @keyframes updown {
@@ -311,7 +312,7 @@ margin-right:10%;
 #text3{
   animation: prijed 1s forwards;
 
-  animation-delay: 10s;
+  animation-delay: 5s;
 }
 
 @keyframes prijed{

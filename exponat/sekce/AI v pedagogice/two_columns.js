@@ -65,7 +65,7 @@ const statements = [
     },
 
     {
-        statement: 'Děti si sami díky programu budou moci uvědomit, jaké emoce prožívají a například.'
+        statement: 'Děti si sami díky programu budou moci uvědomit, jaké emoce prožívají.'
     },
 
     {
