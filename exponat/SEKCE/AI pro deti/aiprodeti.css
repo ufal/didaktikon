@@ -41,12 +41,13 @@ body {
     left: 0;
     right: 0;
     background-color: #ffda53b0;
-    overflow: hidden;
+    overflow: auto;
     width: 0;
     height:0;
     transition: .5s ease;
     border-radius: 16px;
     border: solid 2px #ffd953;
+    /*overflow-wrap: break-word; */
   }
   
   .container:hover .overlay {
@@ -55,15 +56,16 @@ body {
   }
   
   .text {
-    white-space: nowrap; 
+    white-space: wrap; 
     color: rgb(32, 53, 81);
     font-size: 30px;
     position: absolute;
-    overflow: hidden;
+    overflow: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    margin:10px;
   }
 
   #next-button {
