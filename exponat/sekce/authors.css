@@ -61,3 +61,21 @@ p{
     width: 3vw;
     height: 3vw;
   }
+
+  .kviz-btn{
+    text-decoration: none;
+    background-color: rgb(68, 172, 169);
+    border-radius: 16px;
+    padding:10px;
+    font-size: 2vw;
+    margin: 40px 40%;
+    width:20%;
+    transition: 0.3s;
+    font-weight: bold;
+    color:white;
+    display: inline-block;
+    text-align: center;
+}
+.kviz-btn:hover{
+    background-color: rgba(68, 172, 169, 0.664);
+}
