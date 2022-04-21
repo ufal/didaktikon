@@ -11,17 +11,17 @@
       img1.onclick = function(){
         modal.style.display = "block";
         modalImg.src = "emotions_happy.jpg";
-        captionText.innerHTML = "Šťastný žák";
+        captionText.innerHTML = "Šťastný student";
       }
       img2.onclick = function(){
         modal.style.display = "block";
         modalImg.src = "emotions_angry.jpg";
-        captionText.innerHTML = "Naštvaný žák";
+        captionText.innerHTML = "Naštvaný student";
       }
       img3.onclick = function(){
         modal.style.display = "block";
         modalImg.src = "emotions_super_happy.jpg";
-        captionText.innerHTML = "Veselý žák";
+        captionText.innerHTML = "Veselý student";
       }
       
       // Get the <span> element that closes the modal

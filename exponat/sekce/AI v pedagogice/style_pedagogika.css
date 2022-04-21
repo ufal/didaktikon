@@ -240,6 +240,8 @@ margin-right:10%;
   background-color: rgba(250, 225, 135, 0.897); /* Black w/ opacity */
 }
 
+
+
 /* Modal Content (image) */
 .modal-content {
   margin: auto;
@@ -283,7 +285,7 @@ margin-right:10%;
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
+  color: rgb(32, 53, 81);;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -291,7 +293,7 @@ margin-right:10%;
 
 .close:hover,
 .close:focus {
-  color: #bbb;
+  color: rgb(50, 83, 126);;
   text-decoration: none;
   cursor: pointer;
 }
