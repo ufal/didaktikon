@@ -130,17 +130,17 @@ const answers = [
     {
         answer:'1999',
         comment: 'První automatické popisování obrázků: 1999 Mori, Takahashi, Oka',
-        note: 'Vygenerovat popisek pomocí pravidel je prakticky nemožné, první systémy proto vznikly až s rozvojem strojového učení. Popisek obrázku generuje na základě popisků podobných obrázků v trénovacích datech.'
+        note: 'Vygenerovat popisek pomocí pravidel je prakticky nemožné, první systémy proto vznikly až s rozvojem strojového učení. <br>Popisek obrázku generuje na základě popisků podobných obrázků v trénovacích datech.'
     },
     {
         answer:'1949',
         comment: 'Elmer a Elsie',
-        note: 'Náhodně se procházeli, reagovali na světlo a dotek, jejich “mozky” měly dvě umělé neuronové buňky'
+        note: 'Náhodně se procházeli, reagovali na světlo a dotek, jejich „mozky“ měly dvě umělé neuronové buňky'
     },
     {
         answer:'1977',
         comment: 'Tsukuba Mechanical Engineering Laboratory',
-        note: '1977 Tsukuba (speciálně upravená silnice, max 30 km/h), 1985 ALV (standardní silnice), 1995 CMU NavLab 5 (od pobřeží k pobřeží, průměrně 100 km/h), 2018 Waymo (samořídící taxi)'
+        note: '1977 Tsukuba (speciálně upravená silnice, max 30 km/h), <br>1985 ALV (standardní silnice), <br>1995 CMU NavLab 5 (od pobřeží k pobřeží, průměrně 100 km/h), <br>2018 Waymo (samořídící taxi)'
     },
     {
         answer:'1997',
@@ -150,12 +150,12 @@ const answers = [
     {
         answer:'2016',
         comment: 'AlphaGo vs Lee Sedol',
-        note: 'Možných poslopností tahů v go je mnohem víc než v šachách, ani nejvýkonnější počítač jich nezvládne propočítat dost. Proto se AlphaGo nejdřív učí z partií odehraných lidmi, a pak dál zdokonaluje svou strategii zlepšuje hraním sama proti sobě (reinforcement learning). Zvládne tak odehrát miliony zápasů, takže má výrazně větší zkušenosti než může mít člověk.'
+        note: 'Možných poslopností tahů v go je mnohem víc než v šachách, ani nejvýkonnější počítač jich nezvládne propočítat dost. <br>Proto se AlphaGo nejdřív učí z partií odehraných lidmi, a pak dál zdokonaluje svou strategii zlepšuje hraním sama proti sobě (reinforcement learning). <br>Zvládne tak odehrát miliony zápasů, takže má výrazně větší zkušenosti než může mít člověk.'
     },
     {
         answer:'2018',
         comment: 'Portrét Edmonda Belamy',
-        note: 'Strojové učení využívající metodu GAN se učilo malovat z trénovacích dat obsahujících 15 000 portrétů. Obraz (tisk na plátně, 70x70 cm) se vydražil za 432 500 amerických dolarů (asi 10 000 000 Kč).'
+        note: 'Strojové učení využívající metodu GAN se učilo malovat z trénovacích dat obsahujících 15 000 portrétů. <br>Obraz (tisk na plátně, 70x70 cm) se vydražil za 432 500 amerických dolarů (asi 10 000 000 Kč).'
     },
     {
         answer:'2016',
@@ -165,7 +165,7 @@ const answers = [
     {
         answer:'2021',
         comment: 'AI: Když robot píše hru',
-        note: 'Systém THEaiTRobot, založený na neuronovém jazykovém modelu GPT-2, který si načetl asi 8 000 000 článků z internetu. Premiéra 26.2.2021 ve Švandově divadle v Praze.'
+        note: 'Systém THEaiTRobot, založený na neuronovém jazykovém modelu GPT-2, který si načetl asi 8 000 000 článků z internetu. Premiéra 26. 2. 2021 ve Švandově divadle v Praze.'
     }
 ]
 

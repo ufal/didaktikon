@@ -57,15 +57,15 @@ const statements = [
     },
 
     {
-        statement: 'Data o tom, jak „se děti mají“ bude zpracovávat vzdálený server, o kterém pravděpodobně nebudeme vědět, co přesně se s našimi daty děje.'
+        statement: 'Data o tom, jak „se děti mají“ bude zpracovávat vzdálený server.'
     },
 
     {
-        statement: 'Učitel může lépe přizpůsobit výuku, když bude vědět, co děti baví nebo naopak stresuje.'
+        statement: 'Učitel může přizpůsobit výuku, když bude vědět, co děti baví nebo naopak stresuje.'
     },
 
     {
-        statement: 'Děti si sami díky programu budou moci uvědomit, jaké emoce prožívají.'
+        statement: 'Děti si samy díky programu budou moci uvědomit, jaké emoce prožívají.'
     },
 
     {

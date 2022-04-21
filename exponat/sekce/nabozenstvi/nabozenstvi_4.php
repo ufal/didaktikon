@@ -89,7 +89,7 @@
         
         <p id="p3">
           Pro začátek se ale můžete zamyslet nad tím, že byste po vzoru Mindara 
-          mohli mít doma <span class="yellow">"prapraprababičku", robota</span>, který by si pamatoval 
+          mohli mít doma <span class="yellow">„prapraprababičku“, robota</span>, který by si pamatoval 
           vše o vaší rodině, mohli byste se ho na cokoliv zeptat či se mu s 
           čímkoliv svěřit.</p>
         </p>
