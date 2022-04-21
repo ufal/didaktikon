@@ -78,6 +78,24 @@ h1 {
     font-weight: 200;
 }
 
+.authors {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(100, 148, 237, 0.402);
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.2s;
+  }
+  
+  .authors:hover {
+    background-color: rgba(100, 148, 237, 0.84);
+  }
+#person{
+    width:45px;
+    height: 40px;
+}
 
 @media screen and (min-width:1100px) and (max-width:1142px)
 {
