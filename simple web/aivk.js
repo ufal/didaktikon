@@ -20,6 +20,7 @@ let people = {
   'nikol': 'Psycholožka, AI v psychologii',
   'frantisek': 'Teolog, AI v teologii a náboženství',
   'helena': 'Pedagožka, AI pro děti',
+  'veronika': 'žurnalistka, AI v žurnalistice',
   'we-want-you': 'Hledáme odborníky na AI v kontextech: práva, architektury, dopravy, ekologie, ekonomie, markentigu, hudby, bezpečnosti, atd.'
 }
 
