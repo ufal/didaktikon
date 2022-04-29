@@ -127,12 +127,12 @@ p {
 
 #p3{
   animation: prijed 2s forwards;
-  animation-delay: 3s;
+  animation-delay: 1s;
 }
 
 #p4{
   animation: prijed 2s forwards;
-  animation-delay: 5s;
+  animation-delay: 2s;
 }
 
 @keyframes prijed{

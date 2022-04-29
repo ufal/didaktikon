@@ -3,7 +3,7 @@
 </head>
 <?php 
 include "../db.php";
-$vstup=$_POST["second-otazka"];
+$vstup=$_POST["second-question"];
 $why = $_POST["why"];
 
 $sql="INSERT INTO NabozenstviPraprababicka (Odpoved, Proc) VALUES ('$vstup','$why');";
