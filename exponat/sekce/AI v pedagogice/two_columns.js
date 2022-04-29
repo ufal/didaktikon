@@ -53,11 +53,11 @@ conButton.addEventListener('click', function () {
 
 const statements = [
     {
-        statement: 'Učitel může lépe rozpoznat jaké emoce při učení děti/studenti mají.'
+        statement: 'Učitel může lépe rozpoznat, jaké emoce při učení děti/studenti mají.'
     },
 
     {
-        statement: 'Data o tom, jak „se děti mají“ bude zpracovávat vzdálený server.'
+        statement: 'Data o tom, jak „se děti mají“, bude zpracovávat vzdálený server.'
     },
 
     {

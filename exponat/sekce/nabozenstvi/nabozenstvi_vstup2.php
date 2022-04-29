@@ -3,11 +3,11 @@
 </head>
 <?php 
 include "../db.php";
-$btn=$_POST["first-question"];
-$proc=$_POST["why"];
+$vstup=$_POST["second-otazka"];
+$why = $_POST["why"];
 
-$sql="INSERT INTO PedagogikaMereniEmoci (Odpoved, Proc) VALUES ('$btn', '$proc');";
+$sql="INSERT INTO NabozenstviPraprababicka (Odpoved, Proc) VALUES ('$vstup','$why');";
 $conn->query($sql);
 
-Header("Location:pedagogika_second.php?prvni=true");
+Header("Location:nabozenstvi_4.php?druhe=true");
 ?>
