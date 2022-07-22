@@ -13,7 +13,7 @@
     * https://stackoverflow.com/a/10076097/151365
     */
     var hash = window.location.hash.substring(1);
-    if (hash && anchorMap.has(hash)) {
+    if (hash && (hash in anchorMap)) {
         /*
         * Best practice for javascript redirects: 
         * https://stackoverflow.com/a/506004/151365
