@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI v psychologii</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="psychologie_style.css">
+        <link rel="stylesheet" href="v_n.css">
+        <link rel="stylesheet" href="../style_menu.css" >
+    <script defer src="../script_menu.js"></script>
+    </head>
+    <body>
+        <div class="menu-header">
+            <button id="menu-btn" onclick="showMenu()">
+                <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 13.185675,15.139108 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path4" />
+                    <path d="M 13.185675,24.906275 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path6" />
+                    <path d="M 13.185675,34.673441 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path8" />
+                </svg>
+            </button>
+        </div>
+        <div id="menu-items" class="hide" >
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+              <a class="menu-href" href="#"></a>
+          </div>
+          <div class="menu-item">
+              <a class="menu-href" href="#"></a>
+          </div>
+          <div class="menu-item">
+              <a class="menu-href" href="#"></a>
+          </div>
+          <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+        <div class="menu-item">
+          <a class="menu-href" href="#"></a>
+      </div>
+       
+        </div>
+    
+        <div id='cover' onclick='unshow()'>
+        </div>
+
+        <a id='prev-button' href='psychologie_chatbot.html' class='a'>
+            <img src='arrow_left_white.png'>
+          </a>
+
+        <h1 id="nadpis">Výhody a nevýhody</h1>
+        <br>
+        <div class="grid-container">
+            <script>
+                function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 100;
+                    if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                    } else {
+                    reveals[i].classList.remove("active");
+                    }
+                }
+            }
+        
+          window.addEventListener("scroll", reveal);
+        
+        // To check the scroll position on page load
+        reveal();
+        
+            </script>
+
+            <img class="reveal" src="vyhoda.png" width="80"> 
+            <p class="v reveal">Destigmatizace duševních onemocnění</p> <p></p><p></p><p></p><p></p>
+            <p class="n reveal">Nenahrazuje terapii, krizovou intervenci či poradenství v plném rozsahu</p>
+            <img class="reveal" src="nevyhoda.png" width="80">
+
+            <img class="reveal" src="vyhoda.png" width="80">
+            <p class="v reveal">Efektivita při vytvoření strategií pro zvládání určitých problémů</p> <p></p><p></p><p></p><p></p>
+            <p class="n reveal">Konverzace s chatbotem není kontrolována odborníkem (psychologem, terapeutem), je nutné počítat s tím, že mohou nastat chyby</p>
+            <img class="reveal" src="nevyhoda.png" width="80">
+
+            <img class="reveal" src="vyhoda.png" width="80">
+            <p class="v reveal">Může být aplikováno v místech, kde není klasická psychologická pomoc dostupná</p> <p></p><p></p><p></p><p></p>
+            <p class="n reveal">Většina aplikací je zatím pouze v angličtině a dalších jazycích, ale ne v českém jazyce</p>
+            <img class="reveal" src="nevyhoda.png" width="80">
+
+        </div>
+        
+    </body>
+</html>

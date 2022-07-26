@@ -11,9 +11,94 @@ body {
     padding: 0;
     margin: 0;
 }
+#nadpis{
+    padding: 20px;
+    padding-top: 40px;
+    margin: 0;
+    font-size: 5vw;
+    text-align: center;
+  }
 h1{
     font-size: 3vw;
  }
  div{
      text-align: center;
  }
+
+.kategorie{
+    border-radius: 16px;
+    border: solid yellowgreen;
+    width:25%;
+    display:inline-block;
+    transition: transform 1s;
+    margin:20px;
+}
+.kategorie:hover{
+    background:rgb(40, 67, 102);
+    transform: translate(0, 50px);
+    cursor:pointer;
+}
+.img-kat{
+    width:100%;
+    border-radius: 12px;
+}
+.center{
+    margin:0 8%;
+    text-align: center;
+}
+a{
+    color:white;
+}
+
+#next-button{
+    position: fixed;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  
+  }
+  #rozcestnik {
+    position: fixed;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  #prev-button {
+    position: fixed;
+    left: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #prev-button, #next-button, #rozcestnik {
+    background-color: rgba(100, 148, 237, 0.402);
+    padding: 10px;
+    border-radius: 16px;
+    transition: 0.2s;
+  }
+  
+  #prev-button:hover, #next-button:hover, #rozcestnik:hover {
+    background-color: rgba(100, 148, 237, 0.84);
+  }
+  /*#submit2{
+    display: none;
+  }*/
+  
+  .a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    text-decoration: none;
+   
+  }
+  
+  .a:hover {
+  
+  }
+  .a img {
+    width: 3vw;
+    height: 3vw;
+  
+  }

@@ -1,0 +1,58 @@
+._center{
+    margin:0 20%;
+    border: rgb(255, 255, 255) solid 12px;
+    border-radius: 16px;
+    /*display: grid;*/
+    /*grid-template-columns: 55% 0% 45% ;*/
+}
+.y{
+    color:#ffd953   ;
+}
+.uvod{
+    text-align: center;
+}
+.message{
+    margin:8px;
+}
+.bot{
+    text-align: left;
+}
+.client{
+    text-align: right;
+}
+.message p{
+    border-radius: 16px;
+   /* display: inline-block;*/
+    padding:8px;
+    margin:3px;
+}
+
+.client p{
+    background-color: #F17553;
+    margin-left:30%;
+    text-align: left;
+    display: inline-block;
+}
+.bot p{
+    background-color: rgb(68, 172, 169);
+    margin-right:30%;
+    text-align: left;
+    display: inline-block;
+}
+.reveal{
+    position: relative;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+#nepanikar{
+    margin:10%;
+}
+a{
+    color: #ffd953;
+    text-decoration: none;
+}

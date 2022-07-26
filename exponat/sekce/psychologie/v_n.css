@@ -1,0 +1,29 @@
+.grid-container{
+    margin:0 8%;
+    display: grid;
+    grid-template-columns: 7% 43% 43% 7%;
+    row-gap: 50px;
+}
+p{
+    margin-top:0;
+}
+.v{
+    text-align: left;
+    margin-left:20px;
+    margin-right:20px;
+}
+.n{
+    text-align: right;
+    margin-left:20px;
+    margin-right:20px;
+}
+.reveal{
+    position: relative;
+    transform: translateY(60px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
