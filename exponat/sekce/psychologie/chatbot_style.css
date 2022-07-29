@@ -62,7 +62,8 @@ a{
 }
 #pch1, #pch2, #pch3, #pch4{
     display: block;
-    width:50%;
+    width:100%;
+    cursor:pointer;
 }
 #pch1{
     background-color: rgb(68, 172, 169)
