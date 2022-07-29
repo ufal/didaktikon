@@ -52,13 +52,17 @@
 #nepanikar{
     margin:10%;
 }
+#otazka-chatbot{
+    margin:auto;
+    text-align: center;
+}
 a{
     color: #ffd953;
     text-decoration: none;
 }
 #pch1, #pch2, #pch3, #pch4{
     display: block;
-    width:25%;
+    width:50%;
 }
 #pch1{
     background-color: rgb(68, 172, 169)

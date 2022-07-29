@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="psychologie_style.css">
         <link rel="stylesheet" href="chatbot_style.css">
         <link rel="stylesheet" href="../style_menu.css" >
-        <script defer src="script.js"></script>
+        <script defer src="script_chatbot.js"></script>
     <script defer src="../script_menu.js"></script>
 
     </head>
@@ -111,13 +111,14 @@
         </div>
         </div>
 
+        <div id="otazka-chatbot">
         <p>Použili jste někdy chatbota?</p>
         <?php if(isset($_GET["druhe"])){
             echo "<p>Děkujeme za názor :)</p>";
           }
           else{
             ?>
-          <form id="p4" class='controls' action="psycho_chatbot_vstup.php" method="post">
+          <form id="form-chatbot" class='controls' action="psycho_chatbot_vstup.php" method="post">
             <div id='first-section' >
               <button type='button' class='btn' id='pch1' onclick="show('Ano a byl jsem spokojen.')">Ano a byl jsem spokojen.</button>
               <button type='button' class='btn' id='pch2' onclick="show('Ano, ale moc mi nepomohl.')">Ano, ale moc mi nepomohl.</button>
@@ -128,6 +129,7 @@
   
           </form>
           <?php } ?>
+          </div>
 
         <div id="nepanikar">
         <!--<a href="https://nepanikar.eu/">-->
