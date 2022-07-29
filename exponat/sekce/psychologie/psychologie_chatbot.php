@@ -109,7 +109,7 @@
             <p>Doporučím vám kontakty na nejbližší pomoc.</p>
         </div>
 
-        <p>Chtěli byste si vyzkoušet postavit se svému strachu ve virtuální realitě?</p>
+        <p>Použili jste někdy chatbota?</p>
         <?php if(isset($_GET["druhe"])){
             echo "<p>Děkujeme za názor :)</p>";
           }
@@ -117,15 +117,11 @@
             ?>
           <form id="p4" class='controls' action="psycho_chatbot_vstup.php" method="post">
             <div id='first-section' >
-              <button type='button' class='btn' id='yes' onclick="show('Ano')">Ano</button>
-              <button type='button' class='btn' id='no' onclick="show('Ne')">Ne</button>
-              <button type='button' class='btn' id='idk' onclick="show('Nevím')">Nevím</button>
+              <button type='button' class='btn' id='pch1' onclick="show('Ano a byl jsem spokojen.')">Ano a byl jsem spokojen.</button>
+              <button type='button' class='btn' id='pch2' onclick="show('Ano, ale moc mi nepomohl.')">Ano, ale moc mi nepomohl.</button>
+              <button type='button' class='btn' id='pch3' onclick="show('Ne, ale použil bych ho.')">Ne, ale použil bych ho.</button>
+              <button type='button' class='btn' id='pch4' onclick="show('Ne a ani se nechystám.')">Ne a ani se nechystám.</button>
               <input type='text' id='skryte-btn' name='second-question' style="display:none;">
-            </div>
-  
-            <div class='hide' id='second-section'>
-              <input class='input' type="text" id="why" name="why" placeholder="Proč?" >
-              <input type="submit" value="Poslat odpověď" id="submit" class='btn'>
             </div>
   
           </form>

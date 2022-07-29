@@ -56,3 +56,19 @@ a{
     color: #ffd953;
     text-decoration: none;
 }
+#pch1, #pch2, #pch3, #pch4{
+    display: block;
+    width:25%;
+}
+#pch1{
+    background-color: rgb(68, 172, 169)
+}
+#pch2{
+    background-color: #ffd953;
+}
+#pch3{
+    background-color:  #F17553;
+}
+#pch4{
+    background-color: #f15353;
+}
