@@ -181,6 +181,19 @@ li{
   to {opacity: 1}
 }
 
-#p-ai{
+#p-ai, q{
   color:#ffd953;
+}
+.ano, .ne, .nevim{
+  width:5%;
+}
+.ano{
+  background-color: #F17553;
+
+}
+.ne{
+  background-color: #ffd953;
+}
+.nevim{
+  background-color: rgb(68, 172, 169)
 }

@@ -61,7 +61,7 @@
         <h2 id="nadpis">Sociální sítě? Netflix? Váš volný čas!</h2>
         <div class="center">
             <!--TODO otázka-->
-            <p>Chtěli jste se někdy zbavit Vaší “závislosti” na sociálních sítích?</p>
+            <p class="q">Chtěli jste se někdy zbavit Vaší “závislosti” na sociálních sítích?</p>
             <?php if(isset($_GET["prvni"])){
                 echo "<p>Děkujeme za názor :)</p>";
               }
@@ -69,9 +69,9 @@
                 ?>
               <form id="f1" class='controls' action="psycho_pp_vstup1.php" method="post">
                 <div id='first-section' >
-                  <button type='button' class='btn' id='yes' onclick="show('Ano')">Ano</button>
-                  <button type='button' class='btn' id='no' onclick="show('Ne')">Ne</button>
-                  <button type='button' class='btn' id='idk' onclick="show('Nevím')">Nevím</button>
+                  <button type='button' class='btn ano' id='yes' onclick="show('Ano')">Ano</button>
+                  <button type='button' class='btn ne' id='no' onclick="show('Ne')">Ne</button>
+                  <button type='button' class='btn nevim' id='idk' onclick="show('Nevím')">Nevím</button>
                   <input type='text' id='skryte-btn' name='first-question' style="display:none;">
                 </div>
       
@@ -84,7 +84,7 @@
               <?php } ?>
 
             <!--TODO otázka-->
-            <p>Hledali jste někdy, jak lépe trávit volný čas a nekoukat pořád na Netflix?  </p>
+            <p class="q">Hledali jste někdy, jak lépe trávit volný čas a nekoukat pořád na Netflix?  </p>
             <?php if(isset($_GET["druhe"])){
             echo "<p>Děkujeme za názor :)</p>";
             }
@@ -92,9 +92,9 @@
                 ?>
             <form id="f2" class='controls' action="psycho_pp_vstup2.php" method="post">
                 <div id='first-section-2' >
-                <button type='button' class='btn ' id='yes' onclick="show2('Ano')">Ano</button>
-                <button type='button' class='btn' id='no' onclick="show2('Ne')">Ne</button>
-                <button type='button' class='btn' id='idk' onclick="show2('Nevím')">Nevím</button>
+                <button type='button' class='btn ano' id='yes' onclick="show2('Ano')">Ano</button>
+                <button type='button' class='btn ne' id='no' onclick="show2('Ne')">Ne</button>
+                <button type='button' class='btn nevim' id='idk' onclick="show2('Nevím')">Nevím</button>
                 <input type='text' id='skryte-btn' name='second-question' style="display:none;">
                 </div>
     
