@@ -192,6 +192,7 @@ li{
 }
 .ano, .ne, .nevim{
   width:33%;
+  cursor:pointer;
 }
 .ano{
   background-color: #F17553;
