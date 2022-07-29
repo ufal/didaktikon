@@ -184,8 +184,11 @@ li{
 #p-ai, q{
   color:#ffd953;
 }
+.first-section, .second-section, .first-section-2, .second-section-2{
+  width:50%;
+}
 .ano, .ne, .nevim{
-  width:5%;
+  width:33%;
 }
 .ano{
   background-color: #F17553;
