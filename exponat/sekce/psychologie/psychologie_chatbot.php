@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="psychologie_style.css">
         <link rel="stylesheet" href="chatbot_style.css">
         <link rel="stylesheet" href="../style_menu.css" >
+        <script defer src="script.js"></script>
     <script defer src="../script_menu.js"></script>
 
     </head>
@@ -108,6 +109,7 @@
             <p>Aha, vidím, že potřebujete odborníka.</p>
             <p>Doporučím vám kontakty na nejbližší pomoc.</p>
         </div>
+        </div>
 
         <p>Použili jste někdy chatbota?</p>
         <?php if(isset($_GET["druhe"])){
@@ -126,12 +128,11 @@
   
           </form>
           <?php } ?>
-            
-        </div>
+
         <div id="nepanikar">
-        <a href="https://nepanikar.eu/">
-        <img src="nepanikar.png" width="100"></a>
-        <p>Českým ekvivalentem může být aplikace <a href="https://nepanikar.eu/">NEPANIKAŘ</a>. </p>
+        <!--<a href="https://nepanikar.eu/">-->
+        <img src="nepanikar.png" width="100"><!--</a>-->
+        <p>Českým ekvivalentem může být aplikace <!--<a href="https://nepanikar.eu/">-->NEPANIKAŘ<!--</a>-->. </p>
         <ul>
             <li>V této aplikaci sice nemáme k dispozici online chat, jsou zde ale techniky a strategie, jak překonat úzkost či panickou ataku, může pomoci při depresi nebo i sebevražedných myšlenkách.</li>
             <br>
