@@ -13,8 +13,8 @@ let odkazy = [["../Milniky v AI/milniky_prvni_stranka.html","Milníky AI"],
               ["../nabozenstvi/nabozenstvi_first.html","AI v náboženství"],
               ["../AI v divadle/divadlo_index.html","AI v kontextu divadla"],
               ["../AI ve fyzice/fyzika_1_stranka.html","AI ve fyzice"],
-              ["../neuroscience/neuroscience_index.html","AI v neurovědě (ve fázi příprav)"],
-              ["../psychologie/psychologie_index.html","AI v psychologii (ve fázi příprav)"]        
+              ["../psychologie/psychologie_index.html","AI v psychologii"],
+              ["../rozcestnik.html","Rozcestník"]
             ]
 
 

@@ -27,3 +27,12 @@ p{
     transform: translateY(0);
     opacity: 1;
 }
+.vyhody{
+    text-align: left;
+}
+.nevyhody{
+    text-align: right;
+}
+h3{
+    font-size:3.5vw;
+}

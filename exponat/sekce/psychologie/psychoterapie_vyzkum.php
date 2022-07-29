@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="psychologie_style.css">
         <link rel="stylesheet" href="vyzkum_style.css">
         <link rel="stylesheet" href="../style_menu.css" >
+        <script defer src="script.js"></script>
     <script defer src="../script_menu.js"></script>
     </head>
     <body>
@@ -102,6 +103,27 @@
         
         <!--TODO: otázka-->
         <p>Chtěli byste si vyzkoušet postavit se svému strachu ve virtuální realitě?</p>
+        <?php if(isset($_GET["druhe"])){
+            echo "<p>Děkujeme za názor :)</p>";
+          }
+          else{
+            ?>
+          <form id="p4" class='controls' action="psycho_vyzkum_vstup.php" method="post">
+            <div id='first-section' >
+              <button type='button' class='btn' id='yes' onclick="show('Ano')">Ano</button>
+              <button type='button' class='btn' id='no' onclick="show('Ne')">Ne</button>
+              <button type='button' class='btn' id='idk' onclick="show('Nevím')">Nevím</button>
+              <input type='text' id='skryte-btn' name='second-question' style="display:none;">
+            </div>
+  
+            <div class='hide' id='second-section'>
+              <input class='input' type="text" id="why" name="why" placeholder="Proč?" >
+              <input type="submit" value="Poslat odpověď" id="submit" class='btn'>
+            </div>
+  
+          </form>
+          <?php } ?>
+
 
         </div>
         

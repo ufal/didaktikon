@@ -4,10 +4,9 @@
         <title>AI v psychologii</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="psychologie_style.css">
-        <link rel="stylesheet" href="chatbot_style.css">
+        <link rel="stylesheet" href="v_n.css">
         <link rel="stylesheet" href="../style_menu.css" >
     <script defer src="../script_menu.js"></script>
-
     </head>
     <body>
         <div class="menu-header">
@@ -52,25 +51,21 @@
     
         <div id='cover' onclick='unshow()'>
         </div>
-        <a id='prev-button' href='psychologie_index.html' class='a'>
+
+        <a id='prev-button' href='psychoterapie_vyzkum.php' class='a'>
             <img src='arrow_left_white.png'>
           </a>
-          <a id='next-button' href='chatbot_v_n.html' class='a'>
-            <img src='arrow_right_white.png'>     
-          </a>
-        <h2 id="nadpis">AI v oblasti self-care</h2>
+
+        <h1 id="nadpis">Výhody a nevýhody</h1>
+        <br>
         
-        <p class="uvod y">Self-care vnímáme jako péči o sebe</p>
-            <p class="uvod">Pečovat o sebe můžeme tak, že si do svých chytrých telefonů nainstalujeme aplikace, které mohou poskytnout psychologickou pomoc</p>
-            <br><br>
-        <div class="_center">
             <script>
                 function reveal() {
                 var reveals = document.querySelectorAll(".reveal");
                 for (var i = 0; i < reveals.length; i++) {
                     var windowHeight = window.innerHeight;
                     var elementTop = reveals[i].getBoundingClientRect().top;
-                    var elementVisible = 150;
+                    var elementVisible = 100;
                     if (elementTop < windowHeight - elementVisible) {
                     reveals[i].classList.add("active");
                     } else {
@@ -85,42 +80,40 @@
         reveal();
         
             </script>
+
+    <div class="center">
+        <h3 >Virtuální realita</h3>
+        <div class="vyhody">
             
-        <div class="message client reveal">
-            <img src="klient.png" width="100"><br>
-            <p>Dobrý den, cítím se hrozně. <br>Mohl byste mi pomoci?</p>
+            <p class="v reveal"><img class="" src="vyhoda.png" width="25"> dostupnost </p>
+            <p class="v reveal"><img class="" src="vyhoda.png" width="25"> bezpečné prostředí</p>
+            <p class="v reveal"><img class="" src="vyhoda.png" width="25"> podpořeno výzkumy</p>
         </div>
-
-        <div class="message bot reveal">
-            <img src="chatbot.png" width="100"><br>
-            <p>Dobrý den, já jsem chatbot WOEBOT a jsem připraven vám pomoci.</p>
-            <p>Mám naučené různé metody terapie a povedu s vámi „poradenský rozhovor“.</p>
-            <p>Mohu Vám také nabídnout různá cvičení, relaxaci nebo jen vyslechnout vaše pocity.</p>
-        </div>
-
-        <div class="message client reveal">
-            <img src="klient.png" width="100"> <br>
-            <p>Co je smyslem života?</p>
-        </div>
-
-        <div class="message bot reveal">
-            <img src="chatbot.png" width="100"><br>
-            <p>Aha, vidím, že potřebujete odborníka.</p>
-            <p>Doporučím vám kontakty na nejbližší pomoc.</p>
-        </div>
+        <div class="nevyhody">
+            <p class="n reveal">možné závratě v jiné realitě <img class="" src="nevyhoda.png" width="25"></p>
+            <p class="n reveal"> nutnost aktualizace softwaru <img class="" src="nevyhoda.png" width="25"></p>
+            <p class="n reveal">může být finančně nákladné <img class="" src="nevyhoda.png" width="25"></p>
+            <p class="n reveal">nereálnost prostředí <img class="" src="nevyhoda.png" width="25"></p>
             
         </div>
-        <div id="nepanikar">
-        <a href="https://nepanikar.eu/">
-        <img src="nepanikar.png" width="100"></a>
-        <p>Českým ekvivalentem může být aplikace <a href="https://nepanikar.eu/">NEPANIKAŘ</a>. </p>
-        <ul>
-            <li>V této aplikaci sice nemáme k dispozici online chat, jsou zde ale techniky a strategie, jak překonat úzkost či panickou ataku, může pomoci při depresi nebo i sebevražedných myšlenkách.</li>
-            <br>
-            <li>Má celkem 7 modulů a můžeme zde najít kontakty na odbornou pomoc po celé ČR, včetně online poraden.</li>
-        </ul>
+
+
+        <h3 class="reveal">Terapie a výzkum</h3>
+        <div class="vyhody">            
+            <p class="v reveal"><img class="" src="vyhoda.png" width="25"> sběr velkého množství dat </p>
+            <p class="v reveal"><img class="" src="vyhoda.png" width="25"> automatické zpracování</p>
+            <p class="v reveal"><img class="" src="vyhoda.png" width="25"> urychlení terapie a nalezení vhodné léčby na základě AI</p>
+            <p class="v reveal"><img class="" src="vyhoda.png" width="25"> zpětná vazba pro terapeuta i klienta - nástroj pro zlepšení poskytované péče</p>
         </div>
+        <div class="nevyhody">
+            <p class="n reveal">možná nedůvěra k AI <img class="" src="nevyhoda.png" width="25"></p>
+            <p class="n reveal"> ochrana dat a toho, co řekneme na terapii <img class="" src="nevyhoda.png" width="25"></p>
+            <p class="n reveal">ochota pracovat s AI <img class="" src="nevyhoda.png" width="25"></p>
+            
+        </div>
+        <br><br><br><br><br><br>
+
+    </div>
         
-
     </body>
 </html>

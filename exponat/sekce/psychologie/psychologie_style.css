@@ -102,3 +102,57 @@ a{
     height: 3vw;
   
   }
+
+  
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 15px; 
+  
+}
+
+.btn {
+  font-family: 'Questrial';
+  font-size: 2vw;
+
+  font-weight: bold;
+  
+  color: white;
+  border: none;
+  transition: 0.3s;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(68, 172, 169);
+
+}
+.btn:hover {
+
+  background-color: rgb(81, 193, 189);
+
+}
+
+.hide {
+  display: none;
+}
+
+.input {
+  font-size: 2vw;
+  outline: none;
+  border:none;
+  background-image:none;
+  background-color: white;
+  width: 200px;
+  border-radius: 16px;
+  padding: 10px 10px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;  
+
+}
+
+
+.hide {
+  display: none;
+}
