@@ -63,6 +63,8 @@
   position:absolute;
   right: 20%;
   top:0%;
+  animation: puls 0.75s alternate;
+  animation-iteration-count: infinite;
 }
 #thumb{
   position:absolute;
@@ -70,6 +72,14 @@
   top:0%;
 }
 
+@keyframes puls{
+  from{
+    transform:scale(0.9)
+  }
+  to{
+    transform:scale(1)
+  }
+}
 .name{
   color:rgb(37, 35, 53);
   text-align: left;
