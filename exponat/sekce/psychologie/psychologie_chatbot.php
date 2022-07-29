@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../style_menu.css" >
         <script defer src="script_chatbot.js"></script>
     <script defer src="../script_menu.js"></script>
+    <link rel="icon" type="image/png" href="../icon.png">
 
     </head>
     <body>
