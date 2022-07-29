@@ -18,6 +18,13 @@ function show(tlacitko) {
     secondSection.classList.remove('hide')
     document.getElementById('skryte-btn').value=tlacitko
 }
+
+function show2(tlacitko) {
+    document.getElementById('first-section-2').classList.add('hide')
+    document.getElementById('second-section-2').classList.remove('hide')
+    document.getElementById('skryte-btn').value=tlacitko
+}
+
 function showQ(id){
 let par = document.getElementById(id)
 
