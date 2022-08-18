@@ -7,6 +7,7 @@
         "exponat": "exponat.html",
         "elements": "elements_of_ai.html",
         "en": "index_en.html",
+        "exp": "exponat/sekce/rozcestnik.html",
     }
     /*
     * Best practice for extracting hashes:
