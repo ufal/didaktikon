@@ -15,7 +15,7 @@ for (let i = 0; i < buttons.length; i++) {
     buttons.onclick = "location.href='google.com';";
     } 
 
-document.querySelector('audio').play()
+// document.querySelector('audio').play()
 
 // let bubbleElement = document.getElementById('test')
 // let answerButtonsElement = document.getElementById('bubbles_container')
