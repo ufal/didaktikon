@@ -8,6 +8,7 @@
         "elements": "elements_of_ai.html",
         "en": "index_en.html",
         "exp": "exponat/sekce/rozcestnik.html",
+        "expf": "exponat/sekce/frameshome.html",
     }
     /*
     * Best practice for extracting hashes:
