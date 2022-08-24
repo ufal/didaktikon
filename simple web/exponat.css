@@ -12,3 +12,49 @@ body{
     /* padding:10px; */
     /*border-radius: 16px;*/
 }
+
+a {
+    color: rgb(255, 255, 101);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(252, 252, 151);
+  }
+.y{
+    color:#ffd953 ;
+}
+.p{
+    color:#c6c5fc;
+}
+.large{
+    font-size: large;
+}
+#didaktikon_logo{
+   /* position:fixed;
+    right:10px;
+    top:60px;*/
+    width:200px;
+}
+
+#map{
+    width:60%;
+    height:450px;
+    margin: 20px auto;
+  }
+
+  @media screen and (min-width: 100px) and (max-width: 600px) {
+    #map{
+      width:90%;
+      height:300px;
+      margin: 20px auto;
+    }
+    .table-program{
+        width:90%;
+        margin:auto;
+    }
+    #heading-program{
+        margin:20px;
+    }
+
+  }
