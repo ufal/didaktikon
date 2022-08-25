@@ -36,8 +36,8 @@ const questions = [
     },
 
     {
-        question: 'První automatické popisování obrázků?',
-        note: 'Vygenerovat textový popisek k obrázku',
+        question: 'První automatické pojmenovávání obrázků?',
+        note: 'Pojmenovat objekt na obrázku',
         answers: [
             { text: '1979', correct: false},
             { text: '1989', correct: false},
@@ -129,8 +129,8 @@ const answers = [
     },
     {
         answer:'1999',
-        comment: 'První automatické popisování obrázků: 1999 Mori, Takahashi, Oka',
-        note: 'Vygenerovat popisek pomocí pravidel je prakticky nemožné, první systémy proto vznikly až s rozvojem strojového učení. <br>Popisek obrázku generuje na základě popisků podobných obrázků v trénovacích datech.'
+        comment: 'První automatické pojmenovávání obrázků: 1999 Mori, Takahashi, Oka',
+        note: 'Vygenerovat popisek pomocí pravidel je prakticky nemožné, první systémy proto vznikly až s rozvojem strojového učení. <br>Pojmenování obrázku generuje na základě popisků podobných obrázků v trénovacích datech.'
     },
     {
         answer:'1949',
@@ -145,12 +145,12 @@ const answers = [
     {
         answer:'1997',
         comment: 'Deep Blue vs Garry Kasparov',
-        note: 'Jednoduchý pravidlový systém, těžké je to že možných posloupností tahů je příliš mnoho. Nárůst výkonu počítačů umožnil propočítat více tahů než kolik zvládne člověk.'
+        note: 'Jednoduchý pravidlový systém, těžké je to, že možných posloupností tahů je příliš mnoho. Nárůst výkonu počítačů umožnil propočítat více tahů, než kolik zvládne člověk.'
     },
     {
         answer:'2016',
         comment: 'AlphaGo vs Lee Sedol',
-        note: 'Možných poslopností tahů v go je mnohem víc než v šachách, ani nejvýkonnější počítač jich nezvládne propočítat dost. <br>Proto se AlphaGo nejdřív učí z partií odehraných lidmi, a pak dál zdokonaluje svou strategii zlepšuje hraním sama proti sobě (reinforcement learning). <br>Zvládne tak odehrát miliony zápasů, takže má výrazně větší zkušenosti než může mít člověk.'
+        note: 'Možných poslopností tahů v go je mnohem víc než v šachách, ani nejvýkonnější počítač jich nezvládne propočítat dost. <br>Proto se AlphaGo nejdřív učí z partií odehraných lidmi, a pak dál zdokonaluje svou strategii zlepšuje hraním sama proti sobě (reinforcement learning). <br>Zvládne tak odehrát miliony zápasů, takže má výrazně větší zkušenosti, než může mít člověk.'
     },
     {
         answer:'2018',
