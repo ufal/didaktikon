@@ -130,7 +130,7 @@ const answers = [
     {
         answer:'1999',
         comment: 'První automatické pojmenovávání obrázků: 1999 Mori, Takahashi, Oka',
-        note: 'Vygenerovat popisek pomocí pravidel je prakticky nemožné, první systémy proto vznikly až s rozvojem strojového učení. <br>Pojmenování obrázku generuje na základě popisků podobných obrázků v trénovacích datech.'
+        note: 'Vygenerovat popisek pomocí pravidel je prakticky nemožné, první systémy proto vznikly až s rozvojem strojového učení. <br>Pojmenování obrázku se generuje na základě popisků podobných obrázků v trénovacích datech.'
     },
     {
         answer:'1949',
