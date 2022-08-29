@@ -106,7 +106,7 @@ const questions = [
     },
 
     {
-        question: 'Uvedení celovečerní divadelní hry, kde 90% scénáře napsala AI?',
+        question: 'Uvedení celovečerní divadelní hry, kde 90 % scénáře napsala AI?',
         note: '',
         answers: [
             { text: '2001', correct: false},
@@ -135,7 +135,7 @@ const answers = [
     {
         answer:'1949',
         comment: 'Elmer a Elsie',
-        note: 'Náhodně se procházeli, reagovali na světlo a dotek, jejich „mozky“ měly dvě umělé neuronové buňky'
+        note: 'Náhodně se procházeli, reagovali na světlo a dotek, jejich „mozky“ měly dvě umělé neuronové buňky.'
     },
     {
         answer:'1977',
@@ -150,7 +150,7 @@ const answers = [
     {
         answer:'2016',
         comment: 'AlphaGo vs Lee Sedol',
-        note: 'Možných poslopností tahů v go je mnohem víc než v šachách, ani nejvýkonnější počítač jich nezvládne propočítat dost. <br>Proto se AlphaGo nejdřív učí z partií odehraných lidmi, a pak dál zdokonaluje svou strategii zlepšuje hraním sama proti sobě (reinforcement learning). <br>Zvládne tak odehrát miliony zápasů, takže má výrazně větší zkušenosti, než může mít člověk.'
+        note: 'Možných posloupností tahů v go je mnohem víc než v šachách, ani nejvýkonnější počítač jich nezvládne propočítat dost. <br>Proto se AlphaGo nejdřív učí z partií odehraných lidmi, a pak dál zdokonaluje svou strategii hraním sama proti sobě (reinforcement learning). <br>Zvládne tak odehrát miliony zápasů, takže má výrazně větší zkušenosti, než může mít člověk.'
     },
     {
         answer:'2018',
@@ -160,7 +160,7 @@ const answers = [
     {
         answer:'2016',
         comment: 'Jiří Materna: Poezie umělého světa',
-        note: 'Neuronový jazykový model (biLSTM) se učil psát podle amatérských básní na webu pismak.cz'
+        note: 'Neuronový jazykový model (biLSTM) se učil psát podle amatérských básní na webu pismak.cz.'
     },
     {
         answer:'2021',
