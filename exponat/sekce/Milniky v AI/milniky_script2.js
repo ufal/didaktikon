@@ -155,7 +155,7 @@ const answers = [
     {
         answer:'2018',
         comment: 'Portrét Edmonda Belamy',
-        note: 'Strojové učení využívající metodu GAN se učilo malovat z trénovacích dat obsahujících 15 000 portrétů. <br>Obraz (tisk na plátně, 70x70 cm) se vydražil za 432 500 amerických dolarů (asi 10 000 000 Kč).'
+        note: 'Strojové učení využívající metodu GAN se učilo malovat z trénovacích dat obsahujících 15 000 portrétů. <br>Obraz (tisk na plátně, 70x70 cm) se vydražil za 432 500 amerických dolarů (asi 10 000 000 Kč).<br>2022: AI program Midjourney vítězí nad lidmi ve výtvarné soutěži s obrazem Théâtre D’opéra Spatial.'
     },
     {
         answer:'2016',
