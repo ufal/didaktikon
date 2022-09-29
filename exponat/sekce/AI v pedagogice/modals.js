@@ -21,7 +21,7 @@
       img3.onclick = function(){
         modal.style.display = "block";
         modalImg.src = "emotions_super_happy.jpg";
-        captionText.innerHTML = "Veselý student";
+        captionText.innerHTML = "Nadšený student";
       }
       
       // Get the <span> element that closes the modal

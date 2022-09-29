@@ -36,8 +36,8 @@ const questions = [
     },
 
     {
-        question: 'První automatické popisování obrázků?',
-        note: 'Vygenerovat textový popisek k obrázku',
+        question: 'První automatické pojmenovávání obrázků?',
+        note: 'Pojmenovat objekt na obrázku',
         answers: [
             { text: '1979', correct: false},
             { text: '1989', correct: false},
@@ -106,7 +106,7 @@ const questions = [
     },
 
     {
-        question: 'Uvedení celovečerní divadelní hry, kde 90% scénáře napsala AI?',
+        question: 'Uvedení celovečerní divadelní hry, kde 90 % scénáře napsala AI?',
         note: '',
         answers: [
             { text: '2001', correct: false},
@@ -129,13 +129,13 @@ const answers = [
     },
     {
         answer:'1999',
-        comment: 'První automatické popisování obrázků: 1999 Mori, Takahashi, Oka',
-        note: 'Vygenerovat popisek pomocí pravidel je prakticky nemožné, první systémy proto vznikly až s rozvojem strojového učení. <br>Popisek obrázku generuje na základě popisků podobných obrázků v trénovacích datech.'
+        comment: 'První automatické pojmenovávání obrázků: 1999 Mori, Takahashi, Oka',
+        note: 'Vygenerovat popisek pomocí pravidel je prakticky nemožné, první systémy proto vznikly až s rozvojem strojového učení. <br>Pojmenování obrázku se generuje na základě popisků podobných obrázků v trénovacích datech.'
     },
     {
         answer:'1949',
         comment: 'Elmer a Elsie',
-        note: 'Náhodně se procházeli, reagovali na světlo a dotek, jejich „mozky“ měly dvě umělé neuronové buňky'
+        note: 'Náhodně se procházeli, reagovali na světlo a dotek, jejich „mozky“ měly dvě umělé neuronové buňky.'
     },
     {
         answer:'1977',
@@ -145,22 +145,22 @@ const answers = [
     {
         answer:'1997',
         comment: 'Deep Blue vs Garry Kasparov',
-        note: 'Jednoduchý pravidlový systém, těžké je to že možných posloupností tahů je příliš mnoho. Nárůst výkonu počítačů umožnil propočítat více tahů než kolik zvládne člověk.'
+        note: 'Jednoduchý pravidlový systém, těžké je to, že možných posloupností tahů je příliš mnoho. Nárůst výkonu počítačů umožnil propočítat více tahů, než kolik zvládne člověk.'
     },
     {
         answer:'2016',
         comment: 'AlphaGo vs Lee Sedol',
-        note: 'Možných poslopností tahů v go je mnohem víc než v šachách, ani nejvýkonnější počítač jich nezvládne propočítat dost. <br>Proto se AlphaGo nejdřív učí z partií odehraných lidmi, a pak dál zdokonaluje svou strategii zlepšuje hraním sama proti sobě (reinforcement learning). <br>Zvládne tak odehrát miliony zápasů, takže má výrazně větší zkušenosti než může mít člověk.'
+        note: 'Možných posloupností tahů v go je mnohem víc než v šachách, ani nejvýkonnější počítač jich nezvládne propočítat dost. <br>Proto se AlphaGo nejdřív učí z partií odehraných lidmi, a pak dál zdokonaluje svou strategii hraním sama proti sobě (reinforcement learning). <br>Zvládne tak odehrát miliony zápasů, takže má výrazně větší zkušenosti, než může mít člověk.'
     },
     {
         answer:'2018',
         comment: 'Portrét Edmonda Belamy',
-        note: 'Strojové učení využívající metodu GAN se učilo malovat z trénovacích dat obsahujících 15 000 portrétů. <br>Obraz (tisk na plátně, 70x70 cm) se vydražil za 432 500 amerických dolarů (asi 10 000 000 Kč).'
+        note: 'Strojové učení využívající metodu GAN se učilo malovat z trénovacích dat obsahujících 15 000 portrétů. <br>Obraz (tisk na plátně, 70x70 cm) se vydražil za 432 500 amerických dolarů (asi 10 000 000 Kč).<br>2022: AI program Midjourney vítězí nad lidmi ve výtvarné soutěži s obrazem Théâtre D’opéra Spatial.'
     },
     {
         answer:'2016',
         comment: 'Jiří Materna: Poezie umělého světa',
-        note: 'Neuronový jazykový model (biLSTM) se učil psát podle amatérských básní na webu pismak.cz'
+        note: 'Neuronový jazykový model (biLSTM) se učil psát podle amatérských básní na webu pismak.cz.'
     },
     {
         answer:'2021',

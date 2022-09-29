@@ -15,7 +15,7 @@
             <img src='home.png'>     
         </a>
         <div id="vysledky">
-            <p>Uhodli jste správně</p>
+            <p>Zodpověděli jste správně</p>
             <p id="vysledek" style="color:<?php if(intval($_GET['odpovedi'])>=5){
                 echo "rgb(161, 211, 100)";
             }
