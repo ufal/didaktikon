@@ -12,7 +12,7 @@ window.addEventListener('scroll', () => {
 let people = {
   'alisa': 'Design, front end',
   'vika': 'Back end',
-  'misa': 'Front end',
+  'misa': 'Front end, back end, design',
   'tereza': ' Sociology/informatics, AI in the context of social sciences',
   'rosa': 'Informatics, in the context of plays',
   'jindrich': 'Informatics, AI in the context of natural language',
