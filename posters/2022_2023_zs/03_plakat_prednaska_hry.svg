@@ -8,7 +8,7 @@
    version="1.1"
    id="svg42109"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   sodipodi:docname="02_plakat_prednaska_hudba.svg"
+   sodipodi:docname="03_plakat_prednaska_hry.svg"
    inkscape:export-filename="/home/rosa/repos/didaktikon/posters/2022_2023_zs/04_plakat_prednaska_autorskepravo.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -28,8 +28,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.456068"
-     inkscape:cx="604.07659"
-     inkscape:cy="404.54494"
+     inkscape:cx="579.95737"
+     inkscape:cy="792.64496"
      inkscape:window-width="1864"
      inkscape:window-height="1136"
      inkscape:window-x="1976"
@@ -205,10 +205,6 @@
          style="font-family:Questrial;-inkscape-font-specification:Questrial"
          id="path2157" />
     </g>
-    <path
-       style="fill:#668000;fill-opacity:1;stroke-width:1.09633;stroke-linejoin:round"
-       d="m 143.19712,130.64938 c -0.92011,-0.37222 -2.1066,-1.93835 -2.31662,-3.05787 -0.39863,-2.12493 1.61989,-4.28725 3.97186,-4.25479 1.97745,0.0273 3.37353,1.3528 3.63277,3.44915 0.33431,2.70332 -2.6914,4.91395 -5.28801,3.86351 z"
-       id="path283081" />
     <g
        aria-label="AI v kontextu umění, 24. 2."
        id="text286204"
@@ -224,7 +220,7 @@
            id="tspan15609"
            style="font-size:14.1111px;text-align:center;text-anchor:middle;stroke-width:0.0700042"
            x="250.10995"
-           y="63.635529">Jan Hajič jr.</tspan></text>
+           y="63.635529">Tým EquiLibre Technologies</tspan></text>
     </g>
     <text
        xml:space="preserve"
@@ -301,7 +297,7 @@
        transform="rotate(-45)"><tspan
          sodipodi:role="line"
          id="tspan64595-0"
-         style="font-size:8.81944px;stroke-width:0.264583;fill:#89a02c"
+         style="font-size:8.81944px;fill:#000000;fill-opacity:1;stroke-width:0.264583"
          x="11.789159"
          y="183.44617">hudba</tspan></text>
     <text
@@ -313,7 +309,7 @@
        transform="rotate(-45)"><tspan
          sodipodi:role="line"
          id="tspan64595-3"
-         style="font-size:8.81944px;fill:#000000;stroke-width:0.264583"
+         style="font-size:8.81944px;fill:#89a02c;fill-opacity:1;stroke-width:0.264583"
          x="43.273262"
          y="214.53395">hry</tspan></text>
     <text
@@ -368,6 +364,10 @@
            style="fill:#000000"
            id="tspan24631">AI a <tspan
    style="fill:#89a02c"
-   id="tspan39540">hudba</tspan>, 3.11.</tspan></tspan></text>
+   id="tspan39540">hry</tspan>, 24.11.</tspan></tspan></text>
+    <path
+       style="fill:#668000;fill-opacity:1;stroke-width:1.09633;stroke-linejoin:round"
+       d="m 183.72323,130.57693 c -0.92011,-0.37222 -2.1066,-1.93835 -2.31662,-3.05787 -0.39863,-2.12493 1.61989,-4.28725 3.97186,-4.25479 1.97745,0.0273 3.37353,1.3528 3.63277,3.44915 0.33431,2.70332 -2.6914,4.91395 -5.28801,3.86351 z"
+       id="path283081-3" />
   </g>
 </svg>
