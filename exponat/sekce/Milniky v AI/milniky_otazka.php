@@ -48,10 +48,7 @@
             </div>
             <img id="question-image" src="question_images/0.jpg">
         </div>
-        <div id="answer-container"><!--
-            <div>
-                <img id="answer-image" src="eliza.png">
-            </div>-->
+        <div id="answer-container">
             <div>
                 <h1 id="answer">1966</h1>
                 <p id="answer-comment">První chatbot se jmenoval ELIZA a vznikl v roce 1966</p>
@@ -62,6 +59,7 @@
                     <input type="button" id="next-btn" value="Další otázka">
                 </form>
             </div>
+            <img id="answer-image" src="eliza.png">
         </div> <?php } ?> 
         
         <script src="milniky_script2.js"></script>

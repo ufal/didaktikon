@@ -200,7 +200,7 @@ function Evaluate(index){
 function showAnswer(){
     answerContainer.style.display="grid"
     questionContainer.style.display="none"
-    //answerImage.src="answer_images/" + currentQuestionIndex + ".png"
+    answerImage.src="answer_images/" + currentQuestionIndex + ".png"
     answer.innerHTML=answers[currentQuestionIndex].answer
     answerComment.innerHTML=answers[currentQuestionIndex].comment
     answerNote.innerHTML=answers[currentQuestionIndex].note

@@ -132,9 +132,10 @@ li{
     width:90%;
     margin:5%;
     display: none;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 60% 40%;
 }
 #answer-image{
+    margin:5%;
     width:90%;
 }
 #answer-comment{
