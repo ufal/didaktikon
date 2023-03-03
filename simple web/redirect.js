@@ -9,6 +9,8 @@
         "en": "index_en.html",
         "exp": "exponat/sekce/rozcestnik.html",
         "expf": "exponat/sekce/frameshome.html",
+        "chatgpt_letacek": "ChatGPT_diskuze_l.png",
+        "chatgpt_letacek_d": "ChatGPT_diskuze_d.png",
     }
     /*
     * Best practice for extracting hashes:
