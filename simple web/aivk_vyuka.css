@@ -34,26 +34,6 @@
     cursor: pointer;
     font-size: 20px;
   }
-  .fa {
-    font-size: 20px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  }
-  
-  .fa-facebook {
-    background-color: #2D5C4C;
-    color: white;
-  }
-  a.fa-facebook{
-    color:white;
-    text-decoration: none;
-  }
   @media screen and (min-width: 100px) and (max-width: 600px) {
     #map{
       width:90%;
