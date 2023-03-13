@@ -20,7 +20,8 @@ let people = {
   'nikol': 'Psychologist, AI in psychology',
   'frantisek': 'Theologian, AI in theology and religion',
   'helena': 'Teacher, AI for children',
-  'veronika':'journalist, AI in journalism'
+  'veronika':'journalist, AI in journalism',
+  'dita':'AI in art'
 }
 
 let description = document.querySelector('.description')

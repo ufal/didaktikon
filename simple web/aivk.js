@@ -21,6 +21,7 @@ let people = {
   'frantisek': 'Teolog, AI v teologii a náboženství',
   'helena': 'Pedagožka, AI pro děti',
   'veronika': 'žurnalistka, AI v žurnalistice',
+  'dita': 'AI v umění',
   'we-want-you': 'Hledáme odborníky na AI v kontextech: práva, architektury, dopravy, ekologie, ekonomie, markentigu, hudby, bezpečnosti, atd.'
 }
 
