@@ -6,6 +6,7 @@
         "prednasky": "aivk_vyuka.html",
         "exponat": "exponat.html",
         "elements": "elements_of_ai.html",
+        "ethics": "ethics_of_ai.html",
         "en": "index_en.html",
         "exp": "exponat/sekce/rozcestnik.html",
         "expf": "exponat/sekce/frameshome.html",
