@@ -5,8 +5,8 @@
         <meta charset="UTF-8"> 
         <link rel="stylesheet" href="divadlo_style.css">
         <link rel="stylesheet" href="../style_menu.css" >
-        <script defer src="../script_menu.js"></script>
-        <link rel="icon" type="image/png" href="../icon.png">
+        <script defer src="../!scripts/script_menu.js"></script>
+        <link rel="icon" type="image/png" href="../!assets/img/icon.png">
         <!-- jQuery Ajax CDN -->
     <script src=
     "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
