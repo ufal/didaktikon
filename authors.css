@@ -1,0 +1,70 @@
+html, body {
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+/*
+a {
+  text-decoration: none;
+  color:rgb(255, 255, 101);
+}
+*/
+
+p {
+  font-size: var(--small-font-size);
+}
+
+/*ŠIPKY:*/
+#next-button {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+}
+  
+#next-button {
+  background-color: var(--pastel-blue);
+  padding: 10px;
+  border-radius: 16px;
+  transition: 0.2s;
+}
+
+#next-button:active {
+  background-color: var(--light-pastel-blue);
+}
+
+.a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.a img {
+  width: 3vw;
+  height: 3vw;
+}
+
+#logo {
+  width: 150px;
+}
+
+/*
+.kviz-btn {
+  text-decoration: none;
+  background-color: rgb(68, 172, 169);
+  border-radius: 16px;
+  padding:10px;
+  font-size: 2vw;
+  margin: 40px 40%;
+  width:20%;
+  transition: 0.3s;
+  font-weight: bold;
+  color:white;
+  display: inline-block;
+  text-align: center;
+}
+
+.kviz-btn:hover{
+  background-color: rgba(68, 172, 169, 0.664);
+}
+*/
