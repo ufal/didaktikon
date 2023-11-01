@@ -9,7 +9,7 @@
     --superbig-font-size: 5vw;
     --big-font-size: 2.5vw;
     --middle-font-size: 2vw;
-    --small-font-size: 1vw;
+    --small-font-size: 1.5vw;
 }
 
 html, body {
@@ -48,6 +48,5 @@ h1.nadpis {
     top: 0;
     margin: 0;
     width: 100%;
-    position: absolute;
     padding: 40px 0 20px 0;
 }
