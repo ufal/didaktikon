@@ -13,9 +13,8 @@
     <script defer src="script.js"></script>
 
     <link rel="stylesheet" href="../style_menu.css" >
-    <!-- <script defer src="../script_menu_sipky.js"></script> -->
-    <script defer src="../script_menu.js"></script>
-    <link rel="icon" type="image/png" href="../icon.png">
+    <script defer src="../!scripts/script_menu.js"></script>
+    <link rel="icon" type="image/png" href="../!assets/img/icon.png">
   </head>
   <body>
 
