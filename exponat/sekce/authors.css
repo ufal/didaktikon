@@ -28,7 +28,7 @@ p {
   transition: 0.2s;
 }
 
-#next-button:hover {
+#next-button:active {
   background-color: var(--light-pastel-blue);
 }
 

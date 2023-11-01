@@ -80,6 +80,6 @@ a.mini-bubble {
     text-decoration: none;
 }
 
-.mini-bubble:hover {
+.mini-bubble:active {
     background-color: var(--light-pastel-blue);
 }
