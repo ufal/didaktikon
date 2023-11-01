@@ -1,111 +1,85 @@
 body {
-    
-    font-family: 'Questrial';
-    background-color: rgb(32, 53, 81);
-    color: white;
-    text-align: center;
-
-}
-
-.bubble {
-    border: none;
-    outline: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;  
-
-    background-color: rgb(219, 151, 87);
-
-    box-shadow: inset 0 0 80px rgba(6, 0, 92, 0.7);
-
-    border-radius: 50%;
-
-    margin: 20px; 
-
-    color:white;
-    font-size: 30px;
- 
-
-    min-height: 250px;
-    min-width: 250px;
-
     display: flex;
+    min-height: 100%;
     align-items: center;
     justify-content: center;
-   
-    transition: min-width 0.5s, min-height 0.5s, background-color 2s;
-text-decoration: none;
-cursor:pointer;
-}
-
-.unfinished{
-    background-color: rgb(168, 168, 168);
-}
-
-
-.bubble:hover {
- 
-    background-color: rgb(131, 217, 235);
-    transition-timing-function: ease-in-out;
-
-    min-height: 280px;
-    min-width: 280px;
 }
 
 .bubbles-container {
-    max-width: 80%;
-    margin: auto;
-
     display: flex;
-
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+
+    max-width: 1600px;
 }
 
-.hide {
-    display: none;
+a.bubble {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 6px black;
 }
 
-h2 {
-    font-size: 35px;
-    font-weight: 200;
+.bubble {
+    margin: 2%;
+    display: flex;
+    min-width: 300px;
+    min-height: 300px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-size: auto 300px;
+    background-position: center;
+
+    font-size: 32px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: inset 0px 0px 40px black;
 }
 
-
-h1 {
-    font-size: 50px;
-    font-weight: 200;
+.bubble:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
 }
 
-.authors {
+.bubble:active {
+    background-size: auto 330px;
+}
+
+.bubble:active:before {
+    opacity: .1;
+}
+
+.bottom-right {
     position: fixed;
     right: 15px;
     bottom: 15px;
-    transform: translate(-50%, -50%);
-    background-color: rgba(100, 148, 237, 0.402);
-    padding: 10px;
-    border-radius: 50%;
-    transition: 0.2s;
-  }
-  
-  .authors:hover {
-    background-color: rgba(100, 148, 237, 0.84);
-  }
-#person{
-    width:45px;
-    height: 40px;
-}
-#autori_text{
-    text-decoration: none;
-    color:white;
-    display: inline-block;
-    padding:15px 5px;
 }
 
-@media screen and (min-width:1100px) and (max-width:1142px)
-{
-    .bubbles-container {
-        max-width: 90%;
-    }
+.mini-bubble {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pastel-blue);
+}
+
+a.mini-bubble {
+    color: white;
+    text-decoration: none;
+}
+
+.mini-bubble:hover {
+    background-color: var(--light-pastel-blue);
 }

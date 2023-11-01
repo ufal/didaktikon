@@ -1,0 +1,53 @@
+:root {
+    --blue: #284366;
+    --dark-blue: #203551;
+    --pastel-blue: #6494ed67;
+    --light-pastel-blue: #6494edd6;
+
+    --light-green: yellowgreen;
+
+    --superbig-font-size: 5vw;
+    --big-font-size: 2.5vw;
+    --middle-font-size: 2vw;
+    --small-font-size: 1vw;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+
+    color: white;
+    background-color: var(--dark-blue);
+}
+
+html {
+    height: 100%;
+    font-family: 'Questrial', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: var(--superbig-font-size);
+}
+
+h2 {
+    font-size: var(--big-font-size);
+}
+
+h3 {
+    font-size: var(--middle-font-size);
+}
+
+h4 {
+    font-size: var(--small-font-size);
+}
+
+h1.nadpis {
+    top: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    padding: 40px 0 20px 0;
+}
