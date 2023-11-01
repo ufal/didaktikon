@@ -5,8 +5,8 @@
         <meta charset="UTF-8"> 
         <link rel="stylesheet" href="milniky_style2.css">
         <link rel="stylesheet" href="../style_menu.css" >
-        <script defer src="../script_menu.js"></script>
-        <link rel="icon" type="image/png" href="../icon.png">
+        <script defer src="../!scripts/script_menu.js"></script>
+        <link rel="icon" type="image/png" href="../!assets/img/icon.png">
     </head>
     <body>
         
