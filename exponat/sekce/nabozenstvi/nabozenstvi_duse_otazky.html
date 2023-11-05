@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI v náboženství - Otázky</title>
+    <link href='https://fonts.googleapis.com/css?family=Questrial|Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="../style_menu.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="../!scripts/script_menu.js"></script>
+
+    <script src="./data/questions-1.js"></script>
+</head>
+<body>
+
+    <div class="menu-header">
+        <button id="menu-btn" onclick="showMenu()">
+            <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 13.185675,15.139108 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path4" />
+                <path d="M 13.185675,24.906275 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path6" />
+                <path d="M 13.185675,34.673441 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path8" />
+            </svg>
+        </button>
+    </div>
+    <div id="menu-items" class="hide" >
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+    </div>
+
+    <div id='cover' onclick='unshow()'>
+    </div>
+
+    <a id='prev-button' class='nav-arrow' href='nabozenstvi_duse.html' >
+        <img src='../!assets/img/arrow_left_white.png'>        
+    </a>
+    
+    <div id="content">
+        
+        <form id="question-form" method="post" action="#">   <!-- TODO: doplnit do action adresu skriptu nebo skocit rovnou na stranku vysledku -->
+            <input type="hidden" name="seed" value="">
+            <input type="hidden" name="text" value="">
+            <input type="hidden" name="language" value="cs">
+        </form>
+
+    </div>
+
+    <script>
+        function onButtonClick(form, answer, groupNo, isLastGroup) {
+            form.text.value = !form.text.value ? answer : [form.text.value, answer].join(", ");
+
+            let groupInputs = form.querySelectorAll("[data-group='" + groupNo + "']");
+            groupInputs.forEach(function (el) { el.setAttribute("disabled", ""); });
+
+            if (isLastGroup)
+            {
+                location.href = "./nabozenstvi_duse_result.html";
+                
+                // TODO: zamenit presmerovani za odeslani formulare
+                // form.submit();
+            }
+            else
+                location.hash = "question-group-" + (groupNo + 1);
+        }
+
+        const SEED = "9341828"; // TODO - generovat
+
+        let formEl = document.getElementById("question-form");
+        formEl.seed.value = SEED;
+
+        let formButtonTemplate = document.createElement("button");
+        formButtonTemplate.className = "button";
+        formButtonTemplate.setAttribute("type", "button");
+        formButtonTemplate.setAttribute("name", "answer");
+
+        for (let i = 0; i < nabozenstviQuestions1.length; i++) {
+            let entry = nabozenstviQuestions1[i];
+            
+            if (entry.options.length == entry.answers.length) {
+
+                let section = document.createElement("div");
+                section.className = "section";
+                section.setAttribute("id", "question-group-" + i);
+
+                let question = document.createElement("h3");
+                question.innerHTML = entry.question;
+
+                section.appendChild(question);
+
+                for (let j = 0; j < entry.options.length; j++) {
+                    
+                    let option = entry.options[j];
+                    let answer = entry.answers[j];
+
+                    if (entry.prepend || entry.append)
+                        answer = [entry.prepend, answer, entry.append].join("");
+
+                    let button = formButtonTemplate.cloneNode(false);
+                    button.setAttribute("value", entry.answers[j]);
+                    button.setAttribute("data-group", i);
+                    button.onclick = function () {
+                        const isLastGroup = (i == nabozenstviQuestions1.length - 1);
+                        onButtonClick(formEl, answer, i, isLastGroup);
+                    };
+                    button.innerHTML = option;
+
+                    section.appendChild(button);
+                }
+
+                formEl.appendChild(section);
+            }
+        }
+    </script>
+
+</body>
+</html>

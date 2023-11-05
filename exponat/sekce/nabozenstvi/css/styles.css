@@ -1,0 +1,49 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    position: relative;
+    text-align: center;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#content {
+    padding: 0 8%;
+}
+
+#content.centered {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section {
+    gap: 1em;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.section h3 {
+    width: 100%;
+}
+
+#generated-soul-image {
+    width: 512px;
+    height: 512px;
+}
