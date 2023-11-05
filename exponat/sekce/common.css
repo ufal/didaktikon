@@ -1,9 +1,10 @@
+/* Konstanty ******************************* */
+
 :root {
     --blue: #284366;
     --dark-blue: #203551;
     --pastel-blue: #6494ed67;
     --light-pastel-blue: #6494edd6;
-
     --light-green: yellowgreen;
 
     --superbig-font-size: 5vw;
@@ -11,6 +12,8 @@
     --middle-font-size: 2vw;
     --small-font-size: 1.5vw;
 }
+
+/* Základní prvky webu ********************** */
 
 html, body {
     margin: 0;
@@ -28,6 +31,8 @@ html {
     font-weight: normal;
 }
 
+/* Fonty a nadpisy  ************************** */
+
 h1 {
     font-size: var(--superbig-font-size);
 }
@@ -40,7 +45,8 @@ h3 {
     font-size: var(--middle-font-size);
 }
 
-h4 {
+p,
+blockquote {
     font-size: var(--small-font-size);
 }
 
@@ -49,4 +55,123 @@ h1.nadpis {
     margin: 0;
     width: 100%;
     padding: 40px 0 20px 0;
+}
+
+@keyframes prijed {
+    from {
+      opacity: 0;
+      transform:scale(0.5)
+    }
+    to {
+      opacity: 1;
+      transform:scale(1)
+    }
+}
+
+/* Šipky ************************************* */
+
+.nav-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: var(--pastel-blue);
+    padding: 10px;
+    border-radius: 16px;
+    transition: 0.2s;
+
+}
+
+.nav-arrow:active,
+.nav-arrow:active {
+    background-color: var(--light-pastel-blue);
+}
+
+.nav-arrow img {
+    width: 3vw;
+    height: 3vw;
+  }
+
+.nav-arrow img.inverted {
+    transform: scaleX(-1);
+}
+
+#next-button {
+    left: 95%;
+}
+
+#prev-button {
+    left: 5%;
+}
+
+/* Animace ********************************* */
+
+.prijed {
+    opacity: 0;
+    transform: scale(0.5);
+    animation: prijed 1s forwards;
+}
+
+.prijed.delay1s {
+    animation-delay: 1s;
+}
+
+.prijed.delay3s {
+    animation-delay: 3s;
+}
+
+.prijed.delay6s {
+    animation-delay: 6s;
+}
+
+/* Prvky webu ******************************* */
+
+.button {
+    text-decoration: none;
+    background-color: var(--pastel-blue);
+    border-radius: 16px;
+    padding: 10px;
+    font-size: var(--middle-font-size);
+    width: 20%;
+    transition: 0.3s;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    outline: none;
+    border: 0;
+}
+
+.button:enabled:active {
+    background-color: var(--light-pastel-blue);
+}
+
+.button:disabled,
+.button[disabled] {
+    opacity: 0.4;
+}
+
+.kategorie {
+    border-radius: 16px;
+    border: solid var(--light-green);
+    width: 25%;
+    display: inline-block;
+    transition: transform 1s;
+    margin: 20px;
+}
+
+.kategorie:active {
+    background: var(--blue);
+    transform: translate(0, 50px);
+    cursor: pointer;
+}
+
+.img-kat {
+    width: 100%;
+    border-radius: 12px;
 }
