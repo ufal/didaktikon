@@ -13,6 +13,8 @@ import random
 
 from image_generation import get_image_for_line
 
+prompts = list()
+
 # OPENAI SETUP
 
 # path to file with authentication key
@@ -82,11 +84,16 @@ def append_message_assistant(messages, message):
     messages.append({"role": "assistant", "content": message})
 
 def get_image(title, text):
+    system_message = "You are a skilled artist drawing comics images."
+    prompt = f'You are generating images for a story titled "{title}". Generate an English description of an image for an image generator. The image should depict a scene illustrating the following part of a story: {text}'
     messages = [
-        {"role": "system", "content": "You are a skilled artist drawing comics images."},
-        {"role": "user", "content": f'You are generating images for a story titled "{title}". Generate an English description of an image for an image generator. The image should depict a scene illustrating the following part of a story: {text}'},
+        {"role": "system", "content": system_message},
+        {"role": "user", "content": prompt},
     ]
+    prompts.append(f"SYSTEM MESSAGE FOR {model}: {system_message})")
+    prompts.append(f"PROMPT FOR {model}: {prompt})")
     image_description = generate_with_openai(messages)
+    prompts.append(f"PROMPT FOR StableDiffusion v1-5: {image_description})")
     image_filename = get_image_for_line(image_description, seed)
     return f"<img src='genimgs/{image_filename}' title='{image_description}'>"
 
@@ -127,6 +134,7 @@ else:
     messages = messages_initial
 
 base_title = "Nech si vygenerovat příběh na přání!"
+first_sentence = "Vygeneruj první větu příběhu."
 if not prompt:
     # welcome screen
     title = base_title
@@ -135,11 +143,14 @@ if not prompt:
     prompt = "Vygeneruj název příběhu, ve kterém se vyskytne "
 else:
     append_message_user(messages, prompt + word)
+    prompts.append(f"SYSTEM MESSAGE FOR {model}: {system_message})")
+    prompts.append(f"PROMPT FOR {model}: {prompt}{word})")
     if title == base_title:
         # first generate the title
         title = generate_with_openai(messages)
         append_message_assistant(messages, title)
-        append_message_user(messages, "Vygeneruj první větu příběhu.")
+        append_message_user(messages, first_sentence)
+        prompts.append(f"PROMPT FOR {model}: {first_sentence})")
     # generate a continuation
     sentence = generate_with_openai(messages)
     append_message_assistant(messages, sentence)
@@ -170,10 +181,13 @@ for word in words:
     <input type="submit" name="word" value="{word}">
     """)
 
-print("""
+prompts = "\n".join(prompts)
+print(f"""
 </form>
+<hr>
+<pre>{prompts}</pre>
 </body></html>
 """)
 
+# TODO možná přidat i možnost dostat jiný pokračování nebo jiný slova...
 
-# TODO: "Vygeneruj popisek obrázku, ilustrujícího poslední větu, v angličtině."
