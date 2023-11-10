@@ -90,12 +90,12 @@ def get_image(title, text):
         {"role": "system", "content": system_message},
         {"role": "user", "content": prompt},
     ]
-    prompts.append(f"SYSTEM MESSAGE FOR {model}: {system_message})")
-    prompts.append(f"PROMPT FOR {model}: {prompt})")
+    prompts.append(f"SYSTEM MESSAGE FOR {model}: {system_message}")
+    prompts.append(f"PROMPT FOR {model}: {prompt}")
     image_description = generate_with_openai(messages)
-    prompts.append(f"PROMPT FOR StableDiffusion v1-5: {image_description})")
+    prompts.append(f"PROMPT FOR StableDiffusion v1-5: {image_description}")
     image_filename = get_image_for_line(image_description, seed)
-    return f"<img src='genimgs/{image_filename}' title='{image_description}'>"
+    return f"<img src='genimgs/{image_filename}'>"
 
 
 # MAIN
@@ -143,14 +143,14 @@ if not prompt:
     prompt = "Vygeneruj název příběhu, ve kterém se vyskytne "
 else:
     append_message_user(messages, prompt + word)
-    prompts.append(f"SYSTEM MESSAGE FOR {model}: {system_message})")
-    prompts.append(f"PROMPT FOR {model}: {prompt}{word})")
+    prompts.append(f"SYSTEM MESSAGE FOR {model}: {system_message}")
+    prompts.append(f"PROMPT FOR {model}: {prompt}{word}")
     if title == base_title:
         # first generate the title
         title = generate_with_openai(messages)
         append_message_assistant(messages, title)
         append_message_user(messages, first_sentence)
-        prompts.append(f"PROMPT FOR {model}: {first_sentence})")
+        prompts.append(f"PROMPT FOR {model}: {first_sentence}")
     # generate a continuation
     sentence = generate_with_openai(messages)
     append_message_assistant(messages, sentence)
@@ -181,11 +181,11 @@ for word in words:
     <input type="submit" name="word" value="{word}">
     """)
 
-prompts = "\n".join(prompts)
+prompts = "<br>".join(prompts)
 print(f"""
 </form>
 <hr>
-<pre>{prompts}</pre>
+<kbd>{prompts}</kbd>
 </body></html>
 """)
 
