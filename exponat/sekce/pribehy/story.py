@@ -62,6 +62,8 @@ def generate_with_openai(messages):
             # print(openai.InvalidRequestError)
             messages.pop(3)
         except Exception as e:
+            type, value, traceback = sys.exc_info()
+            print("EXCEPTION", e, type, value, traceback, sep="\n")
             result = str(e)
             ok = True
     
