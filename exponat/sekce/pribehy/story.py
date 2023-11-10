@@ -9,6 +9,7 @@ import tiktoken
 import random
 import cgi
 import sys
+import random
 
 from image_generation import get_image_for_line
 
@@ -86,7 +87,7 @@ def get_image(title, text):
         {"role": "user", "content": f'You are generating images for a story titled "{title}". Generate an English description of an image for an image generator. The image should depict a scene illustrating the following part of a story: {text}'},
     ]
     image_description = generate_with_openai(messages)
-    image_filename = get_image_for_line(image_description)
+    image_filename = get_image_for_line(image_description, seed)
     return f'<img src="genimgs/{image_filename}" title="{image_description}">'
 
 
@@ -111,6 +112,7 @@ words = random.choices(nouns, k=10)
 # read in params
 form = cgi.FieldStorage()
 
+seed = int(form.getvalue("seed", random.randint(0, 10000000)))
 title = form.getvalue("title")
 prompt = form.getvalue("prompt")
 word = form.getvalue("word")
@@ -157,6 +159,7 @@ print(f"""
 <p>{sentence}</p>
 <h2>{hint}</h2>
 <form method="post">
+<input type="hidden" name="seed" value="{seed}">
 <input type="hidden" name="messages" value='{json.dumps(messages)}'>
 <input type="hidden" name="title" value="{title}">
 <input type="hidden" name="prompt" value="{prompt}">
