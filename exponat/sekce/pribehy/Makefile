@@ -8,4 +8,5 @@ nouns.txt: czech-morfflex-2.0.tsv.xz
 clean:
 	-rm czech-morfflex-2.0.tsv.xz
 
+# TODO asi přefiltrovat nouns ještě tim jestli se vyskytujou v nějakym korpusu
 
