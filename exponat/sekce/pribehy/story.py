@@ -12,6 +12,7 @@ import sys
 import random
 
 from image_generation import get_image_for_line
+from sound_generation import get_audio_for_line
 
 prompts = list()
 
@@ -95,7 +96,7 @@ def get_image(title, text):
     image_description = generate_with_openai(messages)
     prompts.append(f"PROMPT FOR StableDiffusion v1-5: {image_description}")
     image_filename = get_image_for_line(image_description, seed)
-    return f"<img src='genimgs/{image_filename}'>"
+    return f"genimgs/{image_filename}"
 
 
 # MAIN
@@ -158,7 +159,15 @@ else:
     hint = "Co by se mělo nyní v příběhu objevit?"
     prompt = "Vygeneruj další větu příběhu, ve které se vyskytne "
 
-image = get_image(title, sentence) if sentence else ""
+image = ""
+sound = ""
+if sentence:
+    image = f"<img src='{get_image(title, sentence)}'>"
+    sound = f"""
+        <audio autoplay controls>
+            <source src="{get_audio_for_line(sentence)}" type="audio/mpeg">
+        </audio>"""
+
 
 print(f"""
 <html><head>
@@ -168,6 +177,7 @@ print(f"""
 <h1>{title}</h2>
 {image}
 <p>{sentence}</p>
+{sound}
 <h2>{hint}</h2>
 <form method="post">
 <input type="hidden" name="seed" value="{seed}">
@@ -191,3 +201,4 @@ print(f"""
 
 # TODO možná přidat i možnost dostat jiný pokračování nebo jiný slova...
 
+# TODO možná nějak zobrazovat celou story nebo nějak umožnit se vrátit zpět
