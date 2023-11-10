@@ -112,11 +112,11 @@ except Exception as e:
 
 # next word choices
 CHOICES=5
+FIRST_CHOICES=15
 nouns = list()
 with open('nouns.txt') as infile:
     for line in infile:
         nouns.append(line.strip())
-words = random.choices(nouns, k=CHOICES)
 
 # read in params
 form = cgi.FieldStorage()
@@ -144,6 +144,7 @@ if not prompt:
     sentence = ""
     hint = "O čem by měl být vygenerovaný příběh?"
     prompt = "Vygeneruj název příběhu, ve kterém se vyskytne "
+    words = random.choices(nouns, k=FIRST_CHOICES)
     text_for_audio = f"{base_title} {hint}"
 else:
     append_message_user(messages, prompt + word)
@@ -165,6 +166,7 @@ else:
     # next
     hint = "Co by se mělo nyní v příběhu objevit?"
     prompt = "Vygeneruj další větu příběhu, ve které se vyskytne "
+    words = random.choices(nouns, k=CHOICES)
 
 if sentence:
     image = f"<img src='{get_image(title, sentence)}'>"
