@@ -125,6 +125,7 @@ seed = int(form.getvalue("seed", random.randint(0, 10000000)))
 title = form.getvalue("title")
 prompt = form.getvalue("prompt")
 word = form.getvalue("word")
+end = form.getvalue("end")
 
 messages_initial = [
     {"role": "system", "content": system_message},
@@ -147,9 +148,13 @@ if not prompt:
     words = random.choices(nouns, k=FIRST_CHOICES)
     text_for_audio = f"{base_title} {hint}"
 else:
-    append_message_user(messages, prompt + word)
+    if end:
+        message = 'Vygeneruj konec příběhu.'
+    else:
+        message = prompt + word
+    append_message_user(messages, message)
     prompts.append(f"SYSTEM MESSAGE FOR {model}: {system_message}")
-    prompts.append(f"PROMPT FOR {model}: {prompt}{word}")
+    prompts.append(f"PROMPT FOR {model}: {message}")
     if title == base_title:
         # first generate the title
         title = generate_with_openai(messages)
@@ -170,8 +175,10 @@ else:
 
 if sentence:
     image = f"<img src='{get_image(title, sentence)}'>"
+    konec = f'<input type="submit" name="end" value="KONEC">'
 else:
     image = ""
+    konec = ""
 
 if text_for_audio:
     sound = f"""
@@ -181,6 +188,7 @@ if text_for_audio:
 else:
     sound=""
 
+# Result
 print(f"""
 <html><head>
 <meta charset="UTF-8">
@@ -191,14 +199,35 @@ print(f"""
 {image}
 <p>{sentence}</p>
 {sound}
-<h2>{hint}</h2>
-<form method="post">
-<input type="hidden" name="seed" value="{seed}">
-<input type="hidden" name="messages" value='{json.dumps(messages)}'>
-<input type="hidden" name="title" value="{title}">
-<input type="hidden" name="prompt" value="{prompt}">
-{' '.join([ f'<input type="submit" name="word" value="{word}">' for word in words])}
-</form>
+""")
+
+# Next
+if end:
+    # End
+    print(f"""
+    <h2>KONEC</h2>
+    <ul>
+    <li><a href="lm.html">Jak funguje jazykový model?</a></li>
+    <li><a href="sd.html">Jak funguje generování obrázků?</a></li>
+    <li><a href="story.py">Vygeneruj si další příběh!</a></li>
+    </ul>
+    """)
+else:
+    # Continue
+    print(f"""
+    <h2>{hint}</h2>
+    <form method="post">
+    <input type="hidden" name="seed" value="{seed}">
+    <input type="hidden" name="messages" value='{json.dumps(messages)}'>
+    <input type="hidden" name="title" value="{title}">
+    <input type="hidden" name="prompt" value="{prompt}">
+    {' '.join([ f'<input type="submit" name="word" value="{word}">' for word in words])}
+    {konec}
+    </form>
+    """)
+
+# Prompts
+print(f"""
 <hr>
 <kbd>{'<br>'.join(prompts)}</kbd>
 </body></html>
