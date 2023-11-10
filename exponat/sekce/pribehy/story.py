@@ -144,7 +144,7 @@ print(f"""
 <p>{sentence}</p>
 <h2>{hint}</h2>
 <form method="post">
-<input type="hidden" name="messages" value="{json.dumps(messages)}">
+<input type="hidden" name="messages" value='{json.dumps(messages)}'>
 <input type="hidden" name="title" value="{title}">
 <input type="hidden" name="prompt" value="{prompt}">
 """)
