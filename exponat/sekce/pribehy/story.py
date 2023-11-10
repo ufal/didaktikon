@@ -155,7 +155,7 @@ else:
         title = title.replace("'", '')
         append_message_assistant(messages, title)
         append_message_user(messages, first_sentence)
-        text_for_audio = f"{title} "
+        text_for_audio = f"{title}. . . . "
         prompts.append(f"PROMPT FOR {model}: {first_sentence}")
     # generate a continuation
     sentence = generate_with_openai(messages)
