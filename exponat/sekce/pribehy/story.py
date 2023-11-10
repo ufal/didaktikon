@@ -88,7 +88,7 @@ def get_image(title, text):
     ]
     image_description = generate_with_openai(messages)
     image_filename = get_image_for_line(image_description, seed)
-    return f'<img src="genimgs/{image_filename}" title="{image_description}">'
+    return f"<img src='genimgs/{image_filename}' title='{image_description}'>"
 
 
 # MAIN
