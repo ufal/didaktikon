@@ -185,18 +185,10 @@ print(f"""
 <input type="hidden" name="messages" value='{json.dumps(messages)}'>
 <input type="hidden" name="title" value="{title}">
 <input type="hidden" name="prompt" value="{prompt}">
-""")
-
-for word in words:
-    print(f"""
-    <input type="submit" name="word" value="{word}">
-    """)
-
-prompts = "<br>".join(prompts)
-print(f"""
+{' '.join([ f'<input type="submit" name="word" value="{word}">' for word in words])}
 </form>
 <hr>
-<kbd>{prompts}</kbd>
+<kbd>{'<br>'.join(prompts)}</kbd>
 </body></html>
 """)
 
