@@ -3,10 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <title>Jak funguje jazykový model</title>
+<style>
+ul {border: 1px solid black;}
+ul li ul {border: none;}
+</style>
 </head>
 <body>
 
 <h1>Jak funguje jazykový model</h1>
+
+<ul>
+    <li>Generativní jazykový model předpovídá, jaké slovo má následovat.</li>
+    <li>Jak by například mohla pokračovat tato věta?</li>
+    <li><em>Tatínek ráno vstal a šel do…</em></li>
+</ul>
+
+<ul>
+    <li><em>Tatínek ráno vstal a šel do…</em>
+    <ul>
+        <li>práce</li>
+        <li>koupelny</li>
+        <li>kina</li>
+        <li>koňské</li>
+    </ul>
+    </li>
+    <li>Možností je spousta, některé jsou lepší než jiné, ale neexistuje jen
+        jedna správná odpověď!</li>
+    <li>Proto může jazykové model na stejné zadání odpovědět pokaždé jinak!</li>
+</ul>
+
+<ul>
+    <li>Jazykový model se potřebuje z nějakých dat naučit, jak vypadá jazyk.</li>
+    <li>Dat je naštěstí plný internet.</li>
+    <li>Jazykový model si tak může přečíst miliony novinových článků, knih,
+        filmových titulků a dalších dokumentů z internetu.</li>
+</ul>
+
+<ul>
+    <li>Jednoduchý n-gramový model (například 3-gramový), jaké se používaly
+        dříve, pak v těchto textech počítá, jak časté jsou skupiny slov dané
+        délky (například trojice slov).</li>
+    <li>Pro vygenerování pokračování daného textu se pak prostě podívá, jak
+        časté jsou různé možnosti pokračování (přičemž vždy kouká jen na
+        několik posledních slov).</li>
+    <li>Která z těchto možností si myslíte, že je v textech na internetu
+        častější?
+        <ul>
+            <li><u>šel do</u> <strong>práce</strong></li>
+            <li><u>šel do</u> <strong>koňské</strong></li>
+        </ul>
+    </li>
+</ul>
+
+<ul>
+    <li>Počty výskytů těchto trojic slov (v textech české Wikipedie) jsou:
+        <ul>
+            <li><u>šel do</u> <strong>práce</strong> 1640x</li>
+            <li><u>šel do</u> <strong>koňské</strong> 8x</li>
+        </ul>
+    </li>
+    <li>Jazykový model by tedy nejspíš vybral pokračování "šel do
+        <strong>práce</strong>"</li>
+</ul>
+
+<ul>
+    <li>Zkusme to ještě jednou</li>
+    <li>Která z těchto možností si myslíte, že je v textech na internetu
+        častější?
+        <ul>
+            <li><u>šel do</u> <strong>koupelny</strong></li>
+            <li><u>šel do</u> <strong>kina</strong></li>
+        </ul>
+    </li>
+</ul>
+
+<ul>
+    <li>Počty výskytů těchto trojic slov (v textech české Wikipedie) jsou:
+        <ul>
+            <li><u>šel do</u> <strong>koupelny</strong> 372x</li>
+            <li><u>šel do</u> <strong>kina</strong> 287x</li>
+        </ul>
+    </li>
+    <li>Jazykový model nevybírá vždy nejpravděpodobnější variantu, ale náhodně
+    si zvolí jednu z pravděpodobných variant.</li>
+    <li>V tomto případě by tedy vybral o něco častěji "šel do koupelny" než
+        "šel do kina" (a ještě mnohem častěji "šel do práce")...</li>
+    <li>...ale model si může vybrat kteroukoliv z těchto možností, klidně
+        pokaždé jinou.</li>
+</ul>
+
+<ul>
+    <li>Dnešní modely založené na hlubokých umělých neuronových sítích jsou
+        pokročilejší:
+        <ul>
+            <li>dívají se na větší počet předchozích slov než dvě nebo tři
+                (například GPT-3 se dívá až na 2000 předchozích slov)</li>
+            <li>vybírají si, která z předchozích slov jsou nejdůležitější a na
+                ta zaměřují větší pozornost
+                (pomocí mechanismu zvaného <em>attention</em>)
+            </li>
+            <li>umějí odhadnout podobnost významů slov
+                (pomocí měření kosinové podobností <em>slovních
+                    embeddinků</em>)
+            </li>
+            <li>počítají složitější matematické operace než jen obyčejné
+                porovnávání, co je častější</li>
+        </ul>
+    </li>
+</ul>
+
+<ul>
+    <li>Ale i nejmodernější modely jsou stále omezené tím, že se učí z
+        dostupných textových dat.</li>
+    <li>Texty na internetu mají všelijaké problémy (například rasismus nebo
+        sexismus), které se jazykové modely naučí napodobovat. Je proto
+        potřeba je dále filtrovat a upravovat, abychom se aspoň trochu zbavili
+        jejich nevhodného chování.</li>
+    <li>Texty ale mají i další problémy, které nejdou snadno filtrovat. Pokud
+    například v textech něco chybí nebo to není dost časté, model se to
+    nezvládne naučit.</li>
+    <li>Jazykový model vnímá svět jen skrze texty (a případně obrázky u
+        novějších verzí), ale nemá lidské vnímání světa kolem sebe ani
+        zkušenosti s interakcí se světem.
+        <ul>
+            <li>Je to trochu jako kdybyste jen seděli doma a četli si o světě
+            venku knížky a zprávy na internetu, ale nikdy byste doopravdy
+            nešli ven.</li>
+            <li>Vaše představa o tom, jak svět doopravdy vypadá a jak funguje,
+            by nutně byla velmi podivná a zkreslená.</li>
+        </ul>
+    </li>
+</ul>
+
 
 </body>
 </html>

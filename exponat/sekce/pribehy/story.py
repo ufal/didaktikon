@@ -136,12 +136,14 @@ else:
 
 base_title = "Nech si vygenerovat příběh na přání!"
 first_sentence = "Vygeneruj první větu příběhu."
+text_for_audio = ""
 if not prompt:
     # welcome screen
     title = base_title
     sentence = ""
     hint = "O čem by měl být vygenerovaný příběh?"
     prompt = "Vygeneruj název příběhu, ve kterém se vyskytne "
+    text_for_audio = f"{base_title} {hint}"
 else:
     append_message_user(messages, prompt + word)
     prompts.append(f"SYSTEM MESSAGE FOR {model}: {system_message}")
@@ -151,23 +153,28 @@ else:
         title = generate_with_openai(messages)
         append_message_assistant(messages, title)
         append_message_user(messages, first_sentence)
+        text_for_audio = f"{title} "
         prompts.append(f"PROMPT FOR {model}: {first_sentence}")
     # generate a continuation
     sentence = generate_with_openai(messages)
+    text_for_audio += sentence
     append_message_assistant(messages, sentence)
     # next
     hint = "Co by se mělo nyní v příběhu objevit?"
     prompt = "Vygeneruj další větu příběhu, ve které se vyskytne "
 
-image = ""
-sound = ""
 if sentence:
     image = f"<img src='{get_image(title, sentence)}'>"
+else:
+    image = ""
+
+if text_for_audio:
     sound = f"""
         <audio autoplay controls>
-            <source src="{get_audio_for_line(sentence)}" type="audio/mpeg">
+            <source src="{get_audio_for_line(text_for_audio)}" type="audio/mpeg">
         </audio>"""
-
+else:
+    sound=""
 
 print(f"""
 <html><head>
