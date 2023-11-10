@@ -10,6 +10,7 @@ import random
 import cgi
 import sys
 
+from image_generation import get_image_for_line
 
 # OPENAI SETUP
 
@@ -79,7 +80,14 @@ def append_message_user(messages, message):
 def append_message_assistant(messages, message):
     messages.append({"role": "assistant", "content": message})
 
-
+def get_image(title, text):
+    messages = [
+        {"role": "system", "content": "You are a skilled artist drawing comics images."},
+        {"role": "user", "content": f'You are generating images for a story titled "{title}". Generate an English description of an image for an image generator. The image should depict a scene illustrating the following part of a story: {text}'},
+    ]
+    image_description = generate_with_openai(messages)
+    image_filename = get_image_for_line(image_description)
+    return f'<img src="genimgs/{image_filename}" title="{image_description}">'
 
 
 # MAIN
@@ -137,12 +145,15 @@ else:
     hint = "Co by se mělo nyní v příběhu objevit?"
     prompt = "Vygeneruj další větu příběhu, ve které se vyskytne "
 
+image = get_image(title, sentence) if sentence else ""
+
 print(f"""
 <html><head>
 <meta charset="UTF-8">
 <title>{title}</title>
 </head><body>
 <h1>{title}</h2>
+{image}
 <p>{sentence}</p>
 <h2>{hint}</h2>
 <form method="post">
