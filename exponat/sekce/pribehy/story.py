@@ -17,8 +17,6 @@ import sys
 with open('apikey.txt') as infile:
     apikey = infile.read()
 
-client = OpenAI(api_key=apikey)
-
 # The model shoould try to follow this sort-of meta-instruction
 system_message = "You are an author of short stories."
 
@@ -53,6 +51,7 @@ def generate_with_openai(messages):
                 user = "pribehy",
                 )
             ok = True
+            result = response.choices[0].message.content
         except openai.BadRequestError:
             # assume this is because max length is exceeded
             # keep the system message, the prompt and the story title
@@ -62,9 +61,10 @@ def generate_with_openai(messages):
             
             # print(openai.InvalidRequestError)
             messages.pop(3)
+        except Exception as e:
+            result = str(e)
+            ok = True
     
-    result = response.choices[0].message.content
-
     if result == '':
         # end of text
         print('Nothing was generated, maybe the model assumes that this is a good ending and there is nothing more to add.')
@@ -84,6 +84,12 @@ def append_message_assistant(messages, message):
 
 print("Content-type: text/html")
 print()
+
+# openai
+try:
+    client = OpenAI(api_key=apikey)
+except Exception as e:
+    print(e)
 
 # next word choices
 nouns = list()
