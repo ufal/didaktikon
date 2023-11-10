@@ -151,6 +151,8 @@ else:
     if title == base_title:
         # first generate the title
         title = generate_with_openai(messages)
+        title = title.replace('"', '')
+        title = title.replace("'", '')
         append_message_assistant(messages, title)
         append_message_user(messages, first_sentence)
         text_for_audio = f"{title} "
