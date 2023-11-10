@@ -18,7 +18,7 @@ def get_audio_for_line(line):
     filename = f"{SNDDIR}/{text2id(line)}.mp3"
     try:
         if not os.path.isfile(filename):
-            tts = gTTS(line, lang='cs', tld='cz', slow=True)
+            tts = gTTS(line, lang='cs', tld='cz', slow=False)
             tts.save(filename)
     except Exception as e:
         message = f'StoryBoarder: Cannot generate sound "{filename}" for "{line}": {e}'
