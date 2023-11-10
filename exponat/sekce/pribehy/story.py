@@ -111,11 +111,12 @@ except Exception as e:
     print(e)
 
 # next word choices
+CHOICES=15
 nouns = list()
 with open('nouns.txt') as infile:
     for line in infile:
         nouns.append(line.strip())
-words = random.choices(nouns, k=10)
+words = random.choices(nouns, k=CHOICES)
 
 # read in params
 form = cgi.FieldStorage()
