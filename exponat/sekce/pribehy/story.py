@@ -2,12 +2,17 @@
 #coding: utf-8
 
 import openai
+from openai import OpenAI
+
 import json
 import tiktoken
 import random
 
 # path to file with authentication key
-openai.api_key_path = 'apikey.txt' 
+with open('apikey.txt') as infile:
+    apikey = infile.read()
+
+client = OpenAI(api_key=apikey)
 
 # The model shoould try to follow this sort-of meta-instruction
 system_message = "You are an author of short stories."
@@ -22,8 +27,6 @@ max_tokens = 500
 model = "gpt-3.5-turbo"
 
 def generate_with_openai(messages):
-    """lines = previously generated lines,
-    continues = previous user inputs"""
 
     # Debug output
     # print('MESSAGES:', *messages ,sep='\n')
@@ -32,7 +35,7 @@ def generate_with_openai(messages):
     ok = False
     while not ok:
         try:
-            response = openai.ChatCompletion.create(
+            response = client.chat.completions.create(
                 model = model,
                 messages = messages,  # this one only for chat
                 max_tokens = max_tokens,
@@ -45,15 +48,16 @@ def generate_with_openai(messages):
                 user = "pribehy",
                 )
             ok = True
-        except openai.error.InvalidRequestError:
+        except openai.BadRequestError:
             # assume this is because max length is exceeded
             # keep the system message, the prompt and the story title
             # keep removing from the third message
             # TODO do this in a more clever way!
             # explicitly check number of tokens and cut it!
-            print(openai.error.InvalidRequestError)
+            print(openai.InvalidRequestError)
             messages.pop(3)
-    result = response['choices'][0]['message']['content']
+    
+    result = response.choices[0].message.content
 
     if result == '':
         # end of text
