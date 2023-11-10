@@ -7,6 +7,11 @@ from openai import OpenAI
 import json
 import tiktoken
 import random
+import cgi
+import sys
+
+
+# OPENAI SETUP
 
 # path to file with authentication key
 with open('apikey.txt') as infile:
@@ -54,7 +59,8 @@ def generate_with_openai(messages):
             # keep removing from the third message
             # TODO do this in a more clever way!
             # explicitly check number of tokens and cut it!
-            print(openai.InvalidRequestError)
+            
+            # print(openai.InvalidRequestError)
             messages.pop(3)
     
     result = response.choices[0].message.content
@@ -72,34 +78,80 @@ def append_message_assistant(messages, message):
     messages.append({"role": "assistant", "content": message})
 
 
-if __name__=="__main__":
-    nouns = list()
-    with open('nouns.txt') as infile:
-        for line in infile:
-            nouns.append(line.strip())
-
-    messages = [
-        {"role": "system", "content": system_message},
-    ]
-    
-    # slovo = input("   první slovo: ")
-    slovo = random.choice(nouns)
-    append_message_user(messages, f"Vygeneruj název příběhu, ve kterém se vyskytne {slovo}.")
-    title = generate_with_openai(messages)
-    print(title)
-    append_message_assistant(messages, title)
-    
-    append_message_user(messages, "Vygeneruj první větu příběhu.")
-
-    while True:
-        sentence = generate_with_openai(messages)
-        print(sentence)
-        append_message_assistant(messages, sentence)
-        
-        # slovo=input("   další slovo: ")
-        slovo = random.choice(nouns)
-        append_message_user(messages, f"Vygeneruj další větu příběhu, ve které se vyskytne {slovo}.")
-
-        # "Vygeneruj popisek obrázku, ilustrujícího poslední větu, v angličtině."
 
 
+# MAIN
+
+print("Content-type: text/html")
+print()
+
+# next word choices
+nouns = list()
+with open('nouns.txt') as infile:
+    for line in infile:
+        nouns.append(line.strip())
+words = random.choices(nouns, k=10)
+
+# read in params
+form = cgi.FieldStorage()
+
+title = form.getvalue("title")
+prompt = form.getvalue("prompt")
+word = form.getvalue("word")
+
+messages_initial = [
+    {"role": "system", "content": system_message},
+]
+messages_passed = form.getvalue("messages")
+if messages_passed:
+    messages = json.loads(messages_passed)
+else:
+    messages = messages_initial
+
+base_title = "Nech si vygenerovat příběh na přání!"
+if not prompt:
+    # welcome screen
+    title = base_title
+    sentence = ""
+    hint = "O čem by měl být vygenerovaný příběh?"
+    prompt = "Vygeneruj název příběhu, ve kterém se vyskytne "
+else:
+    append_message_user(messages, prompt + word)
+    if title == base_title:
+        # first generate the title
+        title = generate_with_openai(messages)
+        append_message_assistant(messages, title)
+        append_message_user(messages, "Vygeneruj první větu příběhu.")
+    # generate a continuation
+    sentence = generate_with_openai(messages)
+    append_message_assistant(messages, sentence)
+    # next
+    hint = "Co by se mělo nyní v příběhu objevit?"
+    prompt = "Vygeneruj další větu příběhu, ve které se vyskytne "
+
+print(f"""
+<html><head>
+<meta charset="UTF-8">
+<title>{title}</title>
+</head><body>
+<h1>{title}</h2>
+<p>{sentence}</p>
+<h2>{hint}</h2>
+<form method="post">
+<input type="hidden" name="messages" value="{json.dumps(messages)}">
+<input type="hidden" name="title" value="{title}">
+<input type="hidden" name="prompt" value="{prompt}">
+""")
+
+for word in words:
+    print(f"""
+    <input type="submit" name="word" value="{word}">
+    """)
+
+print("""
+</form>
+</body></html>
+""")
+
+
+# TODO: "Vygeneruj popisek obrázku, ilustrujícího poslední větu, v angličtině."
