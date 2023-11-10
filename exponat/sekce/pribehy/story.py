@@ -111,7 +111,7 @@ except Exception as e:
     print(e)
 
 # next word choices
-CHOICES=15
+CHOICES=5
 nouns = list()
 with open('nouns.txt') as infile:
     for line in infile:
