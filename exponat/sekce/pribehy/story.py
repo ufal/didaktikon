@@ -252,7 +252,7 @@ print(f"""
         <div id='cover' onclick='unshow()'>
         </div>
 
-        <a id='prev-button' class='nav-arrow' href='nabozenstvi_duse.html' >
+        <a id='prev-button' class='nav-arrow' href='index.html' >
             <img src='../!assets/img/arrow_left_white.png'>        
         </a>
         
@@ -269,7 +269,9 @@ print(f"""
                         {sentence}
                     </p>
 
-                    {sound}""")
+                    {sound}
+            </div>
+        </div>""")
 
 # Next
 if end:
