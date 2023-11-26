@@ -6,6 +6,8 @@
     --pastel-blue: #6494ed67;
     --light-pastel-blue: #6494edd6;
     --light-green: yellowgreen;
+    --blue-green: #44aca9;
+    --blue-green-light: rgb(81, 212, 208);
 
     --superbig-font-size: 5vw;
     --big-font-size: 2.5vw;
@@ -135,9 +137,10 @@ h1.nadpis {
     text-decoration: none;
     background-color: var(--pastel-blue);
     border-radius: 16px;
-    padding: 10px;
+    padding: .5rem 1.5rem;
     font-size: var(--middle-font-size);
     width: 20%;
+    line-height: 1;
     transition: 0.3s;
     font-weight: bold;
     color: white;
@@ -147,9 +150,28 @@ h1.nadpis {
     border: 0;
 }
 
+.button.small {
+    width: 15%;
+    font-weight: normal;
+    font-size: var(--small-font-size);
+}
+
+.button.autowidth {
+    width: auto;
+}
+
 .button:enabled:active {
     background-color: var(--light-pastel-blue);
 }
+
+.button.highlighted {
+    background-color: var(--blue-green);
+}
+
+.button.highlighted:enabled:active {
+    background-color: var(--blue-green-light);
+}
+
 
 .button:disabled,
 .button[disabled] {
