@@ -189,17 +189,80 @@ else:
     sound=""
 
 # Result
+
+# TODO určitě tohle přesunout to extra souboru a použít na to HTML template s proměnnýma
+
 print(f"""
-<html><head>
-<meta charset="UTF-8">
-<title>{title}</title>
-<link rel="stylesheet" href="styles.css">
-</head><body>
-<h1>{title}</h2>
-{image}
-<p>{sentence}</p>
-{sound}
-""")
+<!DOCTYPE html>
+    <html lang="cs">
+    <head>
+        <title>{title}</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+        <link href='https://fonts.googleapis.com/css?family=Questrial|Open Sans' rel='stylesheet'>
+        <link rel="stylesheet" href="../common.css">
+        <link rel="stylesheet" href="../style_menu.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <script defer src="../!scripts/script_menu.js"></script>
+    </head>
+    <body>
+
+        <div class="menu-header">
+            <button id="menu-btn" onclick="showMenu()">
+                <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 13.185675,15.139108 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path4" />
+                    <path d="M 13.185675,24.906275 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path6" />
+                    <path d="M 13.185675,34.673441 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path8" />
+                </svg>
+            </button>
+        </div>
+        <div id="menu-items" class="hide" >
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+        </div>
+
+        <div id='cover' onclick='unshow()'>
+        </div>
+
+        <a id='prev-button' class='nav-arrow' href='nabozenstvi_duse.html' >
+            <img src='../!assets/img/arrow_left_white.png'>        
+        </a>
+        
+        <div id="content">
+
+            <h2 class="prijed">{title}</h1>
+
+            {image}
+            <p>{sentence}</p>
+            {sound}""")
 
 # Next
 if end:
@@ -228,9 +291,13 @@ else:
 
 # Prompts
 print(f"""
-<hr>
-<kbd>{'<br>'.join(prompts)}</kbd>
-</body></html>
+        <hr>
+        <kbd>{'<br>'.join(prompts)}</kbd>
+
+    </div>
+
+</body>
+</html>
 """)
 
 # TODO možná přidat i možnost dostat jiný pokračování nebo jiný slova...
