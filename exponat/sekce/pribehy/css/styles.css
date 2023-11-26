@@ -24,6 +24,10 @@ p {
     margin-bottom: 3em;
 }
 
+.offset-bottom-big {
+    margin-bottom: 5em;
+}
+
 #content {
     padding: 0 8%;
 }
@@ -96,4 +100,8 @@ p {
 
 .horizontal-cells.centered-content .cell #story-text {
     width: 100%;
+}
+
+#about-generation-img {
+    width: 80vw;
 }
