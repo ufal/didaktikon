@@ -182,6 +182,9 @@ else:
     image = ""
     konec = ""
 
+if end:
+    display_mode_classes = "vertical centered-content"
+
 if text_for_audio:
     sound = f"""
         <audio autoplay controls>
@@ -306,6 +309,7 @@ else:
     </div>""")
 
 # Prompts
+'''
 print(f"""
         <hr>
         <kbd>{'<br>'.join(prompts)}</kbd>
@@ -315,7 +319,7 @@ print(f"""
 </body>
 </html>
 """)
-
+'''
 # TODO možná přidat i možnost dostat jiný pokračování nebo jiný slova...
 
 # TODO možná nějak zobrazovat celou story nebo nějak umožnit se vrátit zpět
