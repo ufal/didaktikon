@@ -174,9 +174,11 @@ else:
     words = random.choices(nouns, k=CHOICES)
 
 if sentence:
+    display_mode_classes = ""
     image = f"<img id='story-img' src='{get_image(title, sentence)}'>"
     konec = f'<input type="submit" class="button small autowidth highlighted" name="end" value="&#x2714; konec - zobrazit celý příběh">'
 else:
+    display_mode_classes = "vertical centered-content"
     image = ""
     konec = ""
 
@@ -260,7 +262,7 @@ print(f"""
 
             <h1 class="nadpis">{title}</h2>
 
-            <div class="horizontal-cells offset-bottom">
+            <div class="horizontal-cells offset-bottom {display_mode_classes}">
                 <div class="cell left">
                     {image}
                 </div>

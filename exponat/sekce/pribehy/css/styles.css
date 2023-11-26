@@ -52,9 +52,17 @@ p {
     display: flex;
 }
 
+.horizontal-cells.vertical {
+    flex-direction: column;
+}
+
 .horizontal-cells .cell {
     width: 50%;
     margin: 20px;
+}
+
+.horizontal-cells.centered-content .cell {
+    width: 100%;
 }
 
 .horizontal-cells .cell.left {
@@ -63,6 +71,11 @@ p {
 
 .horizontal-cells .cell.right {
     text-align: left;
+}
+
+.horizontal-cells.centered-content .cell.left,
+.horizontal-cells.centered-content .cell.right {
+    text-align: center;
 }
 
 .horizontal-cells .cell p {
@@ -81,6 +94,6 @@ p {
     width: 65%;
 }
 
-kbd {
-    display: none;
+.horizontal-cells.centered-content .cell #story-text {
+    width: 100%;
 }
