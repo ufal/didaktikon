@@ -174,8 +174,8 @@ else:
     words = random.choices(nouns, k=CHOICES)
 
 if sentence:
-    image = f"<img src='{get_image(title, sentence)}'>"
-    konec = f'<input type="submit" name="end" value="KONEC">'
+    image = f"<img id='story-img' src='{get_image(title, sentence)}'>"
+    konec = f'<input type="submit" class="button small autowidth highlighted" name="end" value="&#x2714; konec - zobrazit celý příběh">'
 else:
     image = ""
     konec = ""
@@ -258,11 +258,18 @@ print(f"""
         
         <div id="content">
 
-            <h2 class="prijed">{title}</h1>
+            <h1 class="nadpis">{title}</h2>
 
-            {image}
-            <p>{sentence}</p>
-            {sound}""")
+            <div class="horizontal-cells offset-bottom">
+                <div class="cell left">
+                    {image}
+                </div>
+                <div class="cell right">
+                    <p id="story-text" class="offset-bottom">
+                        {sentence}
+                    </p>
+
+                    {sound}""")
 
 # Next
 if end:
@@ -278,16 +285,21 @@ if end:
 else:
     # Continue
     print(f"""
-    <h2>{hint}</h2>
-    <form method="post">
-    <input type="hidden" name="seed" value="{seed}">
-    <input type="hidden" name="messages" value='{json.dumps(messages)}'>
-    <input type="hidden" name="title" value="{title}">
-    <input type="hidden" name="prompt" value="{prompt}">
-    {' '.join([ f'<input type="submit" name="word" value="{word}">' for word in words])}
-    {konec}
-    </form>
-    """)
+    <h3>{hint}</h3>
+
+    <div class="button-form-holder">
+        <form method="post">
+
+            <input type="hidden" name="seed" value="{seed}">
+            <input type="hidden" name="messages" value='{json.dumps(messages)}'>
+            <input type="hidden" name="title" value="{title}">
+            <input type="hidden" name="prompt" value="{prompt}">
+
+            {' '.join([ f'<input type="submit" class="button small" name="word" value="{word}">' for word in words])}
+            {konec}
+
+        </form>
+    </div>""")
 
 # Prompts
 print(f"""
