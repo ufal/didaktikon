@@ -282,12 +282,29 @@ print(f"""
 if end:
     # End
     print(f"""
-    <h2>KONEC</h2>
-    <ul>
-    <li><a href="lm.html">Jak funguje jazykový model?</a></li>
-    <li><a href="sd.html">Jak funguje generování obrázků?</a></li>
-    <li><a href="story.py">Vygeneruj si další příběh!</a></li>
-    </ul>
+    <h2 class="offset-bottom">KONEC</h2>
+
+    <a href="./lm.html">
+        <div class="kategorie">
+            <img class="img-kat" src="./img/language-model.webp">
+            <h2>Jak funguje jazykový model?<br>&nbsp;</h2>
+        </div>
+    </a>
+    
+    <a href="./sd.html">
+        <div class="kategorie">
+            <img class="img-kat" src="./img/question-chalk.webp">
+            <h2>Jak funguje generování obrázků?</h2>
+        </div>
+    </a>
+
+    <a href="./story.py">
+        <div class="kategorie">
+            <img class="img-kat" src="./img/library.webp">
+            <h2>Vygeneruj si další příběh!<br>&nbsp;</h2>
+        </div>
+    </a>
+
     """)
 else:
     # Continue
