@@ -16,6 +16,14 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-size: 2vw;
+}
+
+.offset-bottom {
+    margin-bottom: 3em;
+}
+
 #content {
     padding: 0 8%;
 }
@@ -28,10 +36,8 @@ a {
     justify-content: center;
 }
 
-.section {
-    gap: 1em;
-    width: 100%;
-    height: 100vh;
+.button-form-holder form {
+    gap: 1.5em;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -42,7 +48,39 @@ a {
     width: 100%;
 }
 
-#generated-soul-image {
-    width: 512px;
-    height: 512px;
+.horizontal-cells {
+    display: flex;
+}
+
+.horizontal-cells .cell {
+    width: 50%;
+    margin: 20px;
+}
+
+.horizontal-cells .cell.left {
+    text-align: right;
+}
+
+.horizontal-cells .cell.right {
+    text-align: left;
+}
+
+.horizontal-cells .cell p {
+    margin: 0;
+}
+
+.horizontal-cells .cell p.offset-bottom {
+    margin-bottom: 1em;
+}
+
+#story-img {
+    width: 50%;
+}
+
+#story-text {
+    width: 65%;
+}
+
+kbd {
+    display: none;
 }
