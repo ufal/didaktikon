@@ -1,149 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <title>Jak funguje jazykový model</title>
-<style>
-ul {border: 1px solid black;}
-ul li ul {border: none;}
-</style>
+    <title>Jak funguje generování obrázků</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Questrial|Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="../style_menu.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="../!scripts/script_menu.js"></script>
 </head>
 <body>
 
-<h1>Jak funguje jazykový model</h1>
+    <div class="menu-header">
+        <button id="menu-btn" onclick="showMenu()">
+            <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 13.185675,15.139108 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path4" />
+                <path d="M 13.185675,24.906275 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path6" />
+                <path d="M 13.185675,34.673441 H 37.115233" stroke="#ffffff" stroke-width="3.57143" stroke-linecap="round" id="path8" />
+            </svg>
+        </button>
+    </div>
+    <div id="menu-items" class="hide" >
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+        <div class="menu-item">
+            <a class="menu-href" href="#"></a>
+        </div>
+    </div>
 
-<ul>
-    <li>Generativní jazykový model předpovídá, jaké slovo má následovat.</li>
-    <li>Jak by například mohla pokračovat tato věta?</li>
-    <li><em>Tatínek ráno vstal a šel do…</em></li>
-</ul>
+    <div id='cover' onclick='unshow()'>
+    </div>
 
-<ul>
-    <li><em>Tatínek ráno vstal a šel do…</em>
-    <ul>
-        <li>práce</li>
-        <li>koupelny</li>
-        <li>kina</li>
-        <li>koňské</li>
-    </ul>
-    </li>
-    <li>Možností je spousta, některé jsou lepší než jiné, ale neexistuje jen
-        jedna správná odpověď!</li>
-    <li>Proto může jazykové model na stejné zadání odpovědět pokaždé jinak!</li>
-</ul>
+    <script>
+        const g_startHash = 1;
+        var g_currentHash = 1;
+        var g_hashCount = 10;
 
-<ul>
-    <li>Jazykový model se potřebuje z nějakých dat naučit, jak vypadá jazyk.</li>
-    <li>Dat je naštěstí plný internet.</li>
-    <li>Jazykový model si tak může přečíst miliony novinových článků, knih,
-        filmových titulků a dalších dokumentů z internetu.</li>
-</ul>
+        function prevButtonClick()
+        {
+            document.getElementById("next-button").classList.remove("hidden");
 
-<ul>
-    <li>Jednoduchý n-gramový model (například 3-gramový), jaké se používaly
-        dříve, pak v těchto textech počítá, jak časté jsou skupiny slov dané
-        délky (například trojice slov).</li>
-    <li>Pro vygenerování pokračování daného textu se pak prostě podívá, jak
-        časté jsou různé možnosti pokračování (přičemž vždy kouká jen na
-        několik posledních slov).</li>
-    <li>Která z těchto možností si myslíte, že je v textech na internetu
-        častější?
-        <ul>
-            <li><u>šel do</u> <strong>práce</strong></li>
-            <li><u>šel do</u> <strong>koňské</strong></li>
-        </ul>
-    </li>
-</ul>
+            if (g_currentHash > g_startHash)
+                goToHash(--g_currentHash);
+            else
+                location.href = "index.html";
+        }
 
-<ul>
-    <li>Počty výskytů těchto trojic slov (v textech české Wikipedie) jsou:
-        <ul>
-            <li><u>šel do</u> <strong>práce</strong> 1640x</li>
-            <li><u>šel do</u> <strong>koňské</strong> 8x</li>
-        </ul>
-    </li>
-    <li>Jazykový model by tedy nejspíš vybral pokračování "šel do
-        <strong>práce</strong>"</li>
-</ul>
+        function nextButtonClick()
+        {
+            if (g_currentHash < g_hashCount)
+                goToHash(++g_currentHash);
 
-<ul>
-    <li>Zkusme to ještě jednou</li>
-    <li>Která z těchto možností si myslíte, že je v textech na internetu
-        častější?
-        <ul>
-            <li><u>šel do</u> <strong>koupelny</strong></li>
-            <li><u>šel do</u> <strong>kina</strong></li>
-        </ul>
-    </li>
-</ul>
+            if (g_currentHash === g_hashCount)
+                document.getElementById("next-button").classList.add("hidden");
+        }
 
-<ul>
-    <li>Počty výskytů těchto trojic slov (v textech české Wikipedie) jsou:
-        <ul>
-            <li><u>šel do</u> <strong>koupelny</strong> 372x</li>
-            <li><u>šel do</u> <strong>kina</strong> 287x</li>
-        </ul>
-    </li>
-    <li>Jazykový model nevybírá vždy nejpravděpodobnější variantu, ale náhodně
-    si zvolí jednu z pravděpodobných variant.</li>
-    <li>V tomto případě by tedy vybral o něco častěji "šel do koupelny" než
-        "šel do kina" (a ještě mnohem častěji "šel do práce")...</li>
-    <li>...ale model si může vybrat kteroukoliv z těchto možností, klidně
-        pokaždé jinou.</li>
-</ul>
+        function goToHash(hashNo)
+        {
+            location.hash = "#section" + hashNo;
+        }
 
-<ul>
-    <li>Vygenerované slovo se stane součástí textu...</li>
-    <li>...a tento text zase zadáním pro další krok modelu, který se na něj
-        pokusí dále navázat.</li>
-    <li>Jazykový model tedy generuje postupně slovo po slově, větu po větě, až
-    vygeneruje celý text.</li>
-</ul>
+    </script>
 
-<ul>
-    <li>Dnešní modely založené na hlubokých umělých neuronových sítích jsou
-        pokročilejší:
-        <ul>
-            <li>dívají se na větší počet předchozích slov než dvě nebo tři
-                (například GPT-3 se dívá až na 2000 předchozích slov)</li>
-            <li>vybírají si, která z předchozích slov jsou nejdůležitější a na
-                ta zaměřují větší pozornost
-                (pomocí mechanismu zvaného <em>attention</em>)
-            </li>
-            <li>umějí odhadnout podobnost významů slov
-                (pomocí měření kosinové podobností <em>slovních
-                    embeddinků</em>)
-            </li>
-            <li>počítají složitější matematické operace než jen obyčejné
-                porovnávání, co je častější</li>
-        </ul>
-    </li>
-</ul>
+    <div id='prev-button' class='nav-arrow' onclick='prevButtonClick()'>
+        <img src='../!assets/img/arrow_left_white.png'>
+    </div>
 
-<ul>
-    <li>Ale i nejmodernější modely jsou stále omezené tím, že se učí z
-        dostupných textových dat.</li>
-    <li>Texty na internetu mají všelijaké problémy (například rasismus nebo
-        sexismus), které se jazykové modely naučí napodobovat. Je proto
-        potřeba je dále filtrovat a upravovat, abychom se aspoň trochu zbavili
-        jejich nevhodného chování.</li>
-    <li>Texty ale mají i další problémy, které nejdou snadno filtrovat. Pokud
-    například v textech něco chybí nebo to není dost časté, model se to
-    nezvládne naučit.</li>
-    <li>Jazykový model vnímá svět jen skrze texty (a případně obrázky u
-        novějších verzí), ale nemá lidské vnímání světa kolem sebe ani
-        zkušenosti s interakcí se světem.
-        <ul>
-            <li>Je to trochu jako kdybyste jen seděli doma a četli si o světě
-            venku knížky a zprávy na internetu, ale nikdy byste doopravdy
-            nešli ven.</li>
-            <li>Vaše představa o tom, jak svět doopravdy vypadá a jak funguje,
-            by nutně byla velmi podivná a zkreslená.</li>
-        </ul>
-    </li>
-</ul>
+    <div id='next-button' class='nav-arrow' onclick='nextButtonClick()'>
+        <img src='../!assets/img/arrow_left_white.png' class='inverted'>
+    </div>
 
+    <div id="content">
+        <div class="sections-holder">
+
+            <div id="section1" class="section">
+                <h1 class="nadpis">Jak funguje jazykový model</h2>
+    
+                <p>Generativní jazykový model předpovídá, jaké slovo má následovat.</p>
+                <p>Jak by například mohla pokračovat tato věta?</p>
+                <p><em>Tatínek ráno vstal a šel do…</em></p>
+            </div>
+            
+            <div id="section2" class="section">
+                <p><em>Tatínek ráno vstal a šel do…</em></p>
+                <ul>
+                    <li>práce</li>
+                    <li>koupelny</li>
+                    <li>kina</li>
+                    <li>koňské</li>
+                </ul>
+                <p>Možností je spousta, některé jsou lepší než jiné, ale neexistuje jen jedna správná odpověď!</p>
+                <p>Proto může jazykové model na stejné zadání odpovědět pokaždé jinak!</p>
+            </div>
+            
+            <div id="section3" class="section">
+                <p>Jazykový model se potřebuje z nějakých dat naučit, jak vypadá jazyk.</p>
+                <p>Dat je naštěstí plný internet.</p>
+                <p>Jazykový model si tak může přečíst miliony novinových článků, knih, filmových titulků a dalších dokumentů z internetu.</p>
+            </div>
+            
+            <div id="section4" class="section">
+                <p>Jednoduchý n-gramový model (například 3-gramový), jaké se používaly dříve, pak v těchto textech počítá, jak časté jsou skupiny slov dané délky (například trojice slov).</p>
+                <p>Pro vygenerování pokračování daného textu se pak prostě podívá, jak časté jsou různé možnosti pokračování (přičemž vždy kouká jen na několik posledních slov).</p>
+                <p>Která z těchto možností si myslíte, že je v textech na internetu častější?</p>
+            </div>
+            
+            <div id="section5" class="section">
+                <p>Počty výskytů těchto trojic slov (v textech české Wikipedie) jsou:</p>
+                <ul>
+                    <li><u>šel do</u> <strong>práce</strong> 1640x</li>
+                    <li><u>šel do</u> <strong>koňské</strong> 8x</li>
+                </ul>
+                </p>
+                <p>Jazykový model by tedy nejspíš vybral pokračování "šel do <strong>práce</strong>"</p>
+            </div>
+            
+            <div id="section6" class="section">
+                <p>Zkusme to ještě jednou</p>
+                <p>Která z těchto možností si myslíte, že je v textech na internetu častější?</p>
+                <ul>
+                    <li><u>šel do</u> <strong>koupelny</strong></li>
+                    <li><u>šel do</u> <strong>kina</strong></li>
+                </ul>
+                
+            </div>
+            
+            <div id="section7" class="section">
+                <p>Počty výskytů těchto trojic slov (v textech české Wikipedie) jsou:</p>
+                <ul>
+                    <li><u>šel do</u> <strong>koupelny</strong> 372x</li>
+                    <li><u>šel do</u> <strong>kina</strong> 287x</li>
+                </ul>
+                <p>Jazykový model nevybírá vždy nejpravděpodobnější variantu, ale náhodně si zvolí jednu z pravděpodobných variant.</p>
+                <p>V tomto případě by tedy vybral o něco častěji "šel do koupelny" než "šel do kina" (a ještě mnohem častěji "šel do práce")...</p>
+                <p>...ale model si může vybrat kteroukoliv z těchto možností, klidně pokaždé jinou.</p>
+            </div>
+            
+            <div id="section8" class="section">
+                <p>Vygenerované slovo se stane součástí textu...</p>
+                <p>...a tento text zase zadáním pro další krok modelu, který se na něj pokusí dále navázat.</p>
+                <p>Jazykový model tedy generuje postupně slovo po slově, větu po větě, až vygeneruje celý text.</p>
+            </div>
+            
+            <div id="section9" class="section">
+                <p>Dnešní modely založené na hlubokých umělých neuronových sítích jsou pokročilejší:</p>
+                <ul>
+                    <li>dívají se na větší počet předchozích slov než dvě nebo tři (například GPT-3 se dívá až na 2000 předchozích slov)</li>
+                    <li>vybírají si, která z předchozích slov jsou nejdůležitější a na ta zaměřují větší pozornost (pomocí mechanismu zvaného <em>attention</em>)</li>
+                    <li>umějí odhadnout podobnost významů slov (pomocí měření kosinové podobností <em>slovních embeddinků</em>)</li>
+                    <li>počítají složitější matematické operace než jen obyčejné porovnávání, co je častější</li>
+                </ul>
+            </div>
+            
+            <div id="section10" class="section">
+                <p>Ale i nejmodernější modely jsou stále omezené tím, že se učí z dostupných textových dat.</p>
+                <p>Texty na internetu mají všelijaké problémy (například rasismus nebo sexismus), které se jazykové modely naučí napodobovat. Je proto potřeba je dále filtrovat a upravovat, abychom se aspoň trochu zbavili jejich nevhodného chování.</p>
+                <p>Texty ale mají i další problémy, které nejdou snadno filtrovat. Pokud například v textech něco chybí nebo to není dost časté, model se to nezvládne naučit.</p>
+                <p>Jazykový model vnímá svět jen skrze texty (a případně obrázky u novějších verzí), ale nemá lidské vnímání světa kolem sebe ani zkušenosti s interakcí se světem.</p>
+                <ul>
+                    <li>Je to trochu jako kdybyste jen seděli doma a četli si o světě venku knížky a zprávy na internetu, ale nikdy byste doopravdy nešli ven.</li>
+                    <li>Vaše představa o tom, jak svět doopravdy vypadá a jak funguje, by nutně byla velmi podivná a zkreslená.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        const isElementXPercentInViewport = function(el, percentVisible) {
+            let rect = el.getBoundingClientRect(),
+                windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+
+            return !(
+                Math.floor(100 - (((rect.top >= 0 ? 0 : rect.top) / +-rect.height) * 100)) < percentVisible ||
+                Math.floor(100 - ((rect.bottom - windowHeight) / rect.height) * 100) < percentVisible
+            )
+        };
+
+        window.addEventListener('scroll', function() {
+            for (let i = g_startHash; i <= g_hashCount; i++) {
+                const el = document.getElementById('section' + i);
+
+                if (isElementXPercentInViewport(el, 10))
+                {
+                    g_currentHash = i;
+
+                    if (g_currentHash === g_hashCount)
+                        document.getElementById("next-button").classList.add("hidden");
+                    else
+                        document.getElementById("next-button").classList.remove("hidden");
+                }
+            }
+        });
+
+    </script>
 
 </body>
 </html>
-
