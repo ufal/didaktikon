@@ -87,6 +87,11 @@ h1.nadpis {
     border-radius: 16px;
     transition: 0.2s;
 
+    cursor: pointer;
+}
+
+.nav-arrow.hidden {
+    display: none;
 }
 
 .nav-arrow:active,
