@@ -137,3 +137,19 @@ ul {
 #about-generation-img {
     width: 80vw;
 }
+
+.icon-text-link {
+    align-items: center;
+    display: inline-flex;
+    gap: 1em;
+}
+
+.icon-text-link h3 {
+    margin: 0;
+}
+
+.nav-arrow.static {
+    position: static;
+    display: inline-flex;
+    transform: none;
+}
