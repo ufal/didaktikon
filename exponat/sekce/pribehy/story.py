@@ -176,7 +176,7 @@ else:
 if sentence:
     display_mode_classes = ""
     image = f"<img id='story-img' src='{get_image(title, sentence)}'>"
-    konec = f'<input type="submit" class="button small autowidth highlighted" name="end" value="&#x2714; konec - zobrazit celý příběh">'
+    konec = f'<input type="submit" class="button small autowidth highlighted" name="end" value="&#x2714; konec">'
 else:
     display_mode_classes = "vertical centered-content"
     image = ""
