@@ -257,9 +257,9 @@ print(f"""
         <div id='cover' onclick='unshow()'>
         </div>
 
-        <a id='prev-button' class='nav-arrow' href='index.html' >
+        <div id='prev-button' class='nav-arrow' onclick='history.back()'>
             <img src='../!assets/img/arrow_left_white.png'>        
-        </a>
+        </div>
         
         <div id="content">
 
