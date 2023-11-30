@@ -176,7 +176,7 @@ else:
 if sentence:
     display_mode_classes = ""
     image = f"<img id='story-img' src='{get_image(title, sentence)}'>"
-    konec = f'<input type="submit" class="button small autowidth highlighted" name="end" value="&#x2714; konec - zobrazit celý příběh">'
+    konec = f'<input type="submit" class="button small autowidth highlighted" name="end" value="&#x2714; konec">'
 else:
     display_mode_classes = "vertical centered-content"
     image = ""
@@ -257,9 +257,9 @@ print(f"""
         <div id='cover' onclick='unshow()'>
         </div>
 
-        <a id='prev-button' class='nav-arrow' href='index.html' >
+        <div id='prev-button' class='nav-arrow' onclick='history.back()'>
             <img src='../!assets/img/arrow_left_white.png'>        
-        </a>
+        </div>
         
         <div id="content">
 
@@ -284,28 +284,14 @@ if end:
     print(f"""
     <h2 class="offset-bottom">KONEC</h2>
 
-    <a href="./lm.html">
-        <div class="kategorie">
-            <img class="img-kat" src="./img/language-model.webp">
-            <h2>Jak funguje jazykový model?<br>&nbsp;</h2>
+    <a class="icon-text-link offset-bottom" href="./index.html">
+        <div id="home-button" class="nav-arrow static">
+            <img src="../!assets/img/home.webp">
         </div>
-    </a>
-    
-    <a href="./sd.html">
-        <div class="kategorie">
-            <img class="img-kat" src="./img/question-chalk.webp">
-            <h2>Jak funguje generování obrázků?</h2>
-        </div>
-    </a>
-
-    <a href="./story.py">
-        <div class="kategorie">
-            <img class="img-kat" src="./img/library.webp">
-            <h2>Vygeneruj si další příběh!<br>&nbsp;</h2>
-        </div>
-    </a>
-
-    """)
+        <h3>
+            Zpět k sekci Příběhy
+        </h3>
+    </a>""")
 else:
     # Continue
     print(f"""

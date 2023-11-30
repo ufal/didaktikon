@@ -135,5 +135,29 @@ ul {
 }
 
 #about-generation-img {
-    width: 80vw;
+    width: 80%;
+}
+
+.icon-text-link {
+    align-items: center;
+    display: inline-flex;
+    gap: 1em;
+}
+
+.icon-text-link h3 {
+    margin: 0;
+}
+
+.nav-arrow.static {
+    position: static;
+    display: inline-flex;
+    transform: none;
+}
+
+.horizontal-align {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    padding: 2% 0;
+    align-items: center;
 }

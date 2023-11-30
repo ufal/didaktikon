@@ -13,6 +13,7 @@
     --big-font-size: 2.5vw;
     --middle-font-size: 2vw;
     --small-font-size: 1.5vw;
+    --extra-small-font-size: 1.4vw;
 }
 
 /* Základní prvky webu ********************** */
@@ -50,6 +51,10 @@ h3 {
 p,
 blockquote {
     font-size: var(--small-font-size);
+}
+
+p.small {
+    font-size: var(--extra-small-font-size);
 }
 
 h1.nadpis {
