@@ -12,6 +12,7 @@
         "expf": "exponat/sekce/frameshome.html",
         "chatgpt_letacek": "ChatGPT_diskuze_l.png",
         "chatgpt_letacek_d": "ChatGPT_diskuze_d.png",
+        "pribehy": "pribehy.html",
     }
     /*
     * Best practice for extracting hashes:
