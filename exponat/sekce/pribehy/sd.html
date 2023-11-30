@@ -63,25 +63,27 @@
     </a>
 
     <div id="content">
-
+        
         <h1 class="nadpis">Jak funguje generování obrázků</h2>
 
-        <div class="prijed offset-bottom-big">
-            <p>
-                Difuzní modely, jako například Stable Diffusion, generují obrázek pomocí odstraňování šumu.
-            </p>
-            <p>
-                Začnou s náhodným šumem, a postupně odstraňují šum tak, aby výsledný obrázek co nejvíc odpovídal zadanému popisu.
-            </p>
-            <p>
-                Trénovací data se jednoduše vytvoří opačným procesem: do existujícího obrázku, ke kterému máme textový popisek, postupně přidáváme náhodný šum. Získáme tak sadu obrázků obsahujících víc a víc šumu.
-            </p>
-            <p>
-                Když pak pro trénování modelu pořadí obrázků otočíme, můžeme model naučit z obrázku šum postupně odstraňovat.
-            </p>
+        <div class="horizontal-align">
+            <div class="prijed">
+                <p class="small">
+                    Difuzní modely, jako například Stable Diffusion, generují obrázek pomocí odstraňování šumu.
+                </p>
+                <p class="small">
+                    Začnou s náhodným šumem, a postupně odstraňují šum tak, aby výsledný obrázek co nejvíc odpovídal zadanému popisu.
+                </p>
+                <p class="small">
+                    Trénovací data se jednoduše vytvoří opačným procesem: do existujícího obrázku, ke kterému máme textový popisek, postupně přidáváme náhodný šum. Získáme tak sadu obrázků obsahujících víc a víc šumu.
+                </p>
+                <p class="small">
+                    Když pak pro trénování modelu pořadí obrázků otočíme, můžeme model naučit z obrázku šum postupně odstraňovat.
+                </p>
+            </div>
+            
+            <img id="about-generation-img" class="prijed delay1s" src="./img/gen-images-1024.webp">            
         </div>
-        
-        <img id="about-generation-img" class="prijed delay1s offset-bottom-big" src="./img/gen-images-1024.webp">
 
     </div>
 

@@ -135,7 +135,7 @@ ul {
 }
 
 #about-generation-img {
-    width: 80vw;
+    width: 80%;
 }
 
 .icon-text-link {
@@ -152,4 +152,12 @@ ul {
     position: static;
     display: inline-flex;
     transform: none;
+}
+
+.horizontal-align {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    padding: 2% 0;
+    align-items: center;
 }
