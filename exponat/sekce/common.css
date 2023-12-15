@@ -182,7 +182,7 @@ h1.nadpis {
     background-color: var(--blue-green-light);
 }
 
-
+.button.disabled,
 .button:disabled,
 .button[disabled] {
     opacity: 0.4;
