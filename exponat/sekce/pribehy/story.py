@@ -297,8 +297,20 @@ else:
     print(f"""
     <h3>{hint}</h3>
 
+    <script>
+        function onFormSubmit() {{
+            var inputs = document.getElementById('storyform').getElementsByTagName('input');
+			var inputsArr = Array.from(inputs);
+			var submits = inputsArr.filter(function(el) {{ return el.type == 'submit'; }})
+			
+            submits.forEach(
+                function (el) {{ el.disabled = true; }}
+            );
+        }}
+    </script>
+
     <div class="button-form-holder">
-        <form method="post">
+        <form id="storyform" method="post" onsubmit="onFormSubmit()">
 
             <input type="hidden" name="seed" value="{seed}">
             <input type="hidden" name="messages" value='{json.dumps(messages)}'>
