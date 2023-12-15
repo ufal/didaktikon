@@ -186,6 +186,7 @@ h1.nadpis {
 .button:disabled,
 .button[disabled] {
     opacity: 0.4;
+    pointer-events: none;
 }
 
 .kategorie {
