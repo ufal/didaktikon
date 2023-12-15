@@ -304,7 +304,7 @@ else:
 			var submits = inputsArr.filter(function(el) {{ return el.type == 'submit'; }})
 			
             submits.forEach(
-                function (el) {{ el.disabled = true; }}
+                function (el) {{ el.classList.add('disabled'); }}
             );
         }}
     </script>
