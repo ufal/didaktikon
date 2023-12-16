@@ -252,6 +252,9 @@ print(f"""
             <div class="menu-item">
                 <a class="menu-href" href="#"></a>
             </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
         </div>
 
         <div id='cover' onclick='unshow()'>
