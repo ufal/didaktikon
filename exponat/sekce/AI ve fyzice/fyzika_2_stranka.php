@@ -20,8 +20,14 @@
             </button>
         </div>
         <div id="menu-items" class="hide" >
-          <div class="menu-item">
-            <a class="menu-href" href="#"></a>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
             </div>
             <div class="menu-item">
                 <a class="menu-href" href="#"></a>
@@ -33,9 +39,6 @@
                 <a class="menu-href" href="#"></a>
             </div>
             <div class="menu-item">
-            <a class="menu-href" href="#"></a>
-            </div>
-            <div class="menu-item">
                 <a class="menu-href" href="#"></a>
             </div>
             <div class="menu-item">
@@ -45,10 +48,10 @@
                 <a class="menu-href" href="#"></a>
             </div>
             <div class="menu-item">
-            <a class="menu-href" href="#"></a>
+                <a class="menu-href" href="#"></a>
             </div>
-       
-        </div>      
+        </div>
+        
         <div id='cover' onclick='unshow()'>
         </div>
 
