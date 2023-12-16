@@ -24,34 +24,36 @@
         </div>
         <div id="menu-items" class="hide" >
             <div class="menu-item">
-              <a class="menu-href" href="#"></a>
-              </div>
-              <div class="menu-item">
-                  <a class="menu-href" href="#"></a>
-              </div>
-              <div class="menu-item">
-                  <a class="menu-href" href="#"></a>
-              </div>
-              <div class="menu-item">
-                  <a class="menu-href" href="#"></a>
-              </div>
-              <div class="menu-item">
-              <a class="menu-href" href="#"></a>
-              </div>
-              <div class="menu-item">
-                  <a class="menu-href" href="#"></a>
-              </div>
-              <div class="menu-item">
-                  <a class="menu-href" href="#"></a>
-              </div>
-              <div class="menu-item">
-                  <a class="menu-href" href="#"></a>
-              </div>
-              <div class="menu-item">
-              <a class="menu-href" href="#"></a>
-              </div>
-         
-          </div>      
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-href" href="#"></a>
+            </div>
+        </div>
           <div id='cover' onclick='unshow()'>
           </div>
 
