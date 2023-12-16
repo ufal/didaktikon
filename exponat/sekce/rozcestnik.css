@@ -23,8 +23,8 @@ a.bubble {
 .bubble {
     margin: 2%;
     display: flex;
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 250px;
+    min-height: 250px;
     position: relative;
     align-items: center;
     justify-content: center;
