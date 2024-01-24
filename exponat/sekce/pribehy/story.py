@@ -9,7 +9,6 @@ import tiktoken
 import random
 import cgi
 import sys
-import random
 
 from image_generation import get_image_for_line
 from sound_generation import get_audio_for_line
