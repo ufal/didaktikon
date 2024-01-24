@@ -17,7 +17,7 @@ DEF_PROMPT = "a ghost of a small kitten sitting in a park in front of a house, d
 
 form = cgi.FieldStorage()
 
-prompt = form.getvalue("prompt", DEF_PROMPT)    
+prompt = form.getvalue("text", DEF_PROMPT)
 
 image_filename = get_image_for_line(prompt, seed)
 

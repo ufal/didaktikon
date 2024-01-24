@@ -68,7 +68,7 @@
     
     <div id="content">
         
-        <form id="question-form" method="post" action="#">   <!-- TODO: doplnit do action adresu skriptu nebo skocit rovnou na stranku vysledku -->
+        <form id="question-form" method="post" action="nabozenstvi_duse_result.py">
             <input type="hidden" name="text" value="">
             <input type="hidden" name="language" value="cs">
         </form>
@@ -84,10 +84,7 @@
 
             if (isLastGroup)
             {
-                location.href = "./nabozenstvi_duse_result.html";
-
-                // TODO: zamenit presmerovani za odeslani formulare
-                // form.submit();
+                form.submit();
             }
             else
                 location.hash = "question-group-" + (groupNo + 1);
