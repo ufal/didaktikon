@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+.no-pointer-events {
+    pointer-events: none;
+}
+
 #content {
     padding: 0 8%;
 }
