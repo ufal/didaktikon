@@ -52,7 +52,7 @@
             <div>
                 <h1 id="answer">1966</h1>
                 <p id="answer-comment">První chatbot se jmenoval ELIZA a vznikl v roce 1966</p>
-                <p id="answer-note">Představoval psychologa, nebyl moc inteligentní, používal jen několik jednoduchých pravidel a vět a hlavně se hodně ptal.</p>
+                <p id="answer-note">Představoval psychoterapeuta, nebyl moc chytrý, používal jen několik jednoduchých pravidel a vět a hlavně se hodně ptal.</p>
                 <form action="zpracuj.php" method="post">
                     <input type='text' id='skryte-btn' name='first-question' style="display:none;">
                     <input type='text' id='skryte-btn2' name='vysledky' style="display:none;">

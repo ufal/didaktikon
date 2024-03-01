@@ -66,7 +66,7 @@ const questions = [
     },
 
     {
-        question: 'AI vítězí v mistrovství v šachách?',
+        question: 'AI poráží nejlepšího světového šachistu?',
         note: '',
         answers: [
             { text: '1987', correct: false},
@@ -76,7 +76,7 @@ const questions = [
     },
 
     {
-        question: 'AI vítězí v mistrovství v go?',
+        question: 'AI vítězí velmista v go?',
         note: '',
         answers: [
             { text: '1996', correct: false},
@@ -120,7 +120,7 @@ const answers = [
     {
         answer:'1966',
         comment: 'První chatbot se jmenoval ELIZA a vznikl v roce 1966',
-        note: 'Představoval psychologa, nebyl moc inteligentní, používal jen několik jednoduchých pravidel a vět a hlavně se hodně ptal.'
+        note: 'Představoval psychoterapeuta, nebyl moc chytrý, používal jen několik jednoduchých pravidel a vět a hlavně se hodně ptal.'
     },
     {
         answer:'1954',
@@ -135,7 +135,7 @@ const answers = [
     {
         answer:'1949',
         comment: 'Elmer a Elsie',
-        note: 'Náhodně se procházeli, reagovali na světlo a dotek, jejich „mozky“ měly dvě umělé neuronové buňky.'
+        note: 'Náhodně se procházeli, reagovali na světlo a dotek, k rozhodování používaly pouhé dva umělé neurony.'
     },
     {
         answer:'1977',
@@ -145,7 +145,7 @@ const answers = [
     {
         answer:'1997',
         comment: 'Deep Blue vs Garry Kasparov',
-        note: 'Jednoduchý pravidlový systém, těžké je to, že možných posloupností tahů je příliš mnoho. Nárůst výkonu počítačů umožnil propočítat více tahů, než kolik zvládne člověk.'
+        note: 'Šachy dělá těžké mimo jiné to, že možných posloupností tahů je příliš mnoho. Nárůst výkonu počítačů umožnil propočítat více tahů, než kolik zvládne člověk.'
     },
     {
         answer:'2016',
