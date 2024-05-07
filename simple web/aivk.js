@@ -16,13 +16,12 @@ let people = {
   'tereza': ' Sociologie/informatika, AI v kontextu sociálních věd',
   'rosa': 'Informatika, AI v kontextu divadelních her',
   'jindrich': 'Informatika, AI v kontextu přirozeného jazyka',
-  'kajzar': 'Lékař, AI v medicíně',
+  'petr': 'Lékař, AI v medicíně',
   'nikol': 'Psycholožka, AI v psychologii',
   'frantisek': 'Teolog, AI v teologii a náboženství',
   'helena': 'Pedagožka, AI pro děti',
   'veronika': 'žurnalistka, AI v žurnalistice',
   'dita': 'AI v umění',
-  'petr': 'AI v medicíně',
   'we-want-you': 'Hledáme odborníky na AI v kontextech: práva, architektury, dopravy, ekologie, ekonomie, markentigu, hudby, bezpečnosti, atd.'
 }
 
