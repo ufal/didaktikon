@@ -24,7 +24,7 @@ model_max_tokens = 2048
 max_tokens = 500
 
 # Model identifier
-model = "gpt-3.5-turbo"
+model = "gpt-4o-mini"
 
 def generate_with_openai(messages):
 
