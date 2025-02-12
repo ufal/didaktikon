@@ -24,6 +24,6 @@
         * Best practice for javascript redirects: 
         * https://stackoverflow.com/a/506004/151365
         */
-        window.location.replace("/AIvK/" + anchorMap[hash]);
+        window.location.replace("/" + anchorMap[hash]);
     }
 })();
